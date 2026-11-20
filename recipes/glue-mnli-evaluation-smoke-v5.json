@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "glue-mnli-evaluation-smoke-v5",
+  "workload": "glue",
+  "world_size": 4,
+  "compression_start_step": 2,
+  "evaluation_split": "validation",
+  "required_paths": [
+    "/home/wyr/.cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "/home/wyr/greedylore-validation/campaigns/v5-glue-qqp-mnli-20261105/smoke-data"
+  ],
+  "args": {
+    "task_name": "mnli",
+    "model_name_or_path": "/home/wyr/.cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "local_glue_cache_root": "/home/wyr/greedylore-validation/campaigns/v5-glue-qqp-mnli-20261105/smoke-data",
+    "max_length": 256,
+    "per_device_train_batch_size": 4,
+    "per_device_eval_batch_size": 8,
+    "num_train_epochs": 1,
+    "gradient_accumulation_steps": 1,
+    "optimizer": "adamw",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "warmup_fraction": 0.1,
+    "report_to": "wandb",
+    "with_tracking": true,
+    "wandb_project": "GreedyLore-Validation",
+    "dtype": "float32",
+    "lr_scheduler_type": "cosine",
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08
+  },
+  "completion": {
+    "status": "completed",
+    "completed_epochs": 1,
+    "expected_epochs": 1,
+    "eval_mismatched_samples": 35
+  },
+  "metrics": [
+    "eval_matched_accuracy",
+    "eval_mismatched_accuracy"
+  ],
+  "notes": "Real-model evaluation integration only, 128 train,33 matched,35 mismatched,8 updates. Nondivisible split sizes exercise four-rank tail deduplication. Not full quality evidence."
+}

@@ -1,0 +1,2 @@
+# Historical source snapshots must retain their original bytes and hashes.
+runs/campaign-*/legacy-source/** -whitespace

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-cifar100-full-v1",
+  "workload": "resnet",
+  "world_size": 4,
+  "compression_start_step": 4000,
+  "evaluation_split": "test",
+  "required_paths": [
+    "/home/wyr/ARC-TopK-release/data/cifar-100-python/train",
+    "/home/wyr/ARC-TopK-release/data/cifar-100-python/test",
+    "/home/wyr/ARC-TopK-release/data/cifar-100-python/meta"
+  ],
+  "args": {
+    "dataset": "cifar100",
+    "data-dir": "/home/wyr/ARC-TopK-release/data",
+    "epochs": 40,
+    "batch-size": 32,
+    "workers": 2,
+    "lr": 0.0005,
+    "weight-decay": 0.0005,
+    "optimizer": "adamw"
+  },
+  "completion": {
+    "status": "completed",
+    "epoch": 40,
+    "update_step": 15640,
+    "test_samples": 10000
+  },
+  "metrics": [
+    "final_test_accuracy",
+    "final_test_loss"
+  ],
+  "notes": "Appendix F CIFAR budget, LR, compression prefix and GreedyLoRE rank/gap. Historical scaffold AdamW/WD/FP32 and data transforms.",
+  "model_architecture": "ResNet18",
+  "tracking": {
+    "mode": "online",
+    "project": "GreedyLore-CIFAR",
+    "group": "resnet-paper-two-workloads-20261108"
+  },
+  "checkpoint_policy": "none",
+  "optimizer": {
+    "class": "torch.optim.AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "decoupled_weight_decay": true
+  }
+}

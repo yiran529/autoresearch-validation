@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/greedylore-streamfix-full-20261025",
+  "destination": "runs/campaign-greedylore-streamfix-full-20261025",
+  "entries": {
+    "130m-allocation.json": {
+      "": {
+        "kind": "file",
+        "sha256": "6cb1408bd265f184c071a4bbbad5a927913860187d6c0920dcd453d15596de9f",
+        "size": 834
+      }
+    },
+    "130m-controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "130m-started.json": {
+      "": {
+        "kind": "file",
+        "sha256": "884938e725b989d80a41e2cb8692648ead4f06c30aa4ad13b076c881b867fb36",
+        "size": 81
+      }
+    },
+    "130m-status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "a6edfee7757c8c666a03ccb4168424a7a158c23b08dd558cb4516a84212148e5",
+        "size": 1273
+      }
+    },
+    "130m.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "60m-controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "60m-started.json": {
+      "": {
+        "kind": "file",
+        "sha256": "7b8d4aeac05a7fab49e892a0dd26368dd55818dba168b3756c676343fdcb9011",
+        "size": 80
+      }
+    },
+    "60m-status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "eb4cab5732c62f7ee262ac129598c4a6d97a7468e764c09f034a41c651d1e016",
+        "size": 1269
+      }
+    },
+    "60m.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "campaign.json": {
+      "": {
+        "kind": "file",
+        "sha256": "7809469ae5a70a359ff392e92c4d3f4c7bad5baac10b98874cae69506ab20210",
+        "size": 839
+      }
+    },
+    "launch-record.json": {
+      "": {
+        "kind": "file",
+        "sha256": "6c6c56b6c91f3785e46735e1e134e3ce508a84253cea675ceb1e1b3ba1e116a6",
+        "size": 614
+      }
+    },
+    "launch.sh": {
+      "": {
+        "kind": "file",
+        "sha256": "d9c9383d0e97bedb90096acf0fd847a327518e06ee6398ce674c145c716ac114",
+        "size": 442
+      }
+    },
+    "preflight.json": {
+      "": {
+        "kind": "file",
+        "sha256": "27487c445afed99f12f44f89428b887e30da7c6204eacb6a0d7e4429b1b263ab",
+        "size": 5055
+      }
+    }
+  },
+  "legacy_source": {
+    "README.md": {
+      "kind": "file",
+      "sha256": "a9a0d7c1db3fd3efde82f69230f5624e016258bfa5cd2b9977c550165c70961b",
+      "size": 816
+    },
+    "greedylore-streamfix-130m-full-20261025.json": {
+      "kind": "file",
+      "sha256": "97249cbba690c11594579c4ebe8b855208c9bb80fdccf47212db2f7d0ea8cd17",
+      "size": 645
+    },
+    "greedylore-streamfix-60m-full-20261025.json": {
+      "kind": "file",
+      "sha256": "99400044f13b1c3cb5c76395f37ddd5f85a5a48928c0e39405acca779708f331",
+      "size": 644
+    },
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "d6b5a0f7e68543153e14e8859150078fab9a647c1855b49f3ac0c250fa238b0d",
+      "size": 3980
+    },
+    "run.py": {
+      "kind": "file",
+      "sha256": "09d4c2b71fcac321e4f1fe0790982a2dbe8a21ebb25e0e6a27987805266ce752",
+      "size": 3339
+    }
+  }
+}

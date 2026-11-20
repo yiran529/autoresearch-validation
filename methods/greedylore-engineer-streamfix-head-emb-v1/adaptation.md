@@ -1,0 +1,1 @@
+User requested lm_head and embed_tokens compression. The adapter registers an empty name exclusion list. Native shape/rank eligibility and 1D exclusions remain. Parent source is unchanged; only compression coverage changes. Both independent embedding and output matrices remain separate parameters. Timing uses synthetic tokens and does not establish training quality.

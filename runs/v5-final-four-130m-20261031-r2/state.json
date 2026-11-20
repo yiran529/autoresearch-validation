@@ -1,0 +1,21 @@
+{
+  "status": "interrupted",
+  "jobs": {
+    "v5-n019-engineer-s1243": {
+      "status": "interrupted",
+      "started_at": 1793430652.88206,
+      "pid": 251055,
+      "error": "",
+      "elapsed_seconds": 16.09604938607663
+    },
+    "v5-n027-retained-s1243": {
+      "status": "planned"
+    },
+    "v5-n033-research-s1243": {
+      "status": "planned"
+    },
+    "v5-n022-engineer-s1243": {
+      "status": "planned"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+mode: engineering
+node_id: N000
+node_type: seed
+base_commit: d6009710690cd4f1985ec6f00f03a94e5acf504a
+quality_anchor: d6009710690cd4f1985ec6f00f03a94e5acf504a
+analysis_refs:
+  parent_research: null
+  parent_engineering: null
+change_summary: Remove unused EF14 norm waits, overlap independent dense payload communication with local projection, and export executed refresh events as absolute training-update numbers.
+selection_rationale: The first candidate exposed missing cycle metadata in the pinned legacy timing harness. The second candidate demonstrated an additional raw timing benefit but exported events in relative coordinates; this final candidate corrects the metadata to absolute executed training updates without changing the workload or timing boundaries. The device-wide wait remains because multi-bucket checks rejected its removal.
+semantic_self_check:
+  status: pass
+  commands:
+    - python -m unittest tests.test_subspace_table_iv tests.test_table_v_timing -v (18 passed)
+    - Managed diagnostic N000-engineer-E0001/ef14-overhead-3, four-rank FP32/BF16 exact differentials across 12 steps and three refreshes
+    - PYTHONPATH="$PWD" python /tmp/engineer-E0001/final-telemetry-check.py (archived under attachments/final-telemetry-check)
+    - Managed diagnostics N000-engineer-E0001/ef14-overlap-7 and ef14-candidate-8, exact multi-bucket DDP optimizer and EF differential across 18 steps, four ranks and both dtypes
+  limitations: Synthetic tests include both matrix orientations and DDP multiple buckets with 1M-element dense payload. No-sync exploratory variants failed tighter differential checks and are rejected. No fresh training-quality measurement; quality inherited provisionally.
+timing:
+  period_steps: 200

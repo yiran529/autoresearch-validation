@@ -1,0 +1,12 @@
+{
+  "historical_reference": "/home/wyr/coral-experiments/greedylore-v5-dense-reuse-20261027/run/.coral/public/eval_logs/9e0844ab3f32e55cc85206082baf1a3dcef722ed/2ae551a9f79e4a9abe098e9200310ba1",
+  "method": "powersgd-paper-r32",
+  "historical_dense_seconds": {
+    "bf16": 0.153403,
+    "fp32": 0.232346
+  },
+  "differences": [
+    "GPU selection may differ: hardware and NUMA topology captured for each run.",
+    "Bucket recording wrapper disabled; core workload/window and asynchronous hook preserved."
+  ]
+}

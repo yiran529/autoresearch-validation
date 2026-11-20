@@ -1,0 +1,14 @@
+[
+  "/home/wyr/greedylore-validation/runs/powersgd-cifar10-r64-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-cifar100-r64-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-sst2-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-cola-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-stsb-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-mrpc-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-rte-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-qnli-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-qqp-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-mnli-r8-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-llama60m-r32-20261109",
+  "/home/wyr/greedylore-validation/runs/powersgd-llama130m-r32-20261109"
+]

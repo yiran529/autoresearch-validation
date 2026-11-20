@@ -1,0 +1,20 @@
+{
+  "n33_reference": "/home/wyr/CORAL/validation/greedylore-validation/runs/v5-350m-n033-n022-rolling20k-20261101",
+  "powersgd_runtime_reference": "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-llama130m-r32-20261109/jobs/powersgd-paper-r32-s1243/runtime",
+  "historical_references": [
+    "/home/wyr/greedy_lore/outputs/CM250-m001-dense-muon-llama350m-c4-dense-formal-lr0p005-bf16-s1243",
+    "/home/wyr/greedy_lore/outputs/CM251-m002-greedylore-muon-llama350m-c4-r32-formal-lr0p005-bf16-s1243",
+    "/home/wyr/greedy_lore/outputs/CM252-m002-greedylore-muon-llama350m-c4-r256-formal-lr0p005-bf16-s1243"
+  ],
+  "approved_differences": [
+    "PowerSGD communication method",
+    "W&B disabled",
+    "No model or optimizer checkpoints"
+  ],
+  "scope_difference": "N33 compresses full buckets including embedding/head; PowerSGD uses its existing dense exclusions.",
+  "gpus": "4,5,6,7",
+  "plan_hashes": {
+    "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-llama350m-r32-smoke-20261118": "29eb491a8ff7ebcaaeef1581e6838e9631b36ee6c675422905c5a424956441d6",
+    "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-llama350m-r32-full-20261118": "cfe71eff8b01435f19b86d04704b4f3cbd00563e5520485b5dc5834abcb7ead0"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "greedylore-engineer-streamfix-head-emb-v1",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "8316c7eacc991173dee03f430ebec20efd99760b",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "llama"
+  ],
+  "support_notes": {
+    "llama": "Head/embedding inclusion experiment. Timing only; no convergence claim."
+  },
+  "parameters": {
+    "compressor": "top_subspace",
+    "compress_rank": 32,
+    "update_proj_gap": 200,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 1.0,
+    "beta_ef": 0.0,
+    "error_inherit": 0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "c4/run_llama_pretraining.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "c4/table_v_timing.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "comm_hooks/subspace_hook.py": {
+      "disposition": "overlay",
+      "reason": "Engineer source plus one producer CUDA event/wait in EF14; remove undefined SVD-output logging. No LR, rank, EF rule or optimizer change."
+    },
+    "comm_hooks/utils.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths."
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths."
+    }
+  },
+  "selection_provenance": {
+    "parent": "382bfae897a4db84af45e021ed1952bab7584445",
+    "derived_fix": "8316c7eacc991173dee03f430ebec20efd99760b",
+    "U": null,
+    "parameter_changes": false,
+    "reason": "User-authorized correctness repair; not a searched/max-U candidate",
+    "parent_method": "greedylore-engineer-streamfix",
+    "parent_method_hash": "cba35c3f73613b5933217ce2f1f6639d8cee4e498895d65be052cc7b3143485c",
+    "change": "User-requested inclusion of lm_head and embed_tokens in existing GreedyLoRE compression eligibility; no source or rank/EF change"
+  }
+}

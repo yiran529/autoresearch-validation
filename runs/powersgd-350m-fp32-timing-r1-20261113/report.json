@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "plan_hash": "2c9f7308af5374c6b1628d4471777c483ff836e7b3e686f977bd75f9fa530a11",
+  "recipe": "powersgd-350m-adamw-fp32-timing-v1",
+  "evaluation_split": "none",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.5381336439424195
+      },
+      "peak_memory_bytes": 11222978560,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "powersgd-paper-r32-s1243",
+      "method_id": "powersgd-paper-r32",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 312.95753249386325
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

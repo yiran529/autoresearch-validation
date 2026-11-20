@@ -1,0 +1,1 @@
+PowerSGD r32 from pinned GreedyLoRE d2c38bc2062e06fdfd73185c508e7cc652933de6. EF14, warm start, min ratio2. The campaign runtime bridge keeps embedding/head or CIFAR classifier dense. The original source snapshot is untouched. All workloads use existing frozen training recipes.

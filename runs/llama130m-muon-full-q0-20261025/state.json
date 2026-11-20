@@ -1,0 +1,53 @@
+{
+  "status": "partial_or_failed",
+  "jobs": {
+    "greedylore-engineer-s1243": {
+      "status": "failed",
+      "started_at": 1792878165.5959415,
+      "pid": 3456044,
+      "returncode": 1,
+      "elapsed_seconds": 789.1780126439407,
+      "validation": {
+        "status": "unverified",
+        "errors": [
+          "No final results"
+        ],
+        "metrics": {}
+      }
+    },
+    "n031-engineer-maxu-s1243": {
+      "status": "completed",
+      "started_at": 1792878955.0740416,
+      "pid": 3469081,
+      "returncode": 0,
+      "elapsed_seconds": 11750.192879281007,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.167041395366774,
+          "final_eval_ppl": 23.73715151774143
+        },
+        "peak_memory_bytes": 9201291776,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "dense-s1243": {
+      "status": "completed",
+      "started_at": 1792894871.8730001,
+      "pid": 3655605,
+      "returncode": 0,
+      "elapsed_seconds": 11441.84116256563,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.13208938496926,
+          "final_eval_ppl": 22.921822054792226
+        },
+        "peak_memory_bytes": 8664977920,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

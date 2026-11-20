@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-paper-r8",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "llama",
+    "glue",
+    "resnet"
+  ],
+  "support_notes": {
+    "llama": "Native PowerSGD; workload-specific dense exclusions added before freezing runtime.",
+    "glue": "Native PowerSGD; workload-specific dense exclusions added before freezing runtime.",
+    "resnet": "Native PowerSGD; workload-specific dense exclusions added before freezing runtime."
+  },
+  "parameters": {
+    "compressor": "powersgd",
+    "compress_rank": 8,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 2.0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "Common scaffold driver retained"
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "Common scaffold driver retained"
+    }
+  }
+}

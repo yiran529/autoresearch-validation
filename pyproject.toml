@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "greedylore-validation"
+version = "0.1.0"
+description = "Independent, provenance-pinned validation scaffold for GreedyLoRE candidates"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+glval = "glval.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["glval*"]

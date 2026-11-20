@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/llama60m-engineer-maxu-20261024",
+  "destination": "runs/campaign-llama60m-engineer-maxu-20261024",
+  "entries": {
+    "bootstrap-status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "b3f19c95e55e36de3249452b1c8f27ac63d6b32f50e16141d26747f43ced2c00",
+        "size": 91
+      }
+    },
+    "bootstrap-status.json.v1-failed": {
+      "": {
+        "kind": "file",
+        "sha256": "b3f19c95e55e36de3249452b1c8f27ac63d6b32f50e16141d26747f43ced2c00",
+        "size": 91
+      }
+    },
+    "campaign.json": {
+      "": {
+        "kind": "file",
+        "sha256": "f7dae92103dd8dd1e2c7268e751e5d7edfc84bc155f8783179f8d8e1ceba60df",
+        "size": 576
+      }
+    },
+    "continuation-pretraining_dense_last-0.json": {
+      "": {
+        "kind": "file",
+        "sha256": "f30741ffea55f9f435a04fa8ab88a9b39b17b5fc4bdf45fdf221498035d076dc",
+        "size": 1412
+      }
+    },
+    "continuation-result.json": {
+      "": {
+        "kind": "file",
+        "sha256": "c5c9bc27aa3ea78239a823d17934a84834e9acfbc6aa6571dea2f96d5475fe82",
+        "size": 10940
+      }
+    },
+    "continuation-timing_dense_last-0.json": {
+      "": {
+        "kind": "file",
+        "sha256": "5f4787d4d9259c381f38cfa9f08bf4c2cf759ff428bfcd13a6511234c1d1fd56",
+        "size": 6844
+      }
+    },
+    "continuation-timing_non_dense-0.json": {
+      "": {
+        "kind": "file",
+        "sha256": "01a70058e8d73f8f36c036c989dde6837d0f32b66d59d5b4a6b798dce6feafa4",
+        "size": 5602
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "controller.log.v1-failed": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "formal-controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e669e351b200af7327ee827cd1a8868872dfaa3a8b8e1fadd78451587604cda7",
+        "size": 531
+      }
+    },
+    "incidents": {
+      "": {
+        "kind": "directory"
+      },
+      "greedylore-engineer-nan.json": {
+        "kind": "file",
+        "sha256": "22c984386bbc216329f0981cacfed321b66d954e54fa2c7b9969c09a0bfc8d8e",
+        "size": 1137
+      }
+    },
+    "launch-record.json": {
+      "": {
+        "kind": "file",
+        "sha256": "c67a7464c333b0ce3c012a44df562a206f66b8592414d030cff2e7cbe6618837",
+        "size": 761
+      }
+    },
+    "launch_formal.sh": {
+      "": {
+        "kind": "file",
+        "sha256": "e6350cc21c49b1b7441f376568603bc669273b774c4ede23c5c04490cd01c777",
+        "size": 513
+      }
+    },
+    "prelaunch-evidence.json": {
+      "": {
+        "kind": "file",
+        "sha256": "60e112f4a35b3edf83c29766fc5f882bcb8311429958186873d5b96ec0fc731d",
+        "size": 1362
+      }
+    },
+    "pretraining_non_dense-queue0.json": {
+      "": {
+        "kind": "file",
+        "sha256": "245e3461ccfb1c6d95eade5539c5886103db995cafd320510f276fb8450f270d",
+        "size": 105
+      }
+    },
+    "pretraining_non_dense-queue1.json": {
+      "": {
+        "kind": "file",
+        "sha256": "e28c059fc0b7c549f71d4cba39348325b512abd648622c90eeb9afd6d552ec31",
+        "size": 1622
+      }
+    },
+    "selections.json": {
+      "": {
+        "kind": "file",
+        "sha256": "88dcc4c533f0f8ac7a6a4f2b3945dcb967aa27dd94c4383b70cbfbe7159de8f7",
+        "size": 10903
+      }
+    },
+    "smoke-plans-v1.json": {
+      "": {
+        "kind": "file",
+        "sha256": "58db8ba995a5df106d12946e6962bbd28d550afd0741c91c1ef81de8296ae487",
+        "size": 141
+      }
+    },
+    "smoke-plans.json": {
+      "": {
+        "kind": "file",
+        "sha256": "12e0b8e47c658c8f1e9b5ee639b45b54c1c87b52455bd7aaa630f74b612f63cd",
+        "size": 147
+      }
+    },
+    "smoke-result-q0.json": {
+      "": {
+        "kind": "file",
+        "sha256": "a43d7613cffca8526b7b5a381c0ea55f6dfc9cae539ff8d71037189aac6ffb6c",
+        "size": 1397
+      }
+    },
+    "smoke-result-q1.json": {
+      "": {
+        "kind": "file",
+        "sha256": "fd1b20c3c7a4407e074ca9771e2244278e51b01fadc74a3399e79d4fc13f3077",
+        "size": 1534
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "6b7d6eeac1cece18a3aa3c6409e42420722cfc85922db2a2e5725cf9982d9c64",
+        "size": 96
+      }
+    },
+    "wandb-network-check.json": {
+      "": {
+        "kind": "file",
+        "sha256": "32c05476a1d33a1223db9229755ce4462e73adc49a3a21e6ceec25a25ce2d11f",
+        "size": 96
+      }
+    }
+  },
+  "legacy_source": {
+    "README.md": {
+      "kind": "file",
+      "sha256": "1d6b846003712f60807d62012747d80a87bf5538aba1751d8fe44b24d8a2d860",
+      "size": 1528
+    },
+    "launch_all.py": {
+      "kind": "file",
+      "sha256": "8f9a36ac5622c1fdcdef8ee5cf3bafef4809e547a32f8c78f75c49a8ddb445fc",
+      "size": 1491
+    },
+    "llama60m-full-q0.json": {
+      "kind": "file",
+      "sha256": "39e4e5025a6f6b5242a01475c013520297a198a375412b11b8ea7a491d55b50d",
+      "size": 699
+    },
+    "llama60m-full-q1.json": {
+      "kind": "file",
+      "sha256": "9e65d42808eb63a0c3e8550632e0bfb9b91f118b10c4a1c9babe79907a39e7eb",
+      "size": 685
+    },
+    "llama60m-timing.json": {
+      "kind": "file",
+      "sha256": "52c767fc72bf50e3e3b8387d7faf6c0cf2266ddb3b29b3663ee0915286aff546",
+      "size": 752
+    },
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "9e07b8570c3185ca3809d2ae27ce6c0fe297ef5997de9956c6f35e3825f6534d",
+      "size": 9606
+    },
+    "smoke-q0.json": {
+      "kind": "file",
+      "sha256": "852b3d1bbf387d4b851d69a99955d2846ecefb3a41221733cfd3778cebdf8797",
+      "size": 672
+    },
+    "smoke-q1.json": {
+      "kind": "file",
+      "sha256": "b5e6f5fe1252d830ed40e8984fe7db975345ae5ca287157a2638d9b384e6792a",
+      "size": 671
+    },
+    "smoke-recipe-v2.json": {
+      "kind": "file",
+      "sha256": "288e9f2e8e43ea625b7a0cc8316f8abb2248c28ded98c1150591804d9947f4fa",
+      "size": 1633
+    },
+    "smoke-recipe.json": {
+      "kind": "file",
+      "sha256": "0be108c92eff03dd80b83da5584dd7830362b7cfffba8069e8a8bdf81b528bcc",
+      "size": 1592
+    },
+    "smoke-v2-q0.json": {
+      "kind": "file",
+      "sha256": "d6e601523646c33ecb235af933046c6acd7b5ff68b0d67f1f52192f4518d15e4",
+      "size": 678
+    },
+    "smoke-v2-q1.json": {
+      "kind": "file",
+      "sha256": "47ea49ce9a300e31686b2bdcba1270aed76c967e547e9abe3f4637f347689d24",
+      "size": 677
+    },
+    "summarize.py": {
+      "kind": "file",
+      "sha256": "b98218c9e40936ccf83f717c106e436772135b9106bc9e2c96870217112183eb",
+      "size": 2300
+    }
+  }
+}

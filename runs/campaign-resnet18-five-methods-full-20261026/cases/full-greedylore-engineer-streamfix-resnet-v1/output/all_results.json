@@ -1,0 +1,28 @@
+{
+  "epoch": 40,
+  "update_step": 15640,
+  "train_loss": 0.002231858728599873,
+  "train_accuracy": 99.94,
+  "test_loss": 0.28788102959282696,
+  "test_accuracy": 94.73,
+  "test_samples": 10000,
+  "best_test_accuracy": 94.74,
+  "best_epoch": 34,
+  "learning_rates": [
+    3.082666266872037e-05,
+    7.706665667180093e-06,
+    7.706665667180093e-06
+  ],
+  "ddp_dense_reference_bits": null,
+  "ddp_payload_bits": null,
+  "muon_collective_bits": {
+    "gradient_presence": 19518720,
+    "orthogonalization_results": 9409344307200
+  },
+  "elapsed_seconds": 575.9926842008717,
+  "status": "completed",
+  "final_test_accuracy": 94.73,
+  "final_test_loss": 0.28788102959282696,
+  "ddp_payload_scope": "estimated per-rank collective inputs including warmup, SVD refresh and score probes; excludes network replication and DDP buffers",
+  "muon_payload_scope": "existing optimizer AllGather estimate: world_size*(world_size-1)*input_bits; different scope from per-rank DDP inputs, do not sum directly"
+}

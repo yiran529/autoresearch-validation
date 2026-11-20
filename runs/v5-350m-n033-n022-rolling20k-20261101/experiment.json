@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "v5-350m-n033-n022-rolling20k-20261101",
+  "methods": [
+    "v5-n033-research",
+    "v5-n022-engineer"
+  ],
+  "reference_methods": [],
+  "recipe": "llama350m-muon-full-offline-rolling20k-v5",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 1,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "offline",
+      "project": "GreedyLore-Validation",
+      "group": "v5-350m-n033-n022-20261101"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

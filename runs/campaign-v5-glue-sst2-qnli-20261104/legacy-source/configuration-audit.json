@@ -1,0 +1,35 @@
+{
+  "historical_script": "/home/wyr/greedy_lore/glue/scripts/run_table_iii_muon.bash",
+  "historical_script_sha256": "a402f1d0aff5802ae5ecf11c6044d2d34ba2b9c17af943abe1e532bcd3587f01",
+  "reference_runs": [
+    "CM009",
+    "CM010",
+    "CM011",
+    "CM024",
+    "CM025",
+    "CM026"
+  ],
+  "shared": {
+    "model_snapshot": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "world_size": 4,
+    "batch_per_device": 4,
+    "global_batch": 16,
+    "epochs": 10,
+    "max_length": 256,
+    "dtype": "float32",
+    "lr": 0.0002,
+    "scheduler": "cosine",
+    "warmup_fraction": 0.1,
+    "weight_decay": 0,
+    "compression_start_step": 1000,
+    "seed": 1243
+  },
+  "explicit_differences": {
+    "optimizer": "AdamW normal all-parameter groups instead of Muon matrices + AdamW fallback; no remaining matrix/scalar split",
+    "tracking": "offline instead of online",
+    "gpu_indices": "4-7 instead of historical 0,1,2,7; same four-GPU count",
+    "methods": "frozen N19/N33/N22 added; Greedy baseline uses explicit r8/r16 with stream fix"
+  },
+  "no_checkpoints": true,
+  "note": "Historical Muon scalar LR5e-5 is not a shared AdamW LR; user requested other hyperparameters unchanged, so AdamW uses base2e-4 without tuning. Historical runs are context only; fresh AdamW baselines used for comparison."
+}

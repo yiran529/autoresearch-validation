@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "resnet18-cifar10-muon-example",
+  "method": "original_greedylore",
+  "baselines": [
+    "dense"
+  ],
+  "recipe": "resnet18-cifar10-muon-full-v1",
+  "seeds": [
+    1243
+  ],
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "environment": {
+      "OMP_NUM_THREADS": "4"
+    }
+  }
+}

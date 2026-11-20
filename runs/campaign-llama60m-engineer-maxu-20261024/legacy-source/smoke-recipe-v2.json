@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "llama60m-real-smoke-v2",
+  "workload": "llama",
+  "world_size": 4,
+  "compression_start_step": 2,
+  "evaluation_split": "none",
+  "tokenizer_path": "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "required_paths": [
+    "/home/wyr/greedy_lore/c4/c4_en",
+    "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+    "c4/configs/llama_60m_table_iv.json"
+  ],
+  "args": {
+    "model_config": "c4/configs/llama_60m_table_iv.json",
+    "dataset_path": "/home/wyr/greedy_lore/c4/c4_en",
+    "max_length": 256,
+    "dtype": "bfloat16",
+    "activation_checkpointing": true,
+    "batch_size": 128,
+    "workers": 4,
+    "optimizer": "adamw",
+    "lr": 0.0025,
+    "weight_decay": 0.0,
+    "grad_clipping": 1.0,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "warmup_iterations": 3,
+    "measured_iterations": 12,
+    "scheduler_steps": 8393,
+    "lr_warmup_steps": 1000,
+    "strict_blocking_communication": false,
+    "record_bucket_layout": false
+  },
+  "completion": {
+    "status": "completed",
+    "measured_steps": 12,
+    "warmup_iterations": 3,
+    "first_measured_update": 4,
+    "last_measured_update": 15,
+    "strict_blocking_communication": false
+  },
+  "metrics": [
+    "mean_iteration_seconds"
+  ],
+  "notes": "Diagnostic v2: wait 2 updates for DDP bucket rebuild, then activate compression; real 60M/BF16/batch128/activation checkpointing. Not a formal result. v1 start0 failed due to bucket rebuild and is retained.",
+  "checkpoint_policy": "none",
+  "kind": "timing"
+}

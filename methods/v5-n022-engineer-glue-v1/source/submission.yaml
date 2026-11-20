@@ -1,0 +1,19 @@
+mode: engineering
+node_id: N022
+node_type: research
+base_commit: efa276e33a9488a7215391dac5be600c2c3a2379
+quality_anchor: efa276e33a9488a7215391dac5be600c2c3a2379
+analysis_refs:
+  parent_research: nodes/N019/research_analysis_v1.md
+  parent_engineering: nodes/N019/engineering_analysis_v1.md
+change_summary: Replace guarded decoder mean division with exact power-of-two reciprocal multiplication; retain division for other world sizes. Runtime compatibility fixes already inherited and reverse-patch verified.
+selection_rationale: N019 paired 350M-coordinate diagnostics identified decoder division throughput and measured a bounded improvement with exact reciprocal scaling. N022 retains the same expensive division in its larger predictor decoder. Target decoder arithmetic without changing rank summation, guard, packet, EF or EMA; require paired differential and cost checks before formal timing.
+semantic_self_check:
+  status: pass
+  commands:
+    - autoresearch diagnostic run --scripts-dir /tmp/coral-engineer/5cd5a1bead49d8b5bec1cbdb1b5ea6ef/engineer-E0020/diagnostics --gpus 4 --timeout 600 --request-id n022-e-scale-check-cost -- python /run/coral-ipv4-launch.py --nproc-per-node 4 --port 0 experiments/probe.py
+    - git apply --reverse --check .codex/notes/toolkit/references/reused_root_runtime_compatibility.patch
+    - git diff --check
+  limitations: Managed n022-e-scale-check-cost passes 520 exact checks/rank on four GPUs, BF16/FP32 packets, residuals, predictor, mean and six-step AdamW updates; lengths1..1048577, zero/subnormal/ties/random, decoder worlds1/2/3/4/8 and extreme scales. Finite synthetic checks only; world3/8 decoder simulation rather than actual collectives. Quality inherited (provisional).
+timing:
+  period_steps: 1

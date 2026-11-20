@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_runtime",
+  "status": null,
+  "source": "runtime-rank-0.json",
+  "source_sha256": "3a4dbbc2d235d39fbf8007b1f7d18875f32029dfb51d5ab093f6f727233d8938",
+  "measurements": {
+    "rank": 0,
+    "method_id": "greedylore-engineer-streamfix",
+    "parameters": {
+      "compressor": "top_subspace",
+      "compress_rank": 32,
+      "update_proj_gap": 200,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 1.0,
+      "beta_ef": 0.0,
+      "error_inherit": 0,
+      "start_compress_iter": 1000
+    },
+    "hook_registrations": 1,
+    "hook_calls": 41961,
+    "last_bucket_calls": 8393,
+    "refresh_coverage": "not established; requires method-specific evidence",
+    "description": {
+      "registration": "comm_hooks.utils.register_comm_hook_for_ddp_model",
+      "implementation": "frozen runtime comm_hooks; base optimizer and training loop",
+      "communication_volume": "unavailable; no generic byte estimator"
+    },
+    "environment": {
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "nccl": {
+        "NCCL_DEBUG": "WARN",
+        "NCCL_P2P_DISABLE": "1"
+      }
+    },
+    "hook_module": "comm_hooks.subspace_hook",
+    "hook_name": "subspace_hook",
+    "hook_source": "comm_hooks/subspace_hook.py",
+    "hook_sha256": "076457f711edc59f702976a7c7835ce873381c3a615c0a5104e4e7f59040e613",
+    "state_type": "SubspaceState",
+    "effective_state_configuration": {
+      "matrix_approximation_rank": 32,
+      "update_proj_gap": 200,
+      "use_error_feedback": "ef14"
+    },
+    "elapsed_seconds": 4447.126817294862,
+    "peak_memory_bytes": 9001756160,
+    "iter": 8393,
+    "timing_period_steps": null,
+    "timing_refresh_steps": null
+  },
+  "omitted_sequences": {},
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

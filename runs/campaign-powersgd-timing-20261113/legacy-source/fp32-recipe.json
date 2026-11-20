@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-350m-adamw-fp32-timing-v1",
+  "workload": "llama",
+  "world_size": 4,
+  "compression_start_step": 100,
+  "evaluation_split": "none",
+  "tokenizer_path": "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "required_paths": [
+    "c4/configs/llama_350m.json",
+    "/home/wyr/greedy_lore/c4/c4_en/en",
+    "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1"
+  ],
+  "args": {
+    "model_config": "c4/configs/llama_350m.json",
+    "dataset_path": "/home/wyr/greedy_lore/c4/c4_en/en",
+    "batch_size": 1,
+    "max_length": 256,
+    "dtype": "float32",
+    "warmup_iterations": 101,
+    "measured_iterations": 400,
+    "scheduler_steps": 20000,
+    "lr_warmup_steps": 2000,
+    "activation_checkpointing": false,
+    "ddp_bucket_cap_mb": 1024,
+    "workers": 4,
+    "lr": 0.0025,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "grad_clipping": 1.0,
+    "optimizer": "adamw",
+    "strict_blocking_communication": false,
+    "record_bucket_layout": false
+  },
+  "completion": {
+    "status": "completed",
+    "measured_steps": 400,
+    "warmup_iterations": 101,
+    "first_measured_update": 102,
+    "last_measured_update": 501,
+    "strict_blocking_communication": false
+  },
+  "metrics": [
+    "mean_iteration_seconds"
+  ],
+  "notes": "v5 Engineer timing workload; asynchronous hook; bucket layout observer disabled by scaffold. No W&B/evaluation/checkpoints. Historical Dense speedups are cross-run comparisons; topology can differ.",
+  "checkpoint_policy": "none",
+  "kind": "timing"
+}

@@ -1,0 +1,1 @@
+{"eval_pearson": 0.9057211875915527, "eval_spearmanr": 0.9032473129291837, "status": "completed", "evaluation_split": "validation", "world_size": 4, "completed_steps": 1800, "expected_steps": 1800, "completed_epochs": 5, "expected_epochs": 5, "peak_memory_bytes_rank0": 3022646272, "best_pearson": 0.9060912728309631, "best_spearmanr": 0.9034602063143484, "wandb_link": null}

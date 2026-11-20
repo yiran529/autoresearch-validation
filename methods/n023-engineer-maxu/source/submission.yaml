@@ -1,0 +1,35 @@
+mode: engineering
+node_id: N023
+node_type: research
+base_commit: 062bf9598ab71d2668fac849c78116b0f8c8d99e
+quality_anchor: 062bf9598ab71d2668fac849c78116b0f8c8d99e
+analysis_refs:
+  parent_research: nodes/N000/research_analysis_v1.md
+  parent_engineering: nodes/N000/engineering_analysis_v1.md
+change_summary: 'C3: overlap dense AllReduce with independent sparse Top-k/encode
+  and local residual work, wait before dense readback, retain dense/offset/value collective
+  order and final device synchronization. Keep C2 buffer reuse and exact fused native-residual/rank-order
+  mean kernels.'
+selection_rationale: C2 formal BF16 improves4.18% versus C1, but FP32 regresses1.18%.
+  overlap-6 shows exact gradients/EF/AdamW state with mixed BF16 and improved FP32
+  hook timing versus C2. Use the final successful-run slot to measure this dependency-safe
+  scheduling opportunity end to end.
+semantic_self_check:
+  status: pass
+  commands:
+  - python -m compileall -q comm_hooks/block_sparse_hook.py comm_hooks/block_sparse_cuda.py
+  - python -m unittest tests.test_table_v_timing tests.test_muon -q
+  - 'Managed diagnostic N023-engineer-E0021/overlap-6: immutable experiments/probe.py
+    and extra_checks.py'
+  - PYTHONPATH=$PWD OMP_NUM_THREADS=1 python -m torch.distributed.run --nnodes=1 --nproc_per_node=2
+    --master_addr=127.0.0.1 --master_port=29593 /tmp/engineer-E0021/diagnostics/experiments/cpu_check.py
+    (C3 CPU/gloo exact PASS; supporting files archived before finish)
+  limitations: 'overlap-6 exact checks: 12 synthetic steps per dtype, including warmup/padding/ties/exclusions;
+    18 rank-order codec cases at world sizes 1/2/4 and k1/8/256 with subnormal/signed-zero
+    decode; 28 four-rank multi-bucket AdamW updates with exact gradients, parameters,
+    optimizer state and FP32 EF. Hook residual path tested at fixed k8 only. No long-horizon
+    Muon/quality rerun; quality inherited provisionally. C1/C2 terminal; this candidate
+    restores the exact overlap-6 hook sources. CPU/gloo additionally matches exact
+    gradients/EF/bit counters over12steps/dtype on2ranks.'
+timing:
+  period_steps: null

@@ -1,0 +1,26 @@
+{
+  "plan_hashes": {
+    "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-graph-350m-rolling10k-smoke-20261118": "3ee7e6171b580fb96862788d881ee211936052218572479a1e8f29bb8295a44f",
+    "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-graph-350m-rolling10k-full-20261118": "f1bb1188ff267e4da0faa9f3a3cdfe4f1c6afe74b781243f820b56f205ecc616"
+  },
+  "campaign_files": {
+    "prepare.py": "f38f13d5eebb7df589854cd78e4aef79f248c97099aa09537a5abfaeff418b15",
+    "controller.py": "70bf08fa7d189b0106bd6887a8ce876b5f955b6ff4c18a2004c24275e1ffb8d2",
+    "checkpoint_state.py": "62b2e9745010c742fbb5e2538bf3bfff517a4a1e17f1ebbd6e12ebbe2c531866",
+    "verify_checkpoint.py": "e7f4ac3724ee05c1fb8b5aa81b6f0a07a87aa0bc4c06cef842a962c1cd0cdcc2"
+  },
+  "timing_manifest_hash": "70136b95fc73f125c9d8c1cc508d37224ac23626a2c77efd37476e25dfc32274",
+  "gpus": "4,5,6,7",
+  "method_id": "powersgd-r32-graph-v1",
+  "n33_reference": "/home/wyr/CORAL/validation/greedylore-validation/runs/v5-350m-n033-n022-rolling20k-20261101",
+  "checkpoint_root": "/dev/shm/wyr_tmp/greedylore-validation/powersgd-graph-350m-rolling10k-20261118",
+  "prior_run": "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-llama350m-r32-full-20261118",
+  "prior_run_status": "interrupted; no checkpoint; new attempt starts at0",
+  "recovery": {
+    "reason": "Post-training checkpoint validator incorrectly rejected the two dense-only buckets with empty P/Q",
+    "training_rerun": false,
+    "full_plan_changed": false,
+    "original_evidence": "recovery-20261118/",
+    "explicit_entrypoint": "controller.py --execute --continue-after-verified-smoke"
+  }
+}

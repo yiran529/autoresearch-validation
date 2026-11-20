@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "llama60m-timing-bsz1-20261025",
+  "methods": [
+    "greedylore-engineer",
+    "n023-engineer-maxu",
+    "n031-engineer-maxu",
+    "n020-engineer-maxu",
+    "dense"
+  ],
+  "reference_methods": [
+    "greedylore-engineer",
+    "dense"
+  ],
+  "recipe": "llama60m-adamw-timing-bsz1-online-v1",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 3,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "online",
+      "project": "GreedyLore-Validation",
+      "group": "llama60m-timing-bsz1-20261025"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

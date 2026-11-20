@@ -1,0 +1,42 @@
+{
+  "status": "partial_or_failed",
+  "plan_hash": "36a49a479c56408dec145f6739d7920e41d211c603010039d47202768c6e2868",
+  "recipe": "llama60m-real-smoke-v1",
+  "evaluation_split": "none",
+  "jobs": [
+    {
+      "status": "failed",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "n023-engineer-maxu-s1243",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "failed",
+      "total_wall_seconds": 15.701916987076402
+    },
+    {
+      "status": "failed",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "n020-engineer-maxu-s1243",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "failed",
+      "total_wall_seconds": 16.050519204698503
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

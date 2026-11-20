@@ -1,0 +1,1 @@
+{"eval_accuracy": 0.9438073394495413, "status": "completed", "evaluation_split": "validation", "world_size": 4, "completed_steps": 21050, "expected_steps": 21050, "completed_epochs": 5, "expected_epochs": 5, "peak_memory_bytes_rank0": 3826908160, "best_accuracy": 0.9472477064220184, "wandb_link": null}

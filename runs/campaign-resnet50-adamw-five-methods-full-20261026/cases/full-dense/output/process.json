@@ -1,0 +1,103 @@
+{
+  "case": "full-dense",
+  "method_id": "dense",
+  "phase": "full",
+  "returncode": 0,
+  "elapsed_seconds": 475.5683944225311,
+  "valid": true,
+  "validation": {
+    "status": "verified",
+    "errors": [],
+    "metrics": {
+      "final_test_accuracy": 92.87,
+      "final_test_loss": 0.35659766346216204
+    },
+    "peak_memory_bytes": 3555717632,
+    "refresh_coverage": "not certified by generic binding evidence"
+  },
+  "command": [
+    "/home/wyr/greedy_lore/.venv/bin/python",
+    "-B",
+    "-m",
+    "torch.distributed.run",
+    "--nnodes",
+    "1",
+    "--rdzv_backend",
+    "static",
+    "--master_addr",
+    "127.0.0.1",
+    "--master_port",
+    "22184",
+    "--nproc_per_node",
+    "4",
+    "--module",
+    "glval.worker",
+    "--driver",
+    "pytorch-cifar/train_ddp.py",
+    "--",
+    "--dataset",
+    "cifar10",
+    "--data-dir",
+    "/home/wyr/ARC-TopK-release/data",
+    "--epochs",
+    "40",
+    "--batch-size",
+    "32",
+    "--workers",
+    "2",
+    "--lr",
+    "0.001",
+    "--weight-decay",
+    "0.0005",
+    "--optimizer",
+    "adamw",
+    "--output-dir",
+    "/home/wyr/greedylore-validation/campaigns/resnet50-adamw-five-methods-full-20261026/cases/full-dense/output",
+    "--seed",
+    "1243",
+    "--compressor",
+    "none",
+    "--compress-rank",
+    "32",
+    "--update-proj-gap",
+    "200",
+    "--min-compression-rate",
+    "1.0",
+    "--start-compress-iter",
+    "500",
+    "--wandb-mode",
+    "online",
+    "--wandb-project",
+    "GreedyLore-CIFAR"
+  ],
+  "gpus": [
+    {
+      "index": "4",
+      "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "5",
+      "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    }
+  ]
+}

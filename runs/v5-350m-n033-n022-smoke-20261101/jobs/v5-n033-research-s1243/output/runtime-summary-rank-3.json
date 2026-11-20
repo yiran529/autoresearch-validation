@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_runtime",
+  "status": null,
+  "source": "runtime-rank-3.json",
+  "source_sha256": "3d77b1f3b42309d767a7a53bd266b87839c163cc03867d3948b3cf3ac65aabd5",
+  "measurements": {
+    "rank": 3,
+    "method_id": "v5-n033-research",
+    "parameters": {
+      "compressor": "sparse_q4_ef",
+      "compress_rank": 32,
+      "update_proj_gap": 1,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 1.0,
+      "beta_ef": 0.0,
+      "error_inherit": 0,
+      "start_compress_iter": 2
+    },
+    "hook_registrations": 1,
+    "hook_calls": 162,
+    "last_bucket_calls": 8,
+    "refresh_coverage": "not established; requires method-specific evidence",
+    "description": {
+      "registration": "comm_hooks.utils.register_comm_hook_for_ddp_model",
+      "implementation": "frozen runtime comm_hooks; base optimizer and training loop",
+      "communication_volume": "unavailable; no generic byte estimator"
+    },
+    "environment": {
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "nccl": {
+        "NCCL_DEBUG": "WARN",
+        "NCCL_P2P_DISABLE": "1"
+      }
+    },
+    "hook_module": "comm_hooks.sparse_q4_hook",
+    "hook_name": "sparse_q4_hook",
+    "hook_source": "comm_hooks/sparse_q4_hook.py",
+    "hook_sha256": "2af802d1072b917f4d65997ebcf9738c9d40add80309b7b18b2f2c5c6c55500b",
+    "state_type": "SparseQ4State",
+    "effective_state_configuration": {},
+    "elapsed_seconds": 264.34430132899433,
+    "peak_memory_bytes": 12538108416,
+    "iter": 8,
+    "timing_period_steps": 1
+  },
+  "omitted_sequences": {
+    "timing_refresh_steps": {
+      "count": 6,
+      "sha256": "6ebccbd8e65fff53389b81b666de1e939d438de1a9eaac33c204b9e2c7bf3c02",
+      "first": 3,
+      "last": 8,
+      "min": 3,
+      "max": 8,
+      "mean": 5.5,
+      "median": 5.5,
+      "p95": 8,
+      "p99": 8,
+      "step": 1
+    }
+  },
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

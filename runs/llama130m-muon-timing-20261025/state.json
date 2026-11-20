@@ -1,0 +1,50 @@
+{
+  "status": "planned",
+  "jobs": {
+    "greedylore-engineer-s1243-r1": {
+      "status": "planned"
+    },
+    "n023-engineer-maxu-s1243-r1": {
+      "status": "planned"
+    },
+    "n031-engineer-maxu-s1243-r1": {
+      "status": "planned"
+    },
+    "n020-engineer-maxu-s1243-r1": {
+      "status": "planned"
+    },
+    "dense-s1243-r1": {
+      "status": "planned"
+    },
+    "greedylore-engineer-s1243-r2": {
+      "status": "planned"
+    },
+    "n023-engineer-maxu-s1243-r2": {
+      "status": "planned"
+    },
+    "n031-engineer-maxu-s1243-r2": {
+      "status": "planned"
+    },
+    "n020-engineer-maxu-s1243-r2": {
+      "status": "planned"
+    },
+    "dense-s1243-r2": {
+      "status": "planned"
+    },
+    "greedylore-engineer-s1243-r3": {
+      "status": "planned"
+    },
+    "n023-engineer-maxu-s1243-r3": {
+      "status": "planned"
+    },
+    "n031-engineer-maxu-s1243-r3": {
+      "status": "planned"
+    },
+    "n020-engineer-maxu-s1243-r3": {
+      "status": "planned"
+    },
+    "dense-s1243-r3": {
+      "status": "planned"
+    }
+  }
+}

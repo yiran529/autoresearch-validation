@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "plan_hash": "8deefbccd812935029f134e409d610423743c395f43348f884b09ae8769c92fd",
+  "recipe": "powersgd-llama130m-full-v1",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.246052585010064,
+        "final_eval_ppl": 25.688735412315328
+      },
+      "peak_memory_bytes": 9220040704,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "powersgd-paper-r32-s1243",
+      "method_id": "powersgd-paper-r32",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 18423.992326882202
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

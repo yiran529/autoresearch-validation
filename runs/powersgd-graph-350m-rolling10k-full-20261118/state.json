@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "jobs": {
+    "powersgd-r32-graph-v1-s1243": {
+      "status": "completed",
+      "started_at": 1795016956.4799006,
+      "pid": 3560103,
+      "returncode": 0,
+      "elapsed_seconds": 120750.93966978882,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.0922343272218806,
+          "final_eval_ppl": 22.0262368574048
+        },
+        "peak_memory_bytes": 13251380736,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

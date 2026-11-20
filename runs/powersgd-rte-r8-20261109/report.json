@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "plan_hash": "e6ffa5dbf5b19880e6f0acac63ac9df1f46be5e08853838ee089539a3e485014",
+  "recipe": "powersgd-rte-full-v1",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_accuracy": 0.7545126353790613
+      },
+      "peak_memory_bytes": 3830699520,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "powersgd-paper-r8-s1243",
+      "method_id": "powersgd-paper-r8",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 88.5496105006896
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

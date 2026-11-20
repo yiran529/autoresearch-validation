@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "glue-sst2-bert-full-v1",
+  "workload": "glue",
+  "world_size": 4,
+  "compression_start_step": 100,
+  "evaluation_split": "validation",
+  "required_paths": [
+    "/path/to/local/models/bert-base-uncased",
+    "/path/to/local/glue-cache"
+  ],
+  "args": {
+    "task_name": "sst2",
+    "model_name_or_path": "/path/to/local/models/bert-base-uncased",
+    "local_glue_cache_root": "/path/to/local/glue-cache",
+    "max_length": 128,
+    "per_device_train_batch_size": 8,
+    "per_device_eval_batch_size": 8,
+    "num_train_epochs": 3,
+    "gradient_accumulation_steps": 1,
+    "optimizer": "adamw",
+    "learning_rate": 2.4e-05,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "report_to": "none"
+  },
+  "completion": {
+    "status": "completed",
+    "completed_epochs": 3,
+    "expected_epochs": 3
+  },
+  "metrics": [
+    "eval_accuracy"
+  ],
+  "notes": "Explicit template, not the old ALBERT 10-epoch script. Set local model/data paths before execution. GLUE validation is not a held-out test claim; no checkpoint resume."
+}

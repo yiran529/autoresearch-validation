@@ -1,0 +1,348 @@
+{
+  "status": "partial_or_failed",
+  "plan_hash": "9c3a6f72d3d2b1995019e0db9311657c632fe1adcf8b61c5a2df51d36014c338",
+  "recipe": "llama60m-adamw-timing-online-v1",
+  "evaluation_split": "none",
+  "jobs": [
+    {
+      "status": "failed",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "greedylore-engineer-s1243-r1",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "failed",
+      "total_wall_seconds": 486.3168098782189
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.4045962960948236
+      },
+      "peak_memory_bytes": 8079541248,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243-r1",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "completed",
+      "total_wall_seconds": 814.9045280669816
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.40417115491989536
+      },
+      "peak_memory_bytes": 8079541248,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243-r1",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 813.9279804020189
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.4341301075927913
+      },
+      "peak_memory_bytes": 7960175104,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243-r1",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "completed",
+      "total_wall_seconds": 846.6273790760897
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.38694533276488075
+      },
+      "peak_memory_bytes": 7836811264,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243-r1",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 796.9554460742511
+    },
+    {
+      "status": "failed",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "greedylore-engineer-s1243-r2",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "failed",
+      "total_wall_seconds": 491.2052291999571
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.40765946229978
+      },
+      "peak_memory_bytes": 8079541248,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243-r2",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "completed",
+      "total_wall_seconds": 816.5026219980791
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.40530541142856236
+      },
+      "peak_memory_bytes": 8079541248,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243-r2",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 814.7878526616842
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.4296376050589606
+      },
+      "peak_memory_bytes": 7960175104,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243-r2",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "completed",
+      "total_wall_seconds": 840.6665535769425
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.38639244985359256
+      },
+      "peak_memory_bytes": 7836811264,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243-r2",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 796.8637994090095
+    },
+    {
+      "status": "failed",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "greedylore-engineer-s1243-r3",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "failed",
+      "total_wall_seconds": 488.78841138631105
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.40732302384392827
+      },
+      "peak_memory_bytes": 8079541248,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243-r3",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "completed",
+      "total_wall_seconds": 817.2379766041413
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.4060789582983125
+      },
+      "peak_memory_bytes": 8079541248,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243-r3",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 815.7068772087805
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.43289542810583953
+      },
+      "peak_memory_bytes": 7960175104,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243-r3",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "completed",
+      "total_wall_seconds": 850.5623762938194
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.3857264961086912
+      },
+      "peak_memory_bytes": 7836811264,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243-r3",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 793.5720431832597
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.01765096332994287
+      },
+      "total_wall_speedup": 0.9779740063105219,
+      "measured_step_speedup": 0.9563738879957366
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.017225822155014614
+      },
+      "total_wall_speedup": 0.9791473757673441,
+      "measured_step_speedup": 0.9573798823955443
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.04718477482791056
+      },
+      "total_wall_speedup": 0.9413296401351385,
+      "measured_step_speedup": 0.8913119039599776
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.02126701244618745
+      },
+      "total_wall_speedup": 0.9759476307118145,
+      "measured_step_speedup": 0.9478314269311665
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.0189129615749698
+      },
+      "total_wall_speedup": 0.9780015703546368,
+      "measured_step_speedup": 0.9533365184829186
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.043245155205368035
+      },
+      "total_wall_speedup": 0.9478952100787676,
+      "measured_step_speedup": 0.8993450417371325
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.02159652773523707
+      },
+      "total_wall_speedup": 0.9710415642708867,
+      "measured_step_speedup": 0.946979359203834
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.02035246218962128
+      },
+      "total_wall_speedup": 0.9728642302229169,
+      "measured_step_speedup": 0.9498805299469124
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.04716893199714833
+      },
+      "total_wall_speedup": 0.9329968798303948,
+      "measured_step_speedup": 0.8910385073745434
+    }
+  ],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

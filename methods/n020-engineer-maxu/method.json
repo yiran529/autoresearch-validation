@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "n020-engineer-maxu",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "llama"
+  ],
+  "support_notes": {
+    "llama": "Pinned 60M config matches source; public DDP registration preserved; AdamW training loop unchanged. Real-model smoke required before formal launch."
+  },
+  "parameters": {
+    "compressor": "top_subspace",
+    "compress_rank": 32,
+    "update_proj_gap": 200,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 1.0,
+    "beta_ef": 0.0,
+    "error_inherit": 0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "c4/run_llama_pretraining.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "c4/table_v_timing.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "comm_hooks/subspace_hook.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "comm_hooks/utils.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths."
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths."
+    }
+  },
+  "selection_provenance": {
+    "node": "N020",
+    "implementation_sha": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+    "parameter_sha": "112bf8c8fa478547c8cfe37aec8224a00acc2cd5",
+    "historical_U": 1.2427550474478901,
+    "U_stage": "research",
+    "U_reference": {
+      "mode": "research",
+      "commit_hash": "d6009710690cd4f1985ec6f00f03a94e5acf504a",
+      "quality_anchor": "d6009710690cd4f1985ec6f00f03a94e5acf504a",
+      "contract_hash": "9641a65a390ca5b9bd3b9fe56963fde33a89b9ce27eac7b6b47bd4da5e28588f",
+      "quality_source": "measured",
+      "quality": {
+        "llama60m_adamw": 3.825115323706282,
+        "llama130m_muon": 3.797413772351918
+      },
+      "timing": {
+        "130m_adamw_bf16": 0.08672240495885489,
+        "130m_adamw_fp32": 0.11668636801012326
+      },
+      "timing_protocol": null,
+      "hardware_comparison": null
+    },
+    "verified_state_assignments": {
+      "matrix_approximation_rank": "min(matrix_approximation_rank, 8) if use_error_feedback == 'ef14' else matrix_approximation_rank",
+      "update_proj_gap": "update_proj_gap",
+      "beta_ef": "beta_ef",
+      "error_inherit": "error_inherit",
+      "rejuvenation_gap": "10"
+    },
+    "note": "Historical U read as stored, not recomputed across Research/Engineering references. Engineer implementation has identical key parameter assignments."
+  }
+}

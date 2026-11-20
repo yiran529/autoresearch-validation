@@ -1,0 +1,37 @@
+mode: engineering
+node_id: N020
+node_type: research
+base_commit: 112bf8c8fa478547c8cfe37aec8224a00acc2cd5
+quality_anchor: 112bf8c8fa478547c8cfe37aec8224a00acc2cd5
+analysis_refs:
+  parent_research: nodes/N007/research_analysis_v1.md
+  parent_engineering: nodes/N007/engineering_analysis_v1.md
+change_summary: Write local beta-zero reconstruction residual directly to EF slices
+  and zero dense EF, avoiding augmented copy and local decoded scatter. Nonzero-beta
+  path retains original interpolation; all factor arithmetic, QR and renewal RNG/cadence
+  unchanged.
+selection_rationale: Managed renewal-direct-3 measures40 fewer copy calls per10 synthetic
+  hooks. renewal-onebucket-5 under the formal single-bucket layout shows exact state/optimizer
+  behavior and direct-write model means128.00/114.24ms FP32/BF16 versus132.65-134.66/115.91-116.79ms
+  Research controls; test whether these short-model savings survive full-cycle timing.
+  Overlap remains excluded because its matched changes are small and mixed.
+semantic_self_check:
+  status: pass
+  commands:
+  - PYTHONPATH=. OMP_NUM_THREADS=1 python /tmp/engineer-E0018/diagnostics/experiments/probe.py
+  - python -m unittest tests.test_subspace_table_iv tests.test_table_v_timing -q
+  - git diff --check
+  - 'Managed renewal-storage-1 at 411bea9: synthetic CUDA/NCCL differential and profile'
+  - 'Managed renewal-model-2 at 411bea9: LLaMA130m AdamW differential'
+  - PYTHONPATH=. OMP_NUM_THREADS=1 python /tmp/engineer-E0018/diagnostics/experiments/probe_direct.py
+  - 'Managed renewal-direct-3: synthetic and14/8-bucket LLaMA exact differential'
+  - 'Managed renewal-onebucket-5: one-bucket Research/repeat/direct/overlap exact
+    differential'
+  limitations: Exact covered FP32/BF16 outputs, EF, bases, SGD updates, RNG/events
+    across29 synthetic steps; exact parameters/gradients/state over16 LLaMA AdamW
+    steps per dtype. No long-horizon Muon or arbitrary-input proof. Quality inherited
+    provisionally; diagnostics are not formal timing. CPU logs archived under diagnostics/N020-engineer-E0018/attachments/cpu-self-checks/.
+    One-bucket16-step differential and23-step timing include renewals but do not replace
+    formal400-step cycle.
+timing:
+  period_steps: 80

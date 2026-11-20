@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "plan_hash": "9070dc8de40d5d6a12d18e8f885bb534d691c84831703588518f26011fad8492",
+  "recipe": "llama130m-muon-full-online-v1",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.2012670974913107,
+        "final_eval_ppl": 24.563635006829134
+      },
+      "peak_memory_bytes": 9151446016,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-streamfix-s1243",
+      "method_id": "greedylore-engineer-streamfix",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8316c7eacc991173dee03f430ebec20efd99760b",
+      "process_status": "completed",
+      "total_wall_seconds": 12037.452123274561
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

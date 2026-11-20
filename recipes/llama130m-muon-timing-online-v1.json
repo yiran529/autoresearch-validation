@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "llama130m-muon-timing-online-v1",
+  "workload": "llama",
+  "world_size": 4,
+  "compression_start_step": 1000,
+  "evaluation_split": "none",
+  "tokenizer_path": "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "required_paths": [
+    "/home/wyr/greedy_lore/c4/c4_en",
+    "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+    "c4/configs/llama_130m.json"
+  ],
+  "args": {
+    "model_config": "c4/configs/llama_130m.json",
+    "dataset_path": "/home/wyr/greedy_lore/c4/c4_en",
+    "max_length": 256,
+    "dtype": "bfloat16",
+    "activation_checkpointing": true,
+    "batch_size": 128,
+    "workers": 4,
+    "optimizer": "muon",
+    "lr": 0.01,
+    "weight_decay": 0.0,
+    "muon_mu": 0.95,
+    "muon_epsilon": 1e-08,
+    "muon_scalar_lr": 0.001,
+    "muon_scalar_beta1": 0.9,
+    "muon_scalar_beta2": 0.999,
+    "muon_scalar_eps": 1e-08,
+    "muon_scalar_weight_decay": 0.0,
+    "muon_adjust_lr": "spectral_norm",
+    "grad_clipping": 1.0,
+    "warmup_iterations": 2201,
+    "measured_iterations": 800,
+    "scheduler_steps": 20000,
+    "lr_warmup_steps": 2000,
+    "strict_blocking_communication": false,
+    "record_bucket_layout": false
+  },
+  "completion": {
+    "status": "completed",
+    "measured_steps": 800,
+    "warmup_iterations": 2201,
+    "first_measured_update": 2202,
+    "last_measured_update": 3001,
+    "strict_blocking_communication": false
+  },
+  "metrics": [
+    "mean_iteration_seconds"
+  ],
+  "notes": "Same 130M model, Muon, BF16, local batch128 and activation checkpointing as full training; default DDP buckets; 800 measured updates after LR warmup. Three repetitions. W&B uploaded only after timing. No held-out quality claim from timing.",
+  "checkpoint_policy": "none",
+  "kind": "timing"
+}

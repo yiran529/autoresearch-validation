@@ -1,0 +1,107 @@
+{
+  "status": "completed",
+  "jobs": {
+    "dense-s1243": {
+      "status": "completed",
+      "started_at": 1793881173.7442212,
+      "pid": 2774761,
+      "returncode": 0,
+      "elapsed_seconds": 8724.6437701541,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matched_accuracy": 0.8773306164034641,
+          "eval_mismatched_accuracy": 0.871847030105777
+        },
+        "peak_memory_bytes": 3045534720,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r8-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793889898.9599836,
+      "pid": 2878023,
+      "returncode": 0,
+      "elapsed_seconds": 12402.180540627334,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matched_accuracy": 0.8765155374426897,
+          "eval_mismatched_accuracy": 0.8725589910496339
+        },
+        "peak_memory_bytes": 3846903808,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r16-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793902301.7101111,
+      "pid": 3023907,
+      "returncode": 0,
+      "elapsed_seconds": 12368.694895042107,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matched_accuracy": 0.8732552215995925,
+          "eval_mismatched_accuracy": 0.874593165174939
+        },
+        "peak_memory_bytes": 3846903808,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n019-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793914628.9572287,
+      "pid": 3153194,
+      "returncode": 0,
+      "elapsed_seconds": 5436.5674873953685,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matched_accuracy": 0.8762098828323994,
+          "eval_mismatched_accuracy": 0.8740846216436127
+        },
+        "peak_memory_bytes": 3544630272,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n033-research-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793920066.1362374,
+      "pid": 3205462,
+      "returncode": 0,
+      "elapsed_seconds": 5533.762274033856,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matched_accuracy": 0.8770249617931737,
+          "eval_mismatched_accuracy": 0.8707282343368592
+        },
+        "peak_memory_bytes": 3542300160,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n022-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793925600.510712,
+      "pid": 3258568,
+      "returncode": 0,
+      "elapsed_seconds": 5812.884938117117,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matched_accuracy": 0.8770249617931737,
+          "eval_mismatched_accuracy": 0.8703213995117982
+        },
+        "peak_memory_bytes": 4044973056,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

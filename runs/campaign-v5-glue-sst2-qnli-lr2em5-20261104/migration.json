@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/v5-glue-sst2-qnli-lr2em5-20261104",
+  "destination": "runs/campaign-v5-glue-sst2-qnli-lr2em5-20261104",
+  "entries": {
+    "allocation.json": {
+      "": {
+        "kind": "file",
+        "sha256": "b015d55d464a5bda61765afc21c55cb23fe55f627d18d965743542094e28dbfc",
+        "size": 879
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "80841de40270b528f3759697043f553ea683664f9238bf3b6700190280b30ea2",
+        "size": 760
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "346b6ca8fef6f5d4cce14054fd7f9dd1a2fbd5b5aa1991e990f90e232aab4c27",
+        "size": 130
+      }
+    }
+  },
+  "legacy_source": {
+    "README.md": {
+      "kind": "file",
+      "sha256": "b0fb5aec8b4b6c78b90aedabe81fcdad92dfee82b3e59a62e02617ca35ca551d",
+      "size": 858
+    },
+    "configuration-audit.json": {
+      "kind": "file",
+      "sha256": "de9ee20151dafb78425c941a6210ed1436ec9c49c61c28e494cc935b6386b30d",
+      "size": 1466
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "42ca1d988ab0e87470c79e95dfee4bb14a4a1f1cf24faa54e263e487dc1e825d",
+      "size": 2021
+    },
+    "qnli.json": {
+      "kind": "file",
+      "sha256": "148960526b0c7746a21dfd7a84475d814977adfcbfb528c1e8b55e280f0d7a06",
+      "size": 912
+    },
+    "sst2.json": {
+      "kind": "file",
+      "sha256": "c0967ffdef5a2686a16775e90cf30d8698eff663bed74406d24264391cc8d20e",
+      "size": 912
+    }
+  }
+}

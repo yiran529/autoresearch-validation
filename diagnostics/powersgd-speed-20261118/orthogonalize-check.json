@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "rows": 1024,
+      "rank": 32,
+      "epsilon": 0,
+      "zero": false,
+      "iterations": 3,
+      "all_bf16_bits_equal": true
+    },
+    {
+      "rows": 2736,
+      "rank": 32,
+      "epsilon": 0,
+      "zero": false,
+      "iterations": 3,
+      "all_bf16_bits_equal": true
+    },
+    {
+      "rows": 1024,
+      "rank": 32,
+      "epsilon": 1e-08,
+      "zero": false,
+      "iterations": 3,
+      "all_bf16_bits_equal": true
+    },
+    {
+      "rows": 1024,
+      "rank": 32,
+      "epsilon": 0,
+      "zero": true,
+      "iterations": 3,
+      "all_bf16_bits_equal": true
+    },
+    {
+      "rows": 1024,
+      "rank": 2,
+      "epsilon": 0,
+      "zero": false,
+      "iterations": 3,
+      "all_bf16_bits_equal": true
+    },
+    {
+      "host_threads": 2,
+      "shared_stream": false,
+      "all_bf16_bits_equal": true
+    },
+    {
+      "host_threads": 2,
+      "shared_stream": true,
+      "all_bf16_bits_equal": true
+    }
+  ],
+  "timings": [
+    {
+      "reference_seconds": 3.114154831506312,
+      "graph_seconds": 0.13486359734088182
+    },
+    {
+      "reference_seconds": 2.859390253201127,
+      "graph_seconds": 0.1355233434587717
+    },
+    {
+      "reference_seconds": 2.951123923063278,
+      "graph_seconds": 0.1396668218076229
+    }
+  ],
+  "cache_entries": 7,
+  "scope": "orthogonalization only; four-rank whole-hook check still required"
+}

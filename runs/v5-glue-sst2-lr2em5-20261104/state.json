@@ -1,0 +1,53 @@
+{
+  "status": "interrupted",
+  "jobs": {
+    "dense-s1243": {
+      "status": "completed",
+      "started_at": 1793801983.3965693,
+      "pid": 1661540,
+      "returncode": 0,
+      "elapsed_seconds": 2937.7535285870545,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.9426605504587156
+        },
+        "peak_memory_bytes": 3024415744,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r8-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793804921.7204514,
+      "pid": 1692406,
+      "returncode": 0,
+      "elapsed_seconds": 4300.411452125758,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.9438073394495413
+        },
+        "peak_memory_bytes": 3830758400,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r16-v1-s1243": {
+      "status": "interrupted",
+      "started_at": 1793809222.7015247,
+      "pid": 1736880,
+      "error": "",
+      "elapsed_seconds": 1767.6674937638454
+    },
+    "v5-n019-engineer-glue-v1-s1243": {
+      "status": "planned"
+    },
+    "v5-n033-research-glue-v1-s1243": {
+      "status": "planned"
+    },
+    "v5-n022-engineer-glue-v1-s1243": {
+      "status": "planned"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "partial_or_failed",
+  "plan_hash": "cf3891623eedc92e5075b95a6ead58a65e618998b50e039570e384ae41ac4602",
+  "recipe": "llama60m-real-smoke-v2",
+  "evaluation_split": "none",
+  "jobs": [
+    {
+      "status": "failed",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.4098861805008103
+      },
+      "peak_memory_bytes": 8079137792,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "failed",
+      "total_wall_seconds": 126.92013790970668
+    },
+    {
+      "status": "failed",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.4316295487806201
+      },
+      "peak_memory_bytes": 7959771648,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "failed",
+      "total_wall_seconds": 126.06330626411363
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

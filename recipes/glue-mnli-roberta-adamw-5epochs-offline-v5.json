@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "glue-mnli-roberta-adamw-5epochs-offline-v5",
+  "workload": "glue",
+  "world_size": 4,
+  "compression_start_step": 1000,
+  "evaluation_split": "validation",
+  "required_paths": [
+    "/home/wyr/.cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "/home/wyr/.cache/huggingface/datasets/glue"
+  ],
+  "args": {
+    "task_name": "mnli",
+    "model_name_or_path": "/home/wyr/.cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "local_glue_cache_root": "/home/wyr/.cache/huggingface/datasets/glue",
+    "max_length": 256,
+    "per_device_train_batch_size": 4,
+    "per_device_eval_batch_size": 8,
+    "num_train_epochs": 5,
+    "gradient_accumulation_steps": 1,
+    "optimizer": "adamw",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "warmup_fraction": 0.1,
+    "report_to": "wandb",
+    "with_tracking": true,
+    "wandb_project": "GreedyLore-Validation",
+    "dtype": "float32",
+    "lr_scheduler_type": "cosine",
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08
+  },
+  "completion": {
+    "status": "completed",
+    "completed_epochs": 5,
+    "expected_epochs": 5
+  },
+  "metrics": [
+    "eval_matched_accuracy",
+    "eval_mismatched_accuracy"
+  ],
+  "notes": "Fresh complete 5-epoch run, not a truncated 10-epoch schedule. Cosine horizon and warmup10% recomputed from full dataset at 5 epochs. Same frozen model/data/methods, AdamW2e-5, WD0, FP32, sequence256, batch4 per rank/global16 GA1, seed1243, compression1000. No model/optimizer checkpoint; W&B offline. All earlier 10-epoch attempts remain separate evidence. MNLI evaluation-only tail dedup and split reporting applied before freezing."
+}

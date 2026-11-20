@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "plan_hash": "44e976546d022cebbae3392c74f13488d8dd9ab21069c7873d2754d827f1d7ec",
+  "recipe": "llama130m-muon-full-offline-v5",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.132321845540066,
+        "final_eval_ppl": 22.927151094002745
+      },
+      "peak_memory_bytes": 9201517056,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n019-engineer-s1243",
+      "method_id": "v5-n019-engineer",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "04181280fa6947fda9bbfdd95526866fe403dfb3",
+      "process_status": "completed",
+      "total_wall_seconds": 11391.727702978067
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.1311473435210226,
+        "final_eval_ppl": 22.900238916049275
+      },
+      "peak_memory_bytes": 9201291776,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n027-retained-s1243",
+      "method_id": "v5-n027-retained",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "e1e105201071ca98145fe644e3f5441c8bc8c269",
+      "process_status": "completed",
+      "total_wall_seconds": 11399.80038088886
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.130677765081869,
+        "final_eval_ppl": 22.889487982003796
+      },
+      "peak_memory_bytes": 9201291776,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n033-research-s1243",
+      "method_id": "v5-n033-research",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "2410afc4f56b989b4040e0b9930011dfbf428102",
+      "process_status": "completed",
+      "total_wall_seconds": 11431.93267316185
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.131912832184274,
+        "final_eval_ppl": 22.917775500497225
+      },
+      "peak_memory_bytes": 9737940480,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n022-engineer-s1243",
+      "method_id": "v5-n022-engineer",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8cec48b5e58e89139ba368bfaae98817a475502f",
+      "process_status": "completed",
+      "total_wall_seconds": 11438.911953331903
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "v5-60m-three-idle10m-20261107",
+  "methods": [
+    "greedylore-engineer-streamfix",
+    "v5-n033-research",
+    "dense"
+  ],
+  "reference_methods": [
+    "dense"
+  ],
+  "recipe": "llama60m-adamw-full-online-v2",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 1,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "online",
+      "project": "GreedyLore-Validation",
+      "group": "v5-60m-three-idle10m-20261107"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

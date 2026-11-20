@@ -1,0 +1,29 @@
+mode: engineering
+node_id: N019
+node_type: research
+base_commit: 46277aadaeef254ee3dbb0b9c9f6c3e6a97a342c
+quality_anchor: 46277aadaeef254ee3dbb0b9c9f6c3e6a97a342c
+analysis_refs:
+  parent_research: nodes/N016/research_analysis_v1.md
+  parent_engineering: nodes/N016/engineering_analysis_v1.md
+change_summary: Use IEEE multiplication by exact reciprocal for power-of-two world-size
+  decoder averaging, retaining division for other world sizes. Revert ineffective
+  encoder grouping/vector loads. Runtime compatibility inherited from2028831.
+selection_rationale: n019-e-large-cost and n019-e-vector-cost find no encoder benefit
+  from grouping/vector memory. Decoder takes about1.5ms BF16/2.8ms FP32 for350M coordinates;
+  replace per-coordinate correctly-rounded division by exact power-of-two scaling
+  under fixed world4. Preserve IEEE non-FTZ operation and rank-order sums. Formal
+  confirmation required.
+semantic_self_check:
+  status: pass
+  commands:
+  - python /run/coral-ipv4-launch.py --nproc-per-node 4 --port 0 experiments/check.py
+    (managed n019-e-scale-check)
+  - git apply --reverse --check .codex/notes/toolkit/references/reused_root_runtime_compatibility.patch
+  - git diff --check
+  limitations: '118 exact checks per rank: six-step packet/EF/four-rank-gradient/AdamW
+    for two dtypes and nine lengths; additional byte-exact decode checks for world1/2/3/4/8
+    and subnormal/normal scales. Evidence diagnostics/N019-engineer-E0017/records/n019-e-scale-check/record.json.
+    Full quality remains inherited (provisional).'
+timing:
+  period_steps: 1

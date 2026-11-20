@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "id": "v5-n019-engineer-glue-v1",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "04181280fa6947fda9bbfdd95526866fe403dfb3",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "glue"
+  ],
+  "support_notes": {
+    "glue": "Frozen original communication hook and parameters, AdamW GLUE via unchanged public registration. Full DDP bucket gradients; no model-specific exclusions added. GA=1. Static audit completed; real GLUE smoke required before full jobs. No optimization rule or candidate source changed."
+  },
+  "parameters": {
+    "compressor": "sparse_q4_ef",
+    "compress_rank": 32,
+    "update_proj_gap": 1,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 1.0,
+    "beta_ef": 0.0,
+    "error_inherit": 0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "c4/run_llama_pretraining.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed language driver differences: local tokenizer, contract/results, optional checkpoint/replay/diagnostic plumbing and method_policy dispatch. No change to loss.backward, gradient clipping, optimizer.step or scheduler rule; staged replay disabled. Explicit adapter parameters reproduce method_policy; scaffold supplies tokenizer, fixed full budget and no checkpoint saving. Timing driver unused in this pretraining-only campaign. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    },
+    "c4/table_v_timing.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed language driver differences: local tokenizer, contract/results, optional checkpoint/replay/diagnostic plumbing and method_policy dispatch. No change to loss.backward, gradient clipping, optimizer.step or scheduler rule; staged replay disabled. Explicit adapter parameters reproduce method_policy; scaffold supplies tokenizer, fixed full budget and no checkpoint saving. Timing driver unused in this pretraining-only campaign. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    },
+    "comm_hooks/block_top1_hook.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "comm_hooks/sparse_q4_hook.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "comm_hooks/subspace_hook.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "comm_hooks/utils.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "CIFAR-specific entry points/helpers are not imported by the LLaMA-only baseline driver or selected communication hook. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    },
+    "pytorch-cifar/train_ddp.py": {
+      "disposition": "not_required",
+      "reason": "CIFAR-specific entry points/helpers are not imported by the LLaMA-only baseline driver or selected communication hook. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "CIFAR-specific entry points/helpers are not imported by the LLaMA-only baseline driver or selected communication hook. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    }
+  },
+  "selection_provenance": {
+    "run": "/home/wyr/coral-experiments/greedylore-v5-dense-reuse-20261027/run",
+    "node": "N019",
+    "implementation_sha": "04181280fa6947fda9bbfdd95526866fe403dfb3",
+    "parameter_sha": "04181280fa6947fda9bbfdd95526866fe403dfb3",
+    "selection": "explicit approved fixed version; N033 Research override",
+    "utility": {
+      "version": "mean-log-ppl-ratio-v2",
+      "advisory_only": true,
+      "formula": "S * exp(-mean(candidate_loss - baseline_loss over the two language workloads))",
+      "value": 2.175440181131701,
+      "speedup": 1.987349783628871,
+      "mean_loss_delta": -0.09042904206775937,
+      "reference": {
+        "mode": "engineering",
+        "commit_hash": "91d446f3e87139df100d1979cfe0f23fcd8eae26",
+        "quality_anchor": "5b9a4b0b3276d8e0a4ec4eda1df4ba640db1088e",
+        "contract_hash": "50a97960fe2f6caf4ba321b4f6e35ab5f86ec2d668219805932cc2860f229304",
+        "quality_source": "inherited (provisional)",
+        "quality": {
+          "llama60m_adamw": 3.7139738566217906,
+          "llama130m_muon": 3.596601569206042
+        },
+        "timing": {
+          "350m_adamw_bf16": 0.1882290107634617,
+          "350m_adamw_fp32": 0.26942138863028964
+        },
+        "timing_protocol": {
+          "version": "bounded-cycles-v2",
+          "minimum_iterations": 400,
+          "maximum_iterations": 800,
+          "period_steps": 200,
+          "requested_steps": null,
+          "host_override": null,
+          "measured_iterations": 400,
+          "window_covers_period": true,
+          "reference_window_matches": true,
+          "cycle_evidence": [
+            {
+              "repetition": 0,
+              "cell": "350m_adamw_bf16",
+              "confirmed": true,
+              "reason": null,
+              "event_count_per_rank": 2,
+              "coverage_scope": "declared_periods"
+            },
+            {
+              "repetition": 0,
+              "cell": "350m_adamw_fp32",
+              "confirmed": true,
+              "reason": null,
+              "event_count_per_rank": 2,
+              "coverage_scope": "declared_periods"
+            },
+            {
+              "repetition": 1,
+              "cell": "350m_adamw_fp32",
+              "confirmed": true,
+              "reason": null,
+              "event_count_per_rank": 2,
+              "coverage_scope": "declared_periods"
+            },
+            {
+              "repetition": 1,
+              "cell": "350m_adamw_bf16",
+              "confirmed": true,
+              "reason": null,
+              "event_count_per_rank": 2,
+              "coverage_scope": "declared_periods"
+            }
+          ]
+        },
+        "hardware_comparison": {
+          "status": "comparable",
+          "allowed": true,
+          "reason": null,
+          "baseline": {
+            "gpu_uuids": [
+              "GPU-27a23dc7-1b91-44b7-092c-93a30892ef4a",
+              "GPU-c6310a68-2302-2147-b92a-22049a5253d0",
+              "GPU-e6622753-895a-f8fc-6082-ac71bbfa0037",
+              "GPU-f7d3c0fb-aed7-235f-7332-68966b63e0c5"
+            ],
+            "gpu_names": [
+              "NVIDIA GeForce RTX 4090",
+              "NVIDIA GeForce RTX 4090",
+              "NVIDIA GeForce RTX 4090",
+              "NVIDIA GeForce RTX 4090"
+            ],
+            "topology_fingerprint": "16c8c8d8545d0950931908de357d479caef5bb4f76ab35fd3e4cf3eefdc6f416",
+            "numa_nodes": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "nccl_env": {
+              "NCCL_P2P_DISABLE": "1",
+              "NCCL_SHM_DISABLE": "0",
+              "NCCL_DEBUG": "INFO"
+            }
+          },
+          "candidate": {
+            "gpu_uuids": [
+              "GPU-27a23dc7-1b91-44b7-092c-93a30892ef4a",
+              "GPU-c6310a68-2302-2147-b92a-22049a5253d0",
+              "GPU-e6622753-895a-f8fc-6082-ac71bbfa0037",
+              "GPU-f7d3c0fb-aed7-235f-7332-68966b63e0c5"
+            ],
+            "gpu_names": [
+              "NVIDIA GeForce RTX 4090",
+              "NVIDIA GeForce RTX 4090",
+              "NVIDIA GeForce RTX 4090",
+              "NVIDIA GeForce RTX 4090"
+            ],
+            "topology_fingerprint": "16c8c8d8545d0950931908de357d479caef5bb4f76ab35fd3e4cf3eefdc6f416",
+            "numa_nodes": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "nccl_env": {
+              "NCCL_P2P_DISABLE": "1",
+              "NCCL_SHM_DISABLE": "0",
+              "NCCL_DEBUG": "INFO"
+            }
+          },
+          "differences": {},
+          "warnings": []
+        }
+      },
+      "reason": null,
+      "quality_source": "inherited (provisional)"
+    },
+    "quality_source": "inherited (provisional)"
+  }
+}

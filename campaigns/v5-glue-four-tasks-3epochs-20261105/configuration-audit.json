@@ -1,0 +1,32 @@
+{
+  "requested_change": "All four tasks fresh 3epochs; rerun completed methods",
+  "tasks": [
+    "sst2",
+    "qnli",
+    "qqp",
+    "mnli"
+  ],
+  "changed_driver_args": {
+    "num_train_epochs": {
+      "old": 10,
+      "new": 3
+    }
+  },
+  "schedule": "cosine horizon and warmup10% recomputed, no continuation",
+  "preserved": {
+    "optimizer": "adamw",
+    "learning_rate": 2e-05,
+    "world_size": 4,
+    "batch_per_device": 4,
+    "global_batch": 16,
+    "GA": 1,
+    "seed": 1243,
+    "compression_start_step": 1000,
+    "dtype": "float32",
+    "max_length": 256,
+    "weight_decay": 0,
+    "checkpoint": false,
+    "wandb": "offline"
+  },
+  "old_campaigns": "preserved; both previous controllers explicitly stopped before launch"
+}

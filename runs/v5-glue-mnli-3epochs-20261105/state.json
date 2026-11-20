@@ -1,0 +1,24 @@
+{
+  "status": "cancelled",
+  "jobs": {
+    "dense-s1243": {
+      "status": "cancelled"
+    },
+    "greedylore-engineer-streamfix-glue-r8-v1-s1243": {
+      "status": "cancelled"
+    },
+    "greedylore-engineer-streamfix-glue-r16-v1-s1243": {
+      "status": "cancelled"
+    },
+    "v5-n019-engineer-glue-v1-s1243": {
+      "status": "cancelled"
+    },
+    "v5-n033-research-glue-v1-s1243": {
+      "status": "cancelled"
+    },
+    "v5-n022-engineer-glue-v1-s1243": {
+      "status": "cancelled"
+    }
+  },
+  "reason": "User chose fresh five-epoch runs before launch"
+}

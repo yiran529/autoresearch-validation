@@ -1,0 +1,17 @@
+{
+  "status": "prepared",
+  "training_executed": false,
+  "run": "/home/wyr/greedylore-validation/runs/llama60m-timing-bsz1-20261025",
+  "per_device_batch_size": 1,
+  "global_batch_size": 4,
+  "preflight": {
+    "status": "static_pass",
+    "missing_inputs": [],
+    "training_executed": false,
+    "gpu_preflight_executed": false,
+    "limitations": [
+      "No candidate module imported",
+      "Hook execution, refresh coverage and convergence unverified"
+    ]
+  }
+}

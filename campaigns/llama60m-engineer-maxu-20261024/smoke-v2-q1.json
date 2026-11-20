@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "llama60m-smoke-v2-q1-20261024",
+  "methods": [
+    "n023-engineer-maxu",
+    "n020-engineer-maxu"
+  ],
+  "recipe": "/home/wyr/greedylore-validation/campaigns/llama60m-engineer-maxu-20261024/smoke-recipe-v2.json",
+  "seeds": [
+    1243
+  ],
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 600,
+    "tracking": {
+      "mode": "online",
+      "project": "GreedyLore-Validation",
+      "group": "llama60m-engineer-maxu-preflight-20261024"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

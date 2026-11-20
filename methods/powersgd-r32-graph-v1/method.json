@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-r32-graph-v1",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "llama"
+  ],
+  "support_notes": {
+    "llama": "Same pinned PowerSGD rank32/EF14/warm-start and dense embedding/head scope; only BF16 orthogonalization kernel launch execution uses CUDA graph replay. Strict state/gradient bit comparisons and full-workload timing recorded separately."
+  },
+  "parameters": {
+    "compressor": "powersgd",
+    "compress_rank": 32,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 2.0,
+    "orthogonalization_execution": "cuda_graph_original_kernels"
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "Common scaffold driver retained"
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "Common scaffold driver retained"
+    }
+  },
+  "implementation_provenance": {
+    "parent_method": "powersgd-paper-r32",
+    "source_snapshot_changed": false,
+    "algorithm_parameters_changed": false,
+    "adapter_sha256": "387e057f3ffa41717a9ad54a263848024eb372f65524bcb9cf483376dc107b62",
+    "change": "Execute unchanged ATen orthogonalization operations through per-stream graph staging; process-wide host enqueue lock. Initial cache capture synchronizes; steady replay keeps original hook synchronization."
+  }
+}

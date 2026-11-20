@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_runtime",
+  "status": null,
+  "source": "runtime-rank-3.json",
+  "source_sha256": "979d0e4cbdd6ab93bad5848a3f9bc781df7cc23c2c6a8de51af95500be97d374",
+  "measurements": {
+    "rank": 3,
+    "method_id": "dense",
+    "parameters": {
+      "compressor": "none",
+      "start_compress_iter": 267
+    },
+    "hook_registrations": 1,
+    "hook_calls": 37437,
+    "last_bucket_calls": 2675,
+    "refresh_coverage": "not established; requires method-specific evidence",
+    "description": {
+      "registration": "comm_hooks.utils.register_comm_hook_for_ddp_model",
+      "implementation": "frozen runtime comm_hooks; base optimizer and training loop",
+      "communication_volume": "unavailable; no generic byte estimator"
+    },
+    "environment": {
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "nccl": {
+        "NCCL_DEBUG": "WARN",
+        "NCCL_P2P_DISABLE": "1"
+      }
+    },
+    "hook_module": "comm_hooks.default_hooks",
+    "hook_name": "allreduce_hook",
+    "hook_source": "comm_hooks/default_hooks.py",
+    "hook_sha256": "1e738d139aa9a64e2173d913421651124ba560fcbec2ef36f0c87b8d7ed131d9",
+    "state_type": "ProcessGroup",
+    "effective_state_configuration": {},
+    "elapsed_seconds": 198.84078128123656,
+    "peak_memory_bytes": 3014168064,
+    "iter": null,
+    "timing_period_steps": null,
+    "timing_refresh_steps": null
+  },
+  "omitted_sequences": {},
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

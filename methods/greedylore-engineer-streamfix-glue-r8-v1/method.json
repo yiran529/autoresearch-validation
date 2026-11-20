@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "greedylore-engineer-streamfix-glue-r8-v1",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "8316c7eacc991173dee03f430ebec20efd99760b",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "glue"
+  ],
+  "support_notes": {
+    "glue": "Frozen original communication hook and parameters, AdamW GLUE via unchanged public registration. Full DDP bucket gradients; no model-specific exclusions added. GA=1. Static audit completed; real GLUE smoke required before full jobs. No optimization rule or candidate source changed. Explicit historical Table III arm: rank8, gap200, EF14; implementation retains verified stream synchronization fix."
+  },
+  "parameters": {
+    "compressor": "top_subspace",
+    "compress_rank": 8,
+    "update_proj_gap": 200,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 1.0,
+    "beta_ef": 0.0,
+    "error_inherit": 0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "c4/run_llama_pretraining.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    },
+    "c4/table_v_timing.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    },
+    "comm_hooks/subspace_hook.py": {
+      "disposition": "overlay",
+      "reason": "Engineer source plus one producer CUDA event/wait in EF14; remove undefined SVD-output logging. No LR, rank, EF rule or optimizer change."
+    },
+    "comm_hooks/utils.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths. GLUE variant: this file is not imported by the scaffold GLUE driver; the frozen comm_hooks overlay contains method registration, EF and predictor state. GLUE backward/AdamW/scheduler remain baseline."
+    }
+  },
+  "selection_provenance": {
+    "parent": "382bfae897a4db84af45e021ed1952bab7584445",
+    "derived_fix": "8316c7eacc991173dee03f430ebec20efd99760b",
+    "U": null,
+    "parameter_changes": false,
+    "reason": "User-authorized correctness repair; not a searched/max-U candidate"
+  }
+}

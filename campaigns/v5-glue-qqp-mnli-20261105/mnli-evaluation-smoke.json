@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "v5-glue-mnli-evaluation-smoke-20261105",
+  "methods": [
+    "dense"
+  ],
+  "reference_methods": [],
+  "recipe": "glue-mnli-evaluation-smoke-v5",
+  "seeds": [
+    1243
+  ],
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "offline",
+      "project": "GreedyLore-Validation",
+      "group": "v5-glue-qqp-mnli-20261105"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

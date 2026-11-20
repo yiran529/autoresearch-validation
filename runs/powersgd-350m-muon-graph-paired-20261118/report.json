@@ -1,0 +1,58 @@
+{
+  "status": "completed",
+  "plan_hash": "2f0957384c63a73f92f705233db9e6c43a3bda71cfad8dda0a9ce8ce79cc53b6",
+  "recipe": "powersgd-350m-muon-graph-paired-20261118",
+  "evaluation_split": "none",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 3.9578774736262856
+      },
+      "peak_memory_bytes": 11917391872,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "powersgd-paper-r32-s1243",
+      "method_id": "powersgd-paper-r32",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 166.09232806507498
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 1.6433410875499248
+      },
+      "peak_memory_bytes": 11925983232,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "powersgd-r32-graph-v1-s1243",
+      "method_id": "powersgd-r32-graph-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 144.5899084182456
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "powersgd-r32-graph-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "powersgd-paper-r32",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -2.3145363860763606
+      },
+      "total_wall_speedup": 1.1487131424458112,
+      "measured_step_speedup": 2.4084333457073894
+    }
+  ],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

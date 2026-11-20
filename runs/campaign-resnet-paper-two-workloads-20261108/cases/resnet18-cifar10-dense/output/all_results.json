@@ -1,0 +1,23 @@
+{
+  "epoch": 40,
+  "update_step": 15640,
+  "train_loss": 0.008827382417712361,
+  "train_accuracy": 99.72,
+  "test_loss": 0.3556886350363493,
+  "test_accuracy": 92.96,
+  "test_samples": 10000,
+  "best_test_accuracy": 93.02,
+  "best_epoch": 37,
+  "learning_rates": [
+    7.706665667180093e-06
+  ],
+  "ddp_dense_reference_bits": null,
+  "ddp_payload_bits": null,
+  "optimizer_collective_bits": 0,
+  "elapsed_seconds": 218.32149691600353,
+  "status": "completed",
+  "final_test_accuracy": 92.96,
+  "final_test_loss": 0.3556886350363493,
+  "ddp_payload_scope": "estimated per-rank collective inputs including warmup, SVD refresh and score probes; excludes network replication and DDP buffers",
+  "optimizer_payload_scope": "AdamW is local; no optimizer collectives"
+}

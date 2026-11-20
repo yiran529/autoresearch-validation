@@ -1,0 +1,28 @@
+{
+  "user_choice": "All four tasks uniformly five epochs; rerun all methods from pretrained initialization",
+  "epochs": 5,
+  "schedule": "cosine horizon and warmup10% recomputed for five epochs",
+  "datasets": [
+    "sst2",
+    "qnli",
+    "qqp",
+    "mnli"
+  ],
+  "methods": [
+    "dense",
+    "greedylore-r8",
+    "greedylore-r16",
+    "N19",
+    "N33",
+    "N22"
+  ],
+  "seed": 1243,
+  "GPUs": "4-7 serial",
+  "optimizer": "adamw",
+  "learning_rate": 2e-05,
+  "dtype": "float32",
+  "global_batch": 16,
+  "checkpoint": false,
+  "wandb": "offline",
+  "previous": "10-epoch attempts stopped and preserved; 3-epoch plans cancelled without training"
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_runtime",
+  "status": null,
+  "source": "runtime-rank-0.json",
+  "source_sha256": "663246398f1a92f46d87ff7c6f582b13c7c3c309302b379351da45900f85fb2a",
+  "measurements": {
+    "rank": 0,
+    "method_id": "n020-engineer-maxu-resnet-v1",
+    "parameters": {
+      "compressor": "top_subspace",
+      "compress_rank": 32,
+      "update_proj_gap": 200,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 1.0,
+      "beta_ef": 0.0,
+      "error_inherit": 0,
+      "start_compress_iter": 2
+    },
+    "hook_registrations": 1,
+    "hook_calls": 613,
+    "last_bucket_calls": 205,
+    "refresh_coverage": "not established; requires method-specific evidence",
+    "description": {
+      "workload": "resnet",
+      "uncompressed_names": [
+        "linear"
+      ],
+      "matrix_mapping": "Candidate native tensor.view(out_channels,-1) / flat block sparse",
+      "implementation": "Frozen parent Engineer source; ResNet registration bridge only",
+      "communication_volume": "Generic estimate unavailable"
+    },
+    "environment": {
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "nccl": {
+        "NCCL_DEBUG": "WARN",
+        "NCCL_P2P_DISABLE": "1"
+      }
+    },
+    "hook_module": "comm_hooks.subspace_hook",
+    "hook_name": "subspace_hook",
+    "hook_source": "comm_hooks/subspace_hook.py",
+    "hook_sha256": "cce976a2873e86eca574287f2f6091572020827845b2637f90bb0ed0be750cd6",
+    "state_type": "SubspaceState",
+    "effective_state_configuration": {
+      "matrix_approximation_rank": 8,
+      "rejuvenation_gap": 10,
+      "update_proj_gap": 200,
+      "use_error_feedback": "ef14"
+    },
+    "elapsed_seconds": 12.643578539136797,
+    "peak_memory_bytes": 1589565952,
+    "iter": 205,
+    "timing_period_steps": 80
+  },
+  "omitted_sequences": {
+    "timing_refresh_steps": {
+      "count": 21,
+      "sha256": "8d7b61d3c9bfe0050f28187a4d54e06799ad84246ca1a846b97ff03801b043b5",
+      "first": 3,
+      "last": 203,
+      "min": 3,
+      "max": 203,
+      "mean": 103.0,
+      "median": 103,
+      "p95": 193,
+      "p99": 203,
+      "step": 10
+    }
+  },
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

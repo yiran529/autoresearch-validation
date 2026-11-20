@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-llama350m-r32-smoke-20261118",
+  "methods": [
+    "powersgd-paper-r32"
+  ],
+  "reference_methods": [],
+  "recipe": "/home/wyr/CORAL/validation/greedylore-validation/campaigns/powersgd-350m-full-20261118/smoke-recipe.json",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 1,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 1800,
+    "tracking": {
+      "mode": "disabled"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

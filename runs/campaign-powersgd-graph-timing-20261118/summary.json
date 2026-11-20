@@ -1,0 +1,91 @@
+{
+  "status": "completed",
+  "method_id": "powersgd-r32-graph-v1",
+  "cells": {
+    "bf16": {
+      "repetitions": [
+        {
+          "case": "powersgd-graph-350m-bf16-r1-20261118",
+          "precision": "bf16",
+          "repetition": 1,
+          "returncode": 0,
+          "elapsed_seconds": 318.374031865038,
+          "valid": true,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.563239398598671
+            },
+            "peak_memory_bytes": 6369625088,
+            "refresh_coverage": "not certified by generic binding evidence"
+          },
+          "mean_iteration_seconds": 0.563239398598671
+        },
+        {
+          "case": "powersgd-graph-350m-bf16-r2-20261118",
+          "precision": "bf16",
+          "repetition": 2,
+          "returncode": 0,
+          "elapsed_seconds": 332.98602636903524,
+          "valid": true,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.5894109926722012
+            },
+            "peak_memory_bytes": 6369625088,
+            "refresh_coverage": "not certified by generic binding evidence"
+          },
+          "mean_iteration_seconds": 0.5894109926722012
+        }
+      ],
+      "mean_iteration_seconds": 0.576325195635436,
+      "relative_spread": 0.04541115722812416
+    },
+    "fp32": {
+      "repetitions": [
+        {
+          "case": "powersgd-graph-350m-fp32-r1-20261118",
+          "precision": "fp32",
+          "repetition": 1,
+          "returncode": 0,
+          "elapsed_seconds": 331.22759515140206,
+          "valid": true,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.5763287777989171
+            },
+            "peak_memory_bytes": 11222978560,
+            "refresh_coverage": "not certified by generic binding evidence"
+          },
+          "mean_iteration_seconds": 0.5763287777989171
+        },
+        {
+          "case": "powersgd-graph-350m-fp32-r2-20261118",
+          "precision": "fp32",
+          "repetition": 2,
+          "returncode": 0,
+          "elapsed_seconds": 317.38207176793367,
+          "valid": true,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.5512829330703244
+            },
+            "peak_memory_bytes": 11222978560,
+            "refresh_coverage": "not certified by generic binding evidence"
+          },
+          "mean_iteration_seconds": 0.5512829330703244
+        }
+      ],
+      "mean_iteration_seconds": 0.5638058554346208,
+      "relative_spread": 0.04442281769011718
+    }
+  },
+  "scope": "AutoResearch350M AdamW batch1; native passive bucket recording; no contemporaneous Dense baseline."
+}

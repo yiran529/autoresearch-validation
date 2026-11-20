@@ -1,0 +1,6 @@
+[
+  "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-bf16-timing-r1-20261113",
+  "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-fp32-timing-r1-20261113",
+  "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-bf16-timing-r2-20261113",
+  "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-fp32-timing-r2-20261113"
+]

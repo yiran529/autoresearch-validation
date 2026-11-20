@@ -1,0 +1,42 @@
+{
+  "status": "finished_exit_unknown",
+  "jobs": {
+    "n023-engineer-maxu-s1243": {
+      "status": "completed",
+      "started_at": 1792878165.5131047,
+      "pid": 3456043,
+      "returncode": 0,
+      "elapsed_seconds": 11727.605968965217,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.219099099827579,
+          "final_eval_ppl": 25.00558249717718
+        },
+        "peak_memory_bytes": 9201291776,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n020-engineer-maxu-s1243": {
+      "status": "finished_exit_unknown",
+      "started_at": 1792889893.3114145,
+      "pid": 3599231,
+      "returncode": null,
+      "process_exit_verified": false,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.236762602849302,
+          "final_eval_ppl": 25.45119261119558
+        },
+        "peak_memory_bytes": 8934112256,
+        "refresh_coverage": "not certified by generic binding evidence"
+      },
+      "completion_observed_at": 1792901668.255604,
+      "elapsed_seconds": null,
+      "monitor_note": "Original monitor exited during scheduler handoff. Exact torchrun process exit observed via pidfd; exit code unavailable. Artifact verification is separate."
+    }
+  }
+}

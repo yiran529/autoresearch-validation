@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_timing",
+  "status": "completed",
+  "source": "all_results.json",
+  "source_sha256": "b7c64009910a4ee95e0a8496eb121853f8b2c8e6f6e72fd50f1fb283cb2df39e",
+  "measurements": {
+    "measured_steps": 400,
+    "mean_iteration_seconds": 0.5381336439424195,
+    "rank_elapsed_seconds": [
+      215.25189216714352,
+      215.25345757696778,
+      215.2479019551538,
+      215.24819239927456
+    ],
+    "slowest_rank": 1,
+    "slowest_rank_iteration_median_seconds": 0.47451207390986383,
+    "status": "completed",
+    "optimizer": "adamw",
+    "compressor": "powersgd",
+    "strict_blocking_communication": false,
+    "bucket_layout_recorded": false,
+    "parameter_count": 367969280,
+    "warmup_iterations": 101,
+    "first_measured_update": 102,
+    "last_measured_update": 501,
+    "rank_peak_allocated_bytes": [
+      11222978560,
+      11222978560,
+      11222978560,
+      11222978560
+    ],
+    "rank_peak_reserved_bytes": [
+      24287117312,
+      24276631552,
+      24276631552,
+      24276631552
+    ],
+    "method_id": "powersgd-paper-r32",
+    "actual_parameters": {
+      "compressor": "powersgd",
+      "compress_rank": 32,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 2.0
+    }
+  },
+  "omitted_sequences": {
+    "rank_iteration_seconds[0]": {
+      "count": 400,
+      "sha256": "edf814e4733129967798ca7e2ed1fdc4f052335bb82885daace4fbbf1a8ac40c",
+      "first": 0.5193236502818763,
+      "last": 0.8407259290106595,
+      "min": 0.40736457938328385,
+      "max": 2.004861676134169,
+      "mean": 0.5380312265618704,
+      "median": 0.4718678954523057,
+      "p95": 0.805670655798167,
+      "p99": 0.8564436952583492
+    },
+    "rank_iteration_seconds[1]": {
+      "count": 400,
+      "sha256": "16d68a69ff735cad91f7031cc37b62c0dc17ae8f994bd6fe387f0d6f83819095",
+      "first": 0.5143959731794894,
+      "last": 0.8398871393874288,
+      "min": 0.4091784618794918,
+      "max": 2.0219660312868655,
+      "mean": 0.5380790520331357,
+      "median": 0.47451207390986383,
+      "p95": 0.7996994331479073,
+      "p99": 0.8722462588921189
+    },
+    "rank_iteration_seconds[2]": {
+      "count": 400,
+      "sha256": "a5989684fd5d80848b85e4afd364a9c23d16f73f3bc893927ee7ccf2029c6ee8",
+      "first": 0.5028640450909734,
+      "last": 0.8476487719453871,
+      "min": 0.4145624050870538,
+      "max": 2.0111375208944082,
+      "mean": 0.5380667712027207,
+      "median": 0.4729886765126139,
+      "p95": 0.8080531768500805,
+      "p99": 0.9020238118246198
+    },
+    "rank_iteration_seconds[3]": {
+      "count": 400,
+      "sha256": "ceac6d3391008330d94f705cba6c7d7d142e37f308c8ea37ee66433c12adbae4",
+      "first": 0.4836486568674445,
+      "last": 0.8653053534217179,
+      "min": 0.40920521412044764,
+      "max": 2.012449173722416,
+      "mean": 0.5380700431065634,
+      "median": 0.47365244710817933,
+      "p95": 0.810091809835285,
+      "p99": 0.8653053534217179
+    },
+    "rank_losses[0]": {
+      "count": 400,
+      "sha256": "258db6e5a38c325ca3d87175daeceb3a7a6381baaa8ac82dd0a7bc2ed989f593",
+      "first": 7.685522556304932,
+      "last": 6.612812519073486,
+      "min": 5.568596363067627,
+      "max": 8.856219291687012,
+      "mean": 7.13107843875885,
+      "median": 7.098019599914551,
+      "p95": 8.059524536132812,
+      "p99": 8.484015464782715
+    },
+    "rank_losses[1]": {
+      "count": 400,
+      "sha256": "fd75a0d80a6acc87d486b75098ff9dc3a62109b0660295e407c018af2f2ceaf5",
+      "first": 7.453986644744873,
+      "last": 6.991313934326172,
+      "min": 5.656248569488525,
+      "max": 9.23151683807373,
+      "mean": 7.117090756893158,
+      "median": 7.062322378158569,
+      "p95": 8.041163444519043,
+      "p99": 8.646614074707031
+    },
+    "rank_losses[2]": {
+      "count": 400,
+      "sha256": "78663666ae9c29bd8e7b2095c0050c2531b2da84495bdac22dbf4978875237e5",
+      "first": 7.539468288421631,
+      "last": 7.774261951446533,
+      "min": 5.675686359405518,
+      "max": 9.363028526306152,
+      "mean": 7.147180908918381,
+      "median": 7.134769678115845,
+      "p95": 7.905130863189697,
+      "p99": 8.331462860107422
+    },
+    "rank_losses[3]": {
+      "count": 400,
+      "sha256": "c6430b7c73e73040776f0141f9a793a5a163b59ef7d42681bae40b2a8fadf1ed",
+      "first": 7.043873310089111,
+      "last": 6.540731430053711,
+      "min": 5.721100807189941,
+      "max": 8.960529327392578,
+      "mean": 7.1588621175289155,
+      "median": 7.150809049606323,
+      "p95": 8.029187202453613,
+      "p99": 8.58613395690918
+    }
+  },
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "status": "partial_or_failed",
+  "jobs": {
+    "n023-engineer-maxu-s1243": {
+      "status": "failed",
+      "started_at": 1792853177.330951,
+      "pid": 3139022,
+      "returncode": 1,
+      "elapsed_seconds": 126.92013790970668,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.4098861805008103
+        },
+        "peak_memory_bytes": 8079137792,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n020-engineer-maxu-s1243": {
+      "status": "failed",
+      "started_at": 1792853304.4476893,
+      "pid": 3145251,
+      "returncode": 1,
+      "elapsed_seconds": 126.06330626411363,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.4316295487806201
+        },
+        "peak_memory_bytes": 7959771648,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

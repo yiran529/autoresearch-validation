@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/v5-glue-four-tasks-5epochs-20261105",
+  "destination": "runs/campaign-v5-glue-four-tasks-5epochs-20261105",
+  "entries": {
+    "allocation.json": {
+      "": {
+        "kind": "file",
+        "sha256": "b015d55d464a5bda61765afc21c55cb23fe55f627d18d965743542094e28dbfc",
+        "size": 879
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "cd45d8d1263ef75c5f31f7cfe139a222b3c5786057e43ae49de462febfaa1339",
+        "size": 396
+      }
+    },
+    "cpu-tests.log": {
+      "": {
+        "kind": "file",
+        "sha256": "041b26b25ed4572325fdb718ba523bf15d81f20458bba37799f6f8dc1acd26b4",
+        "size": 2449
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "b44eef2a6eb3f26288b64fc671aa3d2c6ff60b995b577366357e2ee7ef0f34aa",
+        "size": 106
+      }
+    }
+  },
+  "legacy_source": {
+    "README.md": {
+      "kind": "file",
+      "sha256": "d90b3d3314754ba5756f3ce63c7a51fddb092d7c3fc96bb44adca11d1b59218b",
+      "size": 850
+    },
+    "configuration-audit.json": {
+      "kind": "file",
+      "sha256": "b6ec7c1fdda660936782e4cd8868f72dfc700b03b8b19f96e5d3512b95dabccf",
+      "size": 651
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "7dc2ac5f32df6dfeab1267fedf0951809cd8d0d98eb8ebcbcb2bea346255d9a7",
+      "size": 2127
+    },
+    "mnli.json": {
+      "kind": "file",
+      "sha256": "690d045b3b64b91ec6c929566875c1f5263dbafd42d4020a702ddcc133941b89",
+      "size": 911
+    },
+    "qnli.json": {
+      "kind": "file",
+      "sha256": "6676da4537640892439a8357d1d12855e83acb236f9788239e7f981b952322ad",
+      "size": 911
+    },
+    "qqp.json": {
+      "kind": "file",
+      "sha256": "2c783bce82592a1f1e748da0cc860ae00824a75a3dc0a272c6af2d0791cfe3d7",
+      "size": 909
+    },
+    "sst2.json": {
+      "kind": "file",
+      "sha256": "608eef1036bbd9424c52d54bf4ed86f1c521022fb37452d9985996387d05dee2",
+      "size": 911
+    }
+  }
+}

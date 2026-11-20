@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "v5-four-130m-smoke-20261031",
+  "methods": [
+    "v5-n019-engineer",
+    "v5-n027-retained",
+    "v5-n033-research",
+    "v5-n022-engineer"
+  ],
+  "reference_methods": [],
+  "recipe": "v5-four-130m-smoke-20261031",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 1,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "disabled"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

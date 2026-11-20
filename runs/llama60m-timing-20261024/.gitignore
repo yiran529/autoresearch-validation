@@ -1,0 +1,13 @@
+# Raw timing observations remain local; publish timing-summary.json.
+/jobs/dense-s1243-r1/output/all_results.json
+/jobs/dense-s1243-r2/output/all_results.json
+/jobs/dense-s1243-r3/output/all_results.json
+/jobs/n020-engineer-maxu-s1243-r1/output/all_results.json
+/jobs/n020-engineer-maxu-s1243-r2/output/all_results.json
+/jobs/n020-engineer-maxu-s1243-r3/output/all_results.json
+/jobs/n023-engineer-maxu-s1243-r1/output/all_results.json
+/jobs/n023-engineer-maxu-s1243-r2/output/all_results.json
+/jobs/n023-engineer-maxu-s1243-r3/output/all_results.json
+/jobs/n031-engineer-maxu-s1243-r1/output/all_results.json
+/jobs/n031-engineer-maxu-s1243-r2/output/all_results.json
+/jobs/n031-engineer-maxu-s1243-r3/output/all_results.json

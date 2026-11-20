@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-llama60m-r32-20261109",
+  "methods": [
+    "powersgd-paper-r32"
+  ],
+  "reference_methods": [],
+  "recipe": "/home/wyr/greedylore-validation/campaigns/powersgd-validation-20261109/llama60m-recipe.json",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 1,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "online",
+      "project": "GreedyLore-Validation",
+      "group": "powersgd-validation-20261109"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

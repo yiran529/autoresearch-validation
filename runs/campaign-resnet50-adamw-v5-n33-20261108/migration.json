@@ -1,0 +1,2090 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/resnet50-adamw-v5-n33-20261108",
+  "destination": "runs/campaign-resnet50-adamw-v5-n33-20261108",
+  "entries": {
+    "cases": {
+      "": {
+        "kind": "directory"
+      },
+      "full-dense": {
+        "kind": "directory"
+      },
+      "full-dense/case.json": {
+        "kind": "file",
+        "sha256": "6b13d96a302bc74a01f07c9fcb6a2f259c49a1a412afc40682e601ad8a03d739",
+        "size": 12738
+      },
+      "full-dense/runtime": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/c4": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/c4/__init__.py": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      "full-dense/runtime/c4/configs": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/c4/configs/llama_130m.json": {
+        "kind": "file",
+        "sha256": "21f33d6a29062d0ef28e12379f03eb9f0efc27fe9849e91bfca7d05334a561c6",
+        "size": 474
+      },
+      "full-dense/runtime/c4/configs/llama_1b.json": {
+        "kind": "file",
+        "sha256": "81205ac273e999bcb0ead2a5bef82a9ac4b926e1e73d427ecf18353d794e1c95",
+        "size": 475
+      },
+      "full-dense/runtime/c4/configs/llama_350m.json": {
+        "kind": "file",
+        "sha256": "c236d16168c108d29c051ca012d96ed1dee6f77d0fc47bb739a8650506687c6c",
+        "size": 475
+      },
+      "full-dense/runtime/c4/configs/llama_60m_table_iv.json": {
+        "kind": "file",
+        "sha256": "fc15fdbddb80c161f2c26f7a1f088e8cbfb8b9f15fe541ecd4e16c85ad550305",
+        "size": 391
+      },
+      "full-dense/runtime/c4/pept_utils": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/c4/pept_utils/args_utils.py": {
+        "kind": "file",
+        "sha256": "4faceaf7d520624fc7e4a30f7ac63df4385c3c6cb54f6123c09f3fad3943edb9",
+        "size": 1254
+      },
+      "full-dense/runtime/c4/pept_utils/c4_data.py": {
+        "kind": "file",
+        "sha256": "f8fb74127ef13a80a8f75b0e3f9278ed1117ee5d9ec35637ef0555c517cc0cc5",
+        "size": 1056
+      },
+      "full-dense/runtime/c4/pept_utils/dataloader.py": {
+        "kind": "file",
+        "sha256": "bd28a4e3bb9d466197926282ac411ea9cdd6750a51c8f61ab7f966a15ff0c99d",
+        "size": 1323
+      },
+      "full-dense/runtime/c4/pept_utils/metrics.py": {
+        "kind": "file",
+        "sha256": "5e39ec23221824eae252f5c83766eaff07d976f1497f60c962c8952b444371b6",
+        "size": 2621
+      },
+      "full-dense/runtime/c4/pept_utils/modeling_llama.py": {
+        "kind": "file",
+        "sha256": "31155b9e724da6c9f355706b4e49b655f388c35906cc85734b76fefacfdeb799",
+        "size": 38778
+      },
+      "full-dense/runtime/c4/pept_utils/training_utils.py": {
+        "kind": "file",
+        "sha256": "6f7f3e946a4c3bcfbd0e86bd95c30a9dc5a7628d81e364d60da3860573a370a8",
+        "size": 7768
+      },
+      "full-dense/runtime/c4/run_llama_pretraining.py": {
+        "kind": "file",
+        "sha256": "cadec315e66368e8e110c0406f57b0e65b87a3d4b39891755cad42434e5935ce",
+        "size": 26372
+      },
+      "full-dense/runtime/c4/scripts": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/c4/scripts/queue_table_iv_130m_followups.bash": {
+        "kind": "file",
+        "sha256": "81384a2513640746097b71a9ce5d2ae9fb4e6e49b59dee8029438bc99deebd71",
+        "size": 3074
+      },
+      "full-dense/runtime/c4/scripts/queue_table_iv_130m_muon_lr.py": {
+        "kind": "file",
+        "sha256": "0528fa922a24b7e22d27537e0d1706d41f8130fb95c9be2431103e5f27e2f03c",
+        "size": 4980
+      },
+      "full-dense/runtime/c4/scripts/queue_table_iv_350m_muon.py": {
+        "kind": "file",
+        "sha256": "cb56f163e2a4d8b37297750fc6b418fd32969ffb47095bd07e063dec2a606df2",
+        "size": 12269
+      },
+      "full-dense/runtime/c4/scripts/run_table_iv_130m.bash": {
+        "kind": "file",
+        "sha256": "b4260219769dcba2e58d97b180d2b6136f59097bed2c131281f85939b1d89238",
+        "size": 3344
+      },
+      "full-dense/runtime/c4/scripts/run_table_iv_60m_adam_after_muon.bash": {
+        "kind": "file",
+        "sha256": "adca98101ec2c6426b8d5de760c9fe96196faab1e73fc8b628af1ec97587bed1",
+        "size": 774
+      },
+      "full-dense/runtime/c4/scripts/run_table_iv_60m_muon.bash": {
+        "kind": "file",
+        "sha256": "46bbe0104ad247c446dd9067a369239ff9544b299ca81687789b2f4012c7a006",
+        "size": 2891
+      },
+      "full-dense/runtime/c4/scripts/run_table_v_adam_350m.py": {
+        "kind": "file",
+        "sha256": "979b5d68842114647761eab9c7ef800cd32dd6b90fec9853f8b2ce3a0fc11a36",
+        "size": 4710
+      },
+      "full-dense/runtime/c4/scripts/run_table_v_muon.py": {
+        "kind": "file",
+        "sha256": "929c5c91b29429be3aeda8fc2f9b72222e664677e5358ea38aaa9addbc6b1ae9",
+        "size": 8074
+      },
+      "full-dense/runtime/c4/scripts/run_table_v_muon_setting_matrix.py": {
+        "kind": "file",
+        "sha256": "9032c30c3e0b9cb08cdf1bd584455cf8310a37737f141d52dd7a369ce42eef1c",
+        "size": 13922
+      },
+      "full-dense/runtime/c4/scripts/run_table_v_muon_strict_blocking.py": {
+        "kind": "file",
+        "sha256": "e3db3e15b0439f86f5191542dd3d2211e757dc4dcd896e9ef752521066549042",
+        "size": 19361
+      },
+      "full-dense/runtime/c4/scripts/sweep_table_iv_130m_lr.py": {
+        "kind": "file",
+        "sha256": "bfd89f61d3c7629477f4d299f206f631b87f0d7ca497060c44db478b417989c0",
+        "size": 5755
+      },
+      "full-dense/runtime/c4/table_v_timing.py": {
+        "kind": "file",
+        "sha256": "4683c8a6fddac36bce160438b48cec4afbe0d3155d46b481214d560b1a40a171",
+        "size": 22719
+      },
+      "full-dense/runtime/candidate_adapter.py": {
+        "kind": "file",
+        "sha256": "540f31a53ccd8b41b68e718b68d169d39812a145aa38c238fce29edc5f8524de",
+        "size": 1332
+      },
+      "full-dense/runtime/comm_hooks": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/comm_hooks/__init__.py": {
+        "kind": "file",
+        "sha256": "ad0dc69a87cc1d59b0183ee653e6694b3ea36a913836f7ff5b3ef8657bb06ea5",
+        "size": 3301
+      },
+      "full-dense/runtime/comm_hooks/ddp_zero_hook.py": {
+        "kind": "file",
+        "sha256": "65e00ae49ba38fd8cb1c9d452327192a8786e4ba64fe2ca916b616fb7a9bbe88",
+        "size": 19564
+      },
+      "full-dense/runtime/comm_hooks/debugging_hooks.py": {
+        "kind": "file",
+        "sha256": "233ea90be5fc6f37af113dec7537e9ccdcee5787abb097b5a49598b1faf20d62",
+        "size": 1114
+      },
+      "full-dense/runtime/comm_hooks/default_hooks.py": {
+        "kind": "file",
+        "sha256": "1e738d139aa9a64e2173d913421651124ba560fcbec2ef36f0c87b8d7ed131d9",
+        "size": 8984
+      },
+      "full-dense/runtime/comm_hooks/fake_powersgd_hook.py": {
+        "kind": "file",
+        "sha256": "f9707c594b8f5b7c151382355c7a47d90dd740817d7314c87c45953739d9141e",
+        "size": 13798
+      },
+      "full-dense/runtime/comm_hooks/fake_subspace_hook.py": {
+        "kind": "file",
+        "sha256": "094fe77718247d93da2b9f023a87848a2b0d572bae31b3d192f1589fd555d2be",
+        "size": 16805
+      },
+      "full-dense/runtime/comm_hooks/flex_quant_hooks.py": {
+        "kind": "file",
+        "sha256": "4afbb27cf7f89d9d017e694565224d0e2f55a19a59932a17fc087a0063973a52",
+        "size": 19391
+      },
+      "full-dense/runtime/comm_hooks/lore_hook.py": {
+        "kind": "file",
+        "sha256": "3f4b9fdb0a46537c46cf6d62fd6ca168c7489a11041fc6d8c61aab226cc57b85",
+        "size": 36459
+      },
+      "full-dense/runtime/comm_hooks/optimizer_overlap_hooks.py": {
+        "kind": "file",
+        "sha256": "81879bd2ce498871f10139c9630924a17187903ad188dac3317349fa9af3163b",
+        "size": 6102
+      },
+      "full-dense/runtime/comm_hooks/original_powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "01e13b37cca1c296fa99b5f982fb8940c65434d9f5a909c6c0785489bcd3a19c",
+        "size": 40518
+      },
+      "full-dense/runtime/comm_hooks/post_localSGD_hook.py": {
+        "kind": "file",
+        "sha256": "cdfd4f59c518315b6061294d489c13d840c0996a6e4e7ed93276e31f1fa7b6a6",
+        "size": 5152
+      },
+      "full-dense/runtime/comm_hooks/powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "961f08598f6123922a4f3d4ddbbb3ce1fee04faf381338e1b344d5435d0ae883",
+        "size": 41327
+      },
+      "full-dense/runtime/comm_hooks/sparse_hook.py": {
+        "kind": "file",
+        "sha256": "f22d4430a8431cb0c4b6254f8627235ee4334ddf03aef9160b429c71bee58997",
+        "size": 18343
+      },
+      "full-dense/runtime/comm_hooks/subspace_hook.py": {
+        "kind": "file",
+        "sha256": "b340f97e01dcd7a160c5b12f80e0ef57c803f93ece59b15498f4f5f0c1e02b5f",
+        "size": 35032
+      },
+      "full-dense/runtime/comm_hooks/utils.py": {
+        "kind": "file",
+        "sha256": "c545b97391a764e6cf4f9e8e241a4aa08ed495cb63b7ce9ef5a2bfab1a9a2900",
+        "size": 18872
+      },
+      "full-dense/runtime/glue": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/glue/local_glue.py": {
+        "kind": "file",
+        "sha256": "420155f79e0a667a9f399e8aaaa7aa575b2215d209de0b07529952516c8318a6",
+        "size": 940
+      },
+      "full-dense/runtime/glue/run_glue_no_trainer_HF.py": {
+        "kind": "file",
+        "sha256": "095faee69c005ab532837b61997554eb1610196e202c6b685f5c21bcbe42ba20",
+        "size": 35191
+      },
+      "full-dense/runtime/glue/scripts": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/glue/scripts/run_table_iii_muon.bash": {
+        "kind": "file",
+        "sha256": "a402f1d0aff5802ae5ecf11c6044d2d34ba2b9c17af943abe1e532bcd3587f01",
+        "size": 4043
+      },
+      "full-dense/runtime/glue/utils.py": {
+        "kind": "file",
+        "sha256": "8b552bad52c2dadee9ee51f1a3b900e89b6aabc6ee904bf0925a59cf5354115d",
+        "size": 2872
+      },
+      "full-dense/runtime/glval": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/glval/__init__.py": {
+        "kind": "file",
+        "sha256": "96c4f2e91fcf2c0ddda670f8d831c5a04dd2dccc1db29fe4acc7e27dc3b5242b",
+        "size": 83
+      },
+      "full-dense/runtime/glval/__main__.py": {
+        "kind": "file",
+        "sha256": "50123b63e61f2893c9febced3abf09c3327dd52048af647419f0cd4ce167b511",
+        "size": 3414
+      },
+      "full-dense/runtime/glval/bridge.py": {
+        "kind": "file",
+        "sha256": "ae4cb76732ae12df95b9b8178096e2a091f79ad55b1276319c99c0bd862de3a8",
+        "size": 7514
+      },
+      "full-dense/runtime/glval/build.py": {
+        "kind": "file",
+        "sha256": "655926fa9a99570443ada8ea92545579b47bd7c609711c8192a176a8bdb87f03",
+        "size": 7753
+      },
+      "full-dense/runtime/glval/campaign.py": {
+        "kind": "file",
+        "sha256": "d1e113bb603e90a42f1a5f4f5d494065c24d4211eea231932644888209a6fd52",
+        "size": 3288
+      },
+      "full-dense/runtime/glval/checkpoints.py": {
+        "kind": "file",
+        "sha256": "20a93e6f94aed6d7c79275dfdfa217b38b8d0c7132e40760efd0e21c19cae885",
+        "size": 4996
+      },
+      "full-dense/runtime/glval/common.py": {
+        "kind": "file",
+        "sha256": "687f3995da74d9e9e85c5176f650a3859814446dbd96468623f4e75968557a3d",
+        "size": 1959
+      },
+      "full-dense/runtime/glval/methods.py": {
+        "kind": "file",
+        "sha256": "9fbe6195331dcbd01ee4ef108268b338bbf8566cbe8627066e2e53f986155db0",
+        "size": 7539
+      },
+      "full-dense/runtime/glval/plans.py": {
+        "kind": "file",
+        "sha256": "decb85b9fa19e81dbc59c43fa7a630dd559c20117913beb1a5ba04dbe6d83f59",
+        "size": 12286
+      },
+      "full-dense/runtime/glval/probe.py": {
+        "kind": "file",
+        "sha256": "aa1df2e30190815a696d52603cd2e33f8c926a84f444e32984a6166694553b2e",
+        "size": 3361
+      },
+      "full-dense/runtime/glval/results.py": {
+        "kind": "file",
+        "sha256": "5729beda03af6b146287dc7c455736f43412bdd34bfeeaa68abc09c27bf9ed48",
+        "size": 6488
+      },
+      "full-dense/runtime/glval/runner.py": {
+        "kind": "file",
+        "sha256": "ddd482013c9e05cb94eef8f8d88b3ab0a5b91caea76e8fd8cdd78c34b4731d55",
+        "size": 9994
+      },
+      "full-dense/runtime/glval/worker.py": {
+        "kind": "file",
+        "sha256": "d1921173376d5071ee2db2272fc486e4d264faef6073a9700cb3df10c3f09a6f",
+        "size": 1414
+      },
+      "full-dense/runtime/method.json": {
+        "kind": "file",
+        "sha256": "3ff105e3f1a363ad509b030317d15b721e8031dd372f478e4610641c0fb5acb2",
+        "size": 817
+      },
+      "full-dense/runtime/optimizer": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/optimizer/__init__.py": {
+        "kind": "file",
+        "sha256": "101244a6e430bb4aa440a0c235b2cbac7a81b4fd18d9608b5a7f3830136d845b",
+        "size": 348
+      },
+      "full-dense/runtime/optimizer/galore_adamw.py": {
+        "kind": "file",
+        "sha256": "2dd9d148c4bf72b9a3f81295c6ede8315754b1bd29e8ec87318edb5209fdc025",
+        "size": 6285
+      },
+      "full-dense/runtime/optimizer/galore_projector.py": {
+        "kind": "file",
+        "sha256": "0cf522880e0fb92462ae93f44a2684311b077e05b1c8a8e49c165f72f7af8946",
+        "size": 5498
+      },
+      "full-dense/runtime/optimizer/golore_adamw.py": {
+        "kind": "file",
+        "sha256": "303e50ff1664cf75a002e11aeea7306fb55d0a3ff7b687f6191fbfb4737c10cd",
+        "size": 6973
+      },
+      "full-dense/runtime/optimizer/golore_projector.py": {
+        "kind": "file",
+        "sha256": "f8b40db1cf0f06518fbfaf5fcbde20ea99a84303f0895d0fb31a7ef1fedfbb38",
+        "size": 6728
+      },
+      "full-dense/runtime/optimizer/muon.py": {
+        "kind": "file",
+        "sha256": "59fb1f15ab38a07cd46f37a54e58c8822d089eac44cd6bc48c3ea64ea211b4df",
+        "size": 13966
+      },
+      "full-dense/runtime/optimizer/muon_utils.py": {
+        "kind": "file",
+        "sha256": "205ea1bd218503d126189335c5f640bc77e6912f47be90e903431a0a722eef5f",
+        "size": 4855
+      },
+      "full-dense/runtime/optimizer/onebit_adam.py": {
+        "kind": "file",
+        "sha256": "346cf70e77197d878be4ccd41980583fe70413bd008fab0252daaad1787a4ddb",
+        "size": 15964
+      },
+      "full-dense/runtime/optimizer/onebit_adammini.py": {
+        "kind": "file",
+        "sha256": "a04bfcf4558e4b3804a20960fd5d59fd0c7ae8ec21280b0f7bc43e57b9cbfbaa",
+        "size": 21023
+      },
+      "full-dense/runtime/optimizer/onebit_utils.py": {
+        "kind": "file",
+        "sha256": "87c31107bcdfd711bdc4c4c1bf9b9bb52ccef2f821be50d5e5517468b858dd6f",
+        "size": 9611
+      },
+      "full-dense/runtime/optimizer/precond_adam.py": {
+        "kind": "file",
+        "sha256": "841195b2c7bca33a2af931bff9b047a055c6b9c073e203367339253fe99677b6",
+        "size": 4568
+      },
+      "full-dense/runtime/pytorch-cifar": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/pytorch-cifar/models": {
+        "kind": "directory"
+      },
+      "full-dense/runtime/pytorch-cifar/models/__init__.py": {
+        "kind": "file",
+        "sha256": "52e08c404afcaffc95c5d38ea4f2850f3ba66742fcac3409464ebf61a35ff3f3",
+        "size": 427
+      },
+      "full-dense/runtime/pytorch-cifar/models/densenet.py": {
+        "kind": "file",
+        "sha256": "617c3a85b760e5606d75e45453ee3c90f7eedea4bf0070ffafc6ed4424249290",
+        "size": 3542
+      },
+      "full-dense/runtime/pytorch-cifar/models/dla.py": {
+        "kind": "file",
+        "sha256": "110e9b7317f74d51a1c859bb672ff9e9ca7016a389b7abf0491228fb528c0d59",
+        "size": 4425
+      },
+      "full-dense/runtime/pytorch-cifar/models/dla_simple.py": {
+        "kind": "file",
+        "sha256": "c7454baa2ed7e71406275f4232f29e2b4d4a9034cc9cc3d724e65839f62beea1",
+        "size": 4084
+      },
+      "full-dense/runtime/pytorch-cifar/models/dpn.py": {
+        "kind": "file",
+        "sha256": "d99b63939f23dd1cbc18c1432de2b8f63a7d4248729f45d31e9092d7919c1b37",
+        "size": 3562
+      },
+      "full-dense/runtime/pytorch-cifar/models/efficientnet.py": {
+        "kind": "file",
+        "sha256": "58adf6107ffbe8cf073d03da21c804e38fde8593695542ef7ae5e7c32d86f333",
+        "size": 5719
+      },
+      "full-dense/runtime/pytorch-cifar/models/googlenet.py": {
+        "kind": "file",
+        "sha256": "165d505255db8e9f38d1dc041a7f1541904aa2f229aff725262ce00bbf2cdd70",
+        "size": 3221
+      },
+      "full-dense/runtime/pytorch-cifar/models/lenet.py": {
+        "kind": "file",
+        "sha256": "bb87a7053653351d346f3b69a7f3713567cd9a9fa74a5d3454af9f5e24b867db",
+        "size": 699
+      },
+      "full-dense/runtime/pytorch-cifar/models/mobilenet.py": {
+        "kind": "file",
+        "sha256": "3f6ef2c6371289b50908f1b60c4c533c025ec120294e802861c373fe853761ff",
+        "size": 2025
+      },
+      "full-dense/runtime/pytorch-cifar/models/mobilenetv2.py": {
+        "kind": "file",
+        "sha256": "7e5ee0d8d9ecd923fb9acb28499d44554d57091f5f81375e1a731d8624d928b0",
+        "size": 3092
+      },
+      "full-dense/runtime/pytorch-cifar/models/pnasnet.py": {
+        "kind": "file",
+        "sha256": "f6421290b066d8e1ea9d983def4c390431c8679a73c58faabf67dd6bee34cecf",
+        "size": 4258
+      },
+      "full-dense/runtime/pytorch-cifar/models/preact_resnet.py": {
+        "kind": "file",
+        "sha256": "3cb4ae02d7c419dc3b9adccc47617e0310805c3cfa07dfee1b73816a5ff2a04a",
+        "size": 4078
+      },
+      "full-dense/runtime/pytorch-cifar/models/regnet.py": {
+        "kind": "file",
+        "sha256": "a694137f828af1ba5eca57a28f8d8c59c5932b5361bd86b33a241c3cd0013c32",
+        "size": 4548
+      },
+      "full-dense/runtime/pytorch-cifar/models/resnet.py": {
+        "kind": "file",
+        "sha256": "7bcbe6bba6544645a5da6037bf3e5ddf90e97d0b3ef4183be90e17a0443b4510",
+        "size": 4218
+      },
+      "full-dense/runtime/pytorch-cifar/models/resnext.py": {
+        "kind": "file",
+        "sha256": "da94de29613d495384ec8ae4a24031149798e1a541b96bca0d7323da6a70b098",
+        "size": 3478
+      },
+      "full-dense/runtime/pytorch-cifar/models/senet.py": {
+        "kind": "file",
+        "sha256": "d790bd677eec6ff126c686731624f8634361d7d21742ddeea0aa37cad72f6071",
+        "size": 4027
+      },
+      "full-dense/runtime/pytorch-cifar/models/shufflenet.py": {
+        "kind": "file",
+        "sha256": "49e88cb68accd64351bf4bcccc53ce8de7f9a45b8d9c0c36e5d534f6b2a91390",
+        "size": 3542
+      },
+      "full-dense/runtime/pytorch-cifar/models/shufflenetv2.py": {
+        "kind": "file",
+        "sha256": "5fa2c82d48ee9feec75c44126f75bfe33050c63f8b1e626251635b9c86678f25",
+        "size": 5530
+      },
+      "full-dense/runtime/pytorch-cifar/models/vgg.py": {
+        "kind": "file",
+        "sha256": "20f9a5ef048ef91c3144ecbb22708347d48299ad419bbfc122b74ceed89d3016",
+        "size": 1442
+      },
+      "full-dense/runtime/pytorch-cifar/train_ddp.py": {
+        "kind": "file",
+        "sha256": "e41cab016fac7e0d90f3685ca241781c06d9bea4ef4bc90708dbcba7fcbf955e",
+        "size": 13967
+      },
+      "full-dense/runtime/readme.md": {
+        "kind": "file",
+        "sha256": "43dd70d8854612e187d7e7573221296ebc0ba9da86998258d9d17f22bf21b161",
+        "size": 617
+      },
+      "full-dense/runtime/recipe.json": {
+        "kind": "file",
+        "sha256": "2c45707f34819d4f06f483c6fc7b632e5e84c9842c29799b3aa864dae4dd951c",
+        "size": 1294
+      },
+      "full-dense/runtime/requirements.txt": {
+        "kind": "file",
+        "sha256": "f9e3ad4b7a6b4ea4745e4c192668cc31e84f2a3426bd503dba12636974191a2d",
+        "size": 79
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/case.json": {
+        "kind": "file",
+        "sha256": "b615b3b29bcfa1535aebcca152de7cda2275868f0f486f5c4db5674e96cb2d12",
+        "size": 12916
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/__init__.py": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/configs": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/configs/llama_130m.json": {
+        "kind": "file",
+        "sha256": "21f33d6a29062d0ef28e12379f03eb9f0efc27fe9849e91bfca7d05334a561c6",
+        "size": 474
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/configs/llama_1b.json": {
+        "kind": "file",
+        "sha256": "81205ac273e999bcb0ead2a5bef82a9ac4b926e1e73d427ecf18353d794e1c95",
+        "size": 475
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/configs/llama_350m.json": {
+        "kind": "file",
+        "sha256": "c236d16168c108d29c051ca012d96ed1dee6f77d0fc47bb739a8650506687c6c",
+        "size": 475
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/configs/llama_60m_table_iv.json": {
+        "kind": "file",
+        "sha256": "fc15fdbddb80c161f2c26f7a1f088e8cbfb8b9f15fe541ecd4e16c85ad550305",
+        "size": 391
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/pept_utils": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/pept_utils/args_utils.py": {
+        "kind": "file",
+        "sha256": "4faceaf7d520624fc7e4a30f7ac63df4385c3c6cb54f6123c09f3fad3943edb9",
+        "size": 1254
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/pept_utils/c4_data.py": {
+        "kind": "file",
+        "sha256": "f8fb74127ef13a80a8f75b0e3f9278ed1117ee5d9ec35637ef0555c517cc0cc5",
+        "size": 1056
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/pept_utils/dataloader.py": {
+        "kind": "file",
+        "sha256": "bd28a4e3bb9d466197926282ac411ea9cdd6750a51c8f61ab7f966a15ff0c99d",
+        "size": 1323
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/pept_utils/metrics.py": {
+        "kind": "file",
+        "sha256": "5e39ec23221824eae252f5c83766eaff07d976f1497f60c962c8952b444371b6",
+        "size": 2621
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/pept_utils/modeling_llama.py": {
+        "kind": "file",
+        "sha256": "31155b9e724da6c9f355706b4e49b655f388c35906cc85734b76fefacfdeb799",
+        "size": 38778
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/pept_utils/training_utils.py": {
+        "kind": "file",
+        "sha256": "6f7f3e946a4c3bcfbd0e86bd95c30a9dc5a7628d81e364d60da3860573a370a8",
+        "size": 7768
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/run_llama_pretraining.py": {
+        "kind": "file",
+        "sha256": "cadec315e66368e8e110c0406f57b0e65b87a3d4b39891755cad42434e5935ce",
+        "size": 26372
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/queue_table_iv_130m_followups.bash": {
+        "kind": "file",
+        "sha256": "81384a2513640746097b71a9ce5d2ae9fb4e6e49b59dee8029438bc99deebd71",
+        "size": 3074
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/queue_table_iv_130m_muon_lr.py": {
+        "kind": "file",
+        "sha256": "0528fa922a24b7e22d27537e0d1706d41f8130fb95c9be2431103e5f27e2f03c",
+        "size": 4980
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/queue_table_iv_350m_muon.py": {
+        "kind": "file",
+        "sha256": "cb56f163e2a4d8b37297750fc6b418fd32969ffb47095bd07e063dec2a606df2",
+        "size": 12269
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/run_table_iv_130m.bash": {
+        "kind": "file",
+        "sha256": "b4260219769dcba2e58d97b180d2b6136f59097bed2c131281f85939b1d89238",
+        "size": 3344
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/run_table_iv_60m_adam_after_muon.bash": {
+        "kind": "file",
+        "sha256": "adca98101ec2c6426b8d5de760c9fe96196faab1e73fc8b628af1ec97587bed1",
+        "size": 774
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/run_table_iv_60m_muon.bash": {
+        "kind": "file",
+        "sha256": "46bbe0104ad247c446dd9067a369239ff9544b299ca81687789b2f4012c7a006",
+        "size": 2891
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/run_table_v_adam_350m.py": {
+        "kind": "file",
+        "sha256": "979b5d68842114647761eab9c7ef800cd32dd6b90fec9853f8b2ce3a0fc11a36",
+        "size": 4710
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/run_table_v_muon.py": {
+        "kind": "file",
+        "sha256": "929c5c91b29429be3aeda8fc2f9b72222e664677e5358ea38aaa9addbc6b1ae9",
+        "size": 8074
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/run_table_v_muon_setting_matrix.py": {
+        "kind": "file",
+        "sha256": "9032c30c3e0b9cb08cdf1bd584455cf8310a37737f141d52dd7a369ce42eef1c",
+        "size": 13922
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/run_table_v_muon_strict_blocking.py": {
+        "kind": "file",
+        "sha256": "e3db3e15b0439f86f5191542dd3d2211e757dc4dcd896e9ef752521066549042",
+        "size": 19361
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/scripts/sweep_table_iv_130m_lr.py": {
+        "kind": "file",
+        "sha256": "bfd89f61d3c7629477f4d299f206f631b87f0d7ca497060c44db478b417989c0",
+        "size": 5755
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/c4/table_v_timing.py": {
+        "kind": "file",
+        "sha256": "4683c8a6fddac36bce160438b48cec4afbe0d3155d46b481214d560b1a40a171",
+        "size": 22719
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/candidate_adapter.py": {
+        "kind": "file",
+        "sha256": "e3d4960ac028c5bba14154297879635f6c98b814bdd56249ccda367ae62ee4f4",
+        "size": 1643
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/__init__.py": {
+        "kind": "file",
+        "sha256": "ad0dc69a87cc1d59b0183ee653e6694b3ea36a913836f7ff5b3ef8657bb06ea5",
+        "size": 3301
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/ddp_zero_hook.py": {
+        "kind": "file",
+        "sha256": "65e00ae49ba38fd8cb1c9d452327192a8786e4ba64fe2ca916b616fb7a9bbe88",
+        "size": 19564
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/debugging_hooks.py": {
+        "kind": "file",
+        "sha256": "233ea90be5fc6f37af113dec7537e9ccdcee5787abb097b5a49598b1faf20d62",
+        "size": 1114
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/default_hooks.py": {
+        "kind": "file",
+        "sha256": "1e738d139aa9a64e2173d913421651124ba560fcbec2ef36f0c87b8d7ed131d9",
+        "size": 8984
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/fake_powersgd_hook.py": {
+        "kind": "file",
+        "sha256": "f9707c594b8f5b7c151382355c7a47d90dd740817d7314c87c45953739d9141e",
+        "size": 13798
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/fake_subspace_hook.py": {
+        "kind": "file",
+        "sha256": "094fe77718247d93da2b9f023a87848a2b0d572bae31b3d192f1589fd555d2be",
+        "size": 16805
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/flex_quant_hooks.py": {
+        "kind": "file",
+        "sha256": "4afbb27cf7f89d9d017e694565224d0e2f55a19a59932a17fc087a0063973a52",
+        "size": 19391
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/lore_hook.py": {
+        "kind": "file",
+        "sha256": "3f4b9fdb0a46537c46cf6d62fd6ca168c7489a11041fc6d8c61aab226cc57b85",
+        "size": 36459
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/optimizer_overlap_hooks.py": {
+        "kind": "file",
+        "sha256": "81879bd2ce498871f10139c9630924a17187903ad188dac3317349fa9af3163b",
+        "size": 6102
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/original_powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "01e13b37cca1c296fa99b5f982fb8940c65434d9f5a909c6c0785489bcd3a19c",
+        "size": 40518
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/post_localSGD_hook.py": {
+        "kind": "file",
+        "sha256": "cdfd4f59c518315b6061294d489c13d840c0996a6e4e7ed93276e31f1fa7b6a6",
+        "size": 5152
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "961f08598f6123922a4f3d4ddbbb3ce1fee04faf381338e1b344d5435d0ae883",
+        "size": 41327
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/sparse_hook.py": {
+        "kind": "file",
+        "sha256": "f22d4430a8431cb0c4b6254f8627235ee4334ddf03aef9160b429c71bee58997",
+        "size": 18343
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/subspace_hook.py": {
+        "kind": "file",
+        "sha256": "076457f711edc59f702976a7c7835ce873381c3a615c0a5104e4e7f59040e613",
+        "size": 34798
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/comm_hooks/utils.py": {
+        "kind": "file",
+        "sha256": "06a0376f0dc5fd4652d82af9a92f7aa6681f227a348f3cd8738ec9602fe47e78",
+        "size": 19016
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glue": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glue/local_glue.py": {
+        "kind": "file",
+        "sha256": "420155f79e0a667a9f399e8aaaa7aa575b2215d209de0b07529952516c8318a6",
+        "size": 940
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glue/run_glue_no_trainer_HF.py": {
+        "kind": "file",
+        "sha256": "095faee69c005ab532837b61997554eb1610196e202c6b685f5c21bcbe42ba20",
+        "size": 35191
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glue/scripts": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glue/scripts/run_table_iii_muon.bash": {
+        "kind": "file",
+        "sha256": "a402f1d0aff5802ae5ecf11c6044d2d34ba2b9c17af943abe1e532bcd3587f01",
+        "size": 4043
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glue/utils.py": {
+        "kind": "file",
+        "sha256": "8b552bad52c2dadee9ee51f1a3b900e89b6aabc6ee904bf0925a59cf5354115d",
+        "size": 2872
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/__init__.py": {
+        "kind": "file",
+        "sha256": "96c4f2e91fcf2c0ddda670f8d831c5a04dd2dccc1db29fe4acc7e27dc3b5242b",
+        "size": 83
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/__main__.py": {
+        "kind": "file",
+        "sha256": "50123b63e61f2893c9febced3abf09c3327dd52048af647419f0cd4ce167b511",
+        "size": 3414
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/bridge.py": {
+        "kind": "file",
+        "sha256": "ae4cb76732ae12df95b9b8178096e2a091f79ad55b1276319c99c0bd862de3a8",
+        "size": 7514
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/build.py": {
+        "kind": "file",
+        "sha256": "655926fa9a99570443ada8ea92545579b47bd7c609711c8192a176a8bdb87f03",
+        "size": 7753
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/campaign.py": {
+        "kind": "file",
+        "sha256": "d1e113bb603e90a42f1a5f4f5d494065c24d4211eea231932644888209a6fd52",
+        "size": 3288
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/checkpoints.py": {
+        "kind": "file",
+        "sha256": "20a93e6f94aed6d7c79275dfdfa217b38b8d0c7132e40760efd0e21c19cae885",
+        "size": 4996
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/common.py": {
+        "kind": "file",
+        "sha256": "687f3995da74d9e9e85c5176f650a3859814446dbd96468623f4e75968557a3d",
+        "size": 1959
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/methods.py": {
+        "kind": "file",
+        "sha256": "9fbe6195331dcbd01ee4ef108268b338bbf8566cbe8627066e2e53f986155db0",
+        "size": 7539
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/plans.py": {
+        "kind": "file",
+        "sha256": "decb85b9fa19e81dbc59c43fa7a630dd559c20117913beb1a5ba04dbe6d83f59",
+        "size": 12286
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/probe.py": {
+        "kind": "file",
+        "sha256": "aa1df2e30190815a696d52603cd2e33f8c926a84f444e32984a6166694553b2e",
+        "size": 3361
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/results.py": {
+        "kind": "file",
+        "sha256": "5729beda03af6b146287dc7c455736f43412bdd34bfeeaa68abc09c27bf9ed48",
+        "size": 6488
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/runner.py": {
+        "kind": "file",
+        "sha256": "ddd482013c9e05cb94eef8f8d88b3ab0a5b91caea76e8fd8cdd78c34b4731d55",
+        "size": 9994
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/glval/worker.py": {
+        "kind": "file",
+        "sha256": "d1921173376d5071ee2db2272fc486e4d264faef6073a9700cb3df10c3f09a6f",
+        "size": 1414
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/method.json": {
+        "kind": "file",
+        "sha256": "a4c4fe653c0679e9e9b6173378e6863686f1538a9bd233296a78827490f73a1a",
+        "size": 3022
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/__init__.py": {
+        "kind": "file",
+        "sha256": "101244a6e430bb4aa440a0c235b2cbac7a81b4fd18d9608b5a7f3830136d845b",
+        "size": 348
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/galore_adamw.py": {
+        "kind": "file",
+        "sha256": "2dd9d148c4bf72b9a3f81295c6ede8315754b1bd29e8ec87318edb5209fdc025",
+        "size": 6285
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/galore_projector.py": {
+        "kind": "file",
+        "sha256": "0cf522880e0fb92462ae93f44a2684311b077e05b1c8a8e49c165f72f7af8946",
+        "size": 5498
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/golore_adamw.py": {
+        "kind": "file",
+        "sha256": "303e50ff1664cf75a002e11aeea7306fb55d0a3ff7b687f6191fbfb4737c10cd",
+        "size": 6973
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/golore_projector.py": {
+        "kind": "file",
+        "sha256": "f8b40db1cf0f06518fbfaf5fcbde20ea99a84303f0895d0fb31a7ef1fedfbb38",
+        "size": 6728
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/muon.py": {
+        "kind": "file",
+        "sha256": "59fb1f15ab38a07cd46f37a54e58c8822d089eac44cd6bc48c3ea64ea211b4df",
+        "size": 13966
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/muon_utils.py": {
+        "kind": "file",
+        "sha256": "205ea1bd218503d126189335c5f640bc77e6912f47be90e903431a0a722eef5f",
+        "size": 4855
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/onebit_adam.py": {
+        "kind": "file",
+        "sha256": "346cf70e77197d878be4ccd41980583fe70413bd008fab0252daaad1787a4ddb",
+        "size": 15964
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/onebit_adammini.py": {
+        "kind": "file",
+        "sha256": "a04bfcf4558e4b3804a20960fd5d59fd0c7ae8ec21280b0f7bc43e57b9cbfbaa",
+        "size": 21023
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/onebit_utils.py": {
+        "kind": "file",
+        "sha256": "87c31107bcdfd711bdc4c4c1bf9b9bb52ccef2f821be50d5e5517468b858dd6f",
+        "size": 9611
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/optimizer/precond_adam.py": {
+        "kind": "file",
+        "sha256": "841195b2c7bca33a2af931bff9b047a055c6b9c073e203367339253fe99677b6",
+        "size": 4568
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models": {
+        "kind": "directory"
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/__init__.py": {
+        "kind": "file",
+        "sha256": "52e08c404afcaffc95c5d38ea4f2850f3ba66742fcac3409464ebf61a35ff3f3",
+        "size": 427
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/densenet.py": {
+        "kind": "file",
+        "sha256": "617c3a85b760e5606d75e45453ee3c90f7eedea4bf0070ffafc6ed4424249290",
+        "size": 3542
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/dla.py": {
+        "kind": "file",
+        "sha256": "110e9b7317f74d51a1c859bb672ff9e9ca7016a389b7abf0491228fb528c0d59",
+        "size": 4425
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/dla_simple.py": {
+        "kind": "file",
+        "sha256": "c7454baa2ed7e71406275f4232f29e2b4d4a9034cc9cc3d724e65839f62beea1",
+        "size": 4084
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/dpn.py": {
+        "kind": "file",
+        "sha256": "d99b63939f23dd1cbc18c1432de2b8f63a7d4248729f45d31e9092d7919c1b37",
+        "size": 3562
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/efficientnet.py": {
+        "kind": "file",
+        "sha256": "58adf6107ffbe8cf073d03da21c804e38fde8593695542ef7ae5e7c32d86f333",
+        "size": 5719
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/googlenet.py": {
+        "kind": "file",
+        "sha256": "165d505255db8e9f38d1dc041a7f1541904aa2f229aff725262ce00bbf2cdd70",
+        "size": 3221
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/lenet.py": {
+        "kind": "file",
+        "sha256": "bb87a7053653351d346f3b69a7f3713567cd9a9fa74a5d3454af9f5e24b867db",
+        "size": 699
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/mobilenet.py": {
+        "kind": "file",
+        "sha256": "3f6ef2c6371289b50908f1b60c4c533c025ec120294e802861c373fe853761ff",
+        "size": 2025
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/mobilenetv2.py": {
+        "kind": "file",
+        "sha256": "7e5ee0d8d9ecd923fb9acb28499d44554d57091f5f81375e1a731d8624d928b0",
+        "size": 3092
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/pnasnet.py": {
+        "kind": "file",
+        "sha256": "f6421290b066d8e1ea9d983def4c390431c8679a73c58faabf67dd6bee34cecf",
+        "size": 4258
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/preact_resnet.py": {
+        "kind": "file",
+        "sha256": "3cb4ae02d7c419dc3b9adccc47617e0310805c3cfa07dfee1b73816a5ff2a04a",
+        "size": 4078
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/regnet.py": {
+        "kind": "file",
+        "sha256": "a694137f828af1ba5eca57a28f8d8c59c5932b5361bd86b33a241c3cd0013c32",
+        "size": 4548
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/resnet.py": {
+        "kind": "file",
+        "sha256": "7bcbe6bba6544645a5da6037bf3e5ddf90e97d0b3ef4183be90e17a0443b4510",
+        "size": 4218
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/resnext.py": {
+        "kind": "file",
+        "sha256": "da94de29613d495384ec8ae4a24031149798e1a541b96bca0d7323da6a70b098",
+        "size": 3478
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/senet.py": {
+        "kind": "file",
+        "sha256": "d790bd677eec6ff126c686731624f8634361d7d21742ddeea0aa37cad72f6071",
+        "size": 4027
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/shufflenet.py": {
+        "kind": "file",
+        "sha256": "49e88cb68accd64351bf4bcccc53ce8de7f9a45b8d9c0c36e5d534f6b2a91390",
+        "size": 3542
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/shufflenetv2.py": {
+        "kind": "file",
+        "sha256": "5fa2c82d48ee9feec75c44126f75bfe33050c63f8b1e626251635b9c86678f25",
+        "size": 5530
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/models/vgg.py": {
+        "kind": "file",
+        "sha256": "20f9a5ef048ef91c3144ecbb22708347d48299ad419bbfc122b74ceed89d3016",
+        "size": 1442
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/pytorch-cifar/train_ddp.py": {
+        "kind": "file",
+        "sha256": "e41cab016fac7e0d90f3685ca241781c06d9bea4ef4bc90708dbcba7fcbf955e",
+        "size": 13967
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/readme.md": {
+        "kind": "file",
+        "sha256": "43dd70d8854612e187d7e7573221296ebc0ba9da86998258d9d17f22bf21b161",
+        "size": 617
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/recipe.json": {
+        "kind": "file",
+        "sha256": "2c45707f34819d4f06f483c6fc7b632e5e84c9842c29799b3aa864dae4dd951c",
+        "size": 1294
+      },
+      "full-greedylore-engineer-streamfix-resnet-v1/runtime/requirements.txt": {
+        "kind": "file",
+        "sha256": "f9e3ad4b7a6b4ea4745e4c192668cc31e84f2a3426bd503dba12636974191a2d",
+        "size": 79
+      },
+      "full-v5-n033-research-resnet-v1": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/case.json": {
+        "kind": "file",
+        "sha256": "f5c05896f4b5044280b88b2e6944dd2ef71959d1f5fc11bb0677669c9abfc39b",
+        "size": 13131
+      },
+      "full-v5-n033-research-resnet-v1/runtime": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/__init__.py": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/configs": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/configs/llama_130m.json": {
+        "kind": "file",
+        "sha256": "21f33d6a29062d0ef28e12379f03eb9f0efc27fe9849e91bfca7d05334a561c6",
+        "size": 474
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/configs/llama_1b.json": {
+        "kind": "file",
+        "sha256": "81205ac273e999bcb0ead2a5bef82a9ac4b926e1e73d427ecf18353d794e1c95",
+        "size": 475
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/configs/llama_350m.json": {
+        "kind": "file",
+        "sha256": "c236d16168c108d29c051ca012d96ed1dee6f77d0fc47bb739a8650506687c6c",
+        "size": 475
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/configs/llama_60m_table_iv.json": {
+        "kind": "file",
+        "sha256": "fc15fdbddb80c161f2c26f7a1f088e8cbfb8b9f15fe541ecd4e16c85ad550305",
+        "size": 391
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/pept_utils": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/pept_utils/args_utils.py": {
+        "kind": "file",
+        "sha256": "4faceaf7d520624fc7e4a30f7ac63df4385c3c6cb54f6123c09f3fad3943edb9",
+        "size": 1254
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/pept_utils/c4_data.py": {
+        "kind": "file",
+        "sha256": "f8fb74127ef13a80a8f75b0e3f9278ed1117ee5d9ec35637ef0555c517cc0cc5",
+        "size": 1056
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/pept_utils/dataloader.py": {
+        "kind": "file",
+        "sha256": "bd28a4e3bb9d466197926282ac411ea9cdd6750a51c8f61ab7f966a15ff0c99d",
+        "size": 1323
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/pept_utils/metrics.py": {
+        "kind": "file",
+        "sha256": "5e39ec23221824eae252f5c83766eaff07d976f1497f60c962c8952b444371b6",
+        "size": 2621
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/pept_utils/modeling_llama.py": {
+        "kind": "file",
+        "sha256": "31155b9e724da6c9f355706b4e49b655f388c35906cc85734b76fefacfdeb799",
+        "size": 38778
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/pept_utils/training_utils.py": {
+        "kind": "file",
+        "sha256": "6f7f3e946a4c3bcfbd0e86bd95c30a9dc5a7628d81e364d60da3860573a370a8",
+        "size": 7768
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/run_llama_pretraining.py": {
+        "kind": "file",
+        "sha256": "cadec315e66368e8e110c0406f57b0e65b87a3d4b39891755cad42434e5935ce",
+        "size": 26372
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/queue_table_iv_130m_followups.bash": {
+        "kind": "file",
+        "sha256": "81384a2513640746097b71a9ce5d2ae9fb4e6e49b59dee8029438bc99deebd71",
+        "size": 3074
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/queue_table_iv_130m_muon_lr.py": {
+        "kind": "file",
+        "sha256": "0528fa922a24b7e22d27537e0d1706d41f8130fb95c9be2431103e5f27e2f03c",
+        "size": 4980
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/queue_table_iv_350m_muon.py": {
+        "kind": "file",
+        "sha256": "cb56f163e2a4d8b37297750fc6b418fd32969ffb47095bd07e063dec2a606df2",
+        "size": 12269
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_iv_130m.bash": {
+        "kind": "file",
+        "sha256": "b4260219769dcba2e58d97b180d2b6136f59097bed2c131281f85939b1d89238",
+        "size": 3344
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_iv_60m_adam_after_muon.bash": {
+        "kind": "file",
+        "sha256": "adca98101ec2c6426b8d5de760c9fe96196faab1e73fc8b628af1ec97587bed1",
+        "size": 774
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_iv_60m_muon.bash": {
+        "kind": "file",
+        "sha256": "46bbe0104ad247c446dd9067a369239ff9544b299ca81687789b2f4012c7a006",
+        "size": 2891
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_adam_350m.py": {
+        "kind": "file",
+        "sha256": "979b5d68842114647761eab9c7ef800cd32dd6b90fec9853f8b2ce3a0fc11a36",
+        "size": 4710
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_muon.py": {
+        "kind": "file",
+        "sha256": "929c5c91b29429be3aeda8fc2f9b72222e664677e5358ea38aaa9addbc6b1ae9",
+        "size": 8074
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_muon_setting_matrix.py": {
+        "kind": "file",
+        "sha256": "9032c30c3e0b9cb08cdf1bd584455cf8310a37737f141d52dd7a369ce42eef1c",
+        "size": 13922
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_muon_strict_blocking.py": {
+        "kind": "file",
+        "sha256": "e3db3e15b0439f86f5191542dd3d2211e757dc4dcd896e9ef752521066549042",
+        "size": 19361
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/scripts/sweep_table_iv_130m_lr.py": {
+        "kind": "file",
+        "sha256": "bfd89f61d3c7629477f4d299f206f631b87f0d7ca497060c44db478b417989c0",
+        "size": 5755
+      },
+      "full-v5-n033-research-resnet-v1/runtime/c4/table_v_timing.py": {
+        "kind": "file",
+        "sha256": "4683c8a6fddac36bce160438b48cec4afbe0d3155d46b481214d560b1a40a171",
+        "size": 22719
+      },
+      "full-v5-n033-research-resnet-v1/runtime/candidate_adapter.py": {
+        "kind": "file",
+        "sha256": "540f31a53ccd8b41b68e718b68d169d39812a145aa38c238fce29edc5f8524de",
+        "size": 1332
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/__init__.py": {
+        "kind": "file",
+        "sha256": "ad0dc69a87cc1d59b0183ee653e6694b3ea36a913836f7ff5b3ef8657bb06ea5",
+        "size": 3301
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/block_top1_hook.py": {
+        "kind": "file",
+        "sha256": "99aa9a563dcb011296bca73c66b82bf6309133d603737956aab54544aa20a629",
+        "size": 9933
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/ddp_zero_hook.py": {
+        "kind": "file",
+        "sha256": "65e00ae49ba38fd8cb1c9d452327192a8786e4ba64fe2ca916b616fb7a9bbe88",
+        "size": 19564
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/debugging_hooks.py": {
+        "kind": "file",
+        "sha256": "233ea90be5fc6f37af113dec7537e9ccdcee5787abb097b5a49598b1faf20d62",
+        "size": 1114
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/default_hooks.py": {
+        "kind": "file",
+        "sha256": "1e738d139aa9a64e2173d913421651124ba560fcbec2ef36f0c87b8d7ed131d9",
+        "size": 8984
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/fake_powersgd_hook.py": {
+        "kind": "file",
+        "sha256": "f9707c594b8f5b7c151382355c7a47d90dd740817d7314c87c45953739d9141e",
+        "size": 13798
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/fake_subspace_hook.py": {
+        "kind": "file",
+        "sha256": "094fe77718247d93da2b9f023a87848a2b0d572bae31b3d192f1589fd555d2be",
+        "size": 16805
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/flex_quant_hooks.py": {
+        "kind": "file",
+        "sha256": "4afbb27cf7f89d9d017e694565224d0e2f55a19a59932a17fc087a0063973a52",
+        "size": 19391
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/lore_hook.py": {
+        "kind": "file",
+        "sha256": "3f4b9fdb0a46537c46cf6d62fd6ca168c7489a11041fc6d8c61aab226cc57b85",
+        "size": 36459
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/optimizer_overlap_hooks.py": {
+        "kind": "file",
+        "sha256": "81879bd2ce498871f10139c9630924a17187903ad188dac3317349fa9af3163b",
+        "size": 6102
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/original_powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "01e13b37cca1c296fa99b5f982fb8940c65434d9f5a909c6c0785489bcd3a19c",
+        "size": 40518
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/post_localSGD_hook.py": {
+        "kind": "file",
+        "sha256": "cdfd4f59c518315b6061294d489c13d840c0996a6e4e7ed93276e31f1fa7b6a6",
+        "size": 5152
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "961f08598f6123922a4f3d4ddbbb3ce1fee04faf381338e1b344d5435d0ae883",
+        "size": 41327
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/sparse_hook.py": {
+        "kind": "file",
+        "sha256": "f22d4430a8431cb0c4b6254f8627235ee4334ddf03aef9160b429c71bee58997",
+        "size": 18343
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/sparse_q4_hook.py": {
+        "kind": "file",
+        "sha256": "2af802d1072b917f4d65997ebcf9738c9d40add80309b7b18b2f2c5c6c55500b",
+        "size": 18327
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/subspace_hook.py": {
+        "kind": "file",
+        "sha256": "d91d67ba24e144b40bf37e787249e030b71e342c7c49584bcb9b5e08c49fef46",
+        "size": 35167
+      },
+      "full-v5-n033-research-resnet-v1/runtime/comm_hooks/utils.py": {
+        "kind": "file",
+        "sha256": "53a8b1142a059988eb3bb38fd3d8288c8e8eae84c15db6eafe8995e570bb23e4",
+        "size": 19564
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glue": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glue/local_glue.py": {
+        "kind": "file",
+        "sha256": "420155f79e0a667a9f399e8aaaa7aa575b2215d209de0b07529952516c8318a6",
+        "size": 940
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glue/run_glue_no_trainer_HF.py": {
+        "kind": "file",
+        "sha256": "095faee69c005ab532837b61997554eb1610196e202c6b685f5c21bcbe42ba20",
+        "size": 35191
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glue/scripts": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glue/scripts/run_table_iii_muon.bash": {
+        "kind": "file",
+        "sha256": "a402f1d0aff5802ae5ecf11c6044d2d34ba2b9c17af943abe1e532bcd3587f01",
+        "size": 4043
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glue/utils.py": {
+        "kind": "file",
+        "sha256": "8b552bad52c2dadee9ee51f1a3b900e89b6aabc6ee904bf0925a59cf5354115d",
+        "size": 2872
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/__init__.py": {
+        "kind": "file",
+        "sha256": "96c4f2e91fcf2c0ddda670f8d831c5a04dd2dccc1db29fe4acc7e27dc3b5242b",
+        "size": 83
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/__main__.py": {
+        "kind": "file",
+        "sha256": "50123b63e61f2893c9febced3abf09c3327dd52048af647419f0cd4ce167b511",
+        "size": 3414
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/bridge.py": {
+        "kind": "file",
+        "sha256": "ae4cb76732ae12df95b9b8178096e2a091f79ad55b1276319c99c0bd862de3a8",
+        "size": 7514
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/build.py": {
+        "kind": "file",
+        "sha256": "655926fa9a99570443ada8ea92545579b47bd7c609711c8192a176a8bdb87f03",
+        "size": 7753
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/campaign.py": {
+        "kind": "file",
+        "sha256": "d1e113bb603e90a42f1a5f4f5d494065c24d4211eea231932644888209a6fd52",
+        "size": 3288
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/checkpoints.py": {
+        "kind": "file",
+        "sha256": "20a93e6f94aed6d7c79275dfdfa217b38b8d0c7132e40760efd0e21c19cae885",
+        "size": 4996
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/common.py": {
+        "kind": "file",
+        "sha256": "687f3995da74d9e9e85c5176f650a3859814446dbd96468623f4e75968557a3d",
+        "size": 1959
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/methods.py": {
+        "kind": "file",
+        "sha256": "9fbe6195331dcbd01ee4ef108268b338bbf8566cbe8627066e2e53f986155db0",
+        "size": 7539
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/plans.py": {
+        "kind": "file",
+        "sha256": "decb85b9fa19e81dbc59c43fa7a630dd559c20117913beb1a5ba04dbe6d83f59",
+        "size": 12286
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/probe.py": {
+        "kind": "file",
+        "sha256": "aa1df2e30190815a696d52603cd2e33f8c926a84f444e32984a6166694553b2e",
+        "size": 3361
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/results.py": {
+        "kind": "file",
+        "sha256": "5729beda03af6b146287dc7c455736f43412bdd34bfeeaa68abc09c27bf9ed48",
+        "size": 6488
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/runner.py": {
+        "kind": "file",
+        "sha256": "ddd482013c9e05cb94eef8f8d88b3ab0a5b91caea76e8fd8cdd78c34b4731d55",
+        "size": 9994
+      },
+      "full-v5-n033-research-resnet-v1/runtime/glval/worker.py": {
+        "kind": "file",
+        "sha256": "d1921173376d5071ee2db2272fc486e4d264faef6073a9700cb3df10c3f09a6f",
+        "size": 1414
+      },
+      "full-v5-n033-research-resnet-v1/runtime/method.json": {
+        "kind": "file",
+        "sha256": "e0be6b782f1e195fa5bfdd98edf948fbc436a5ee59d5b63e45bf192966495545",
+        "size": 4068
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/__init__.py": {
+        "kind": "file",
+        "sha256": "101244a6e430bb4aa440a0c235b2cbac7a81b4fd18d9608b5a7f3830136d845b",
+        "size": 348
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/galore_adamw.py": {
+        "kind": "file",
+        "sha256": "2dd9d148c4bf72b9a3f81295c6ede8315754b1bd29e8ec87318edb5209fdc025",
+        "size": 6285
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/galore_projector.py": {
+        "kind": "file",
+        "sha256": "0cf522880e0fb92462ae93f44a2684311b077e05b1c8a8e49c165f72f7af8946",
+        "size": 5498
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/golore_adamw.py": {
+        "kind": "file",
+        "sha256": "303e50ff1664cf75a002e11aeea7306fb55d0a3ff7b687f6191fbfb4737c10cd",
+        "size": 6973
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/golore_projector.py": {
+        "kind": "file",
+        "sha256": "f8b40db1cf0f06518fbfaf5fcbde20ea99a84303f0895d0fb31a7ef1fedfbb38",
+        "size": 6728
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/muon.py": {
+        "kind": "file",
+        "sha256": "59fb1f15ab38a07cd46f37a54e58c8822d089eac44cd6bc48c3ea64ea211b4df",
+        "size": 13966
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/muon_utils.py": {
+        "kind": "file",
+        "sha256": "205ea1bd218503d126189335c5f640bc77e6912f47be90e903431a0a722eef5f",
+        "size": 4855
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/onebit_adam.py": {
+        "kind": "file",
+        "sha256": "346cf70e77197d878be4ccd41980583fe70413bd008fab0252daaad1787a4ddb",
+        "size": 15964
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/onebit_adammini.py": {
+        "kind": "file",
+        "sha256": "a04bfcf4558e4b3804a20960fd5d59fd0c7ae8ec21280b0f7bc43e57b9cbfbaa",
+        "size": 21023
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/onebit_utils.py": {
+        "kind": "file",
+        "sha256": "87c31107bcdfd711bdc4c4c1bf9b9bb52ccef2f821be50d5e5517468b858dd6f",
+        "size": 9611
+      },
+      "full-v5-n033-research-resnet-v1/runtime/optimizer/precond_adam.py": {
+        "kind": "file",
+        "sha256": "841195b2c7bca33a2af931bff9b047a055c6b9c073e203367339253fe99677b6",
+        "size": 4568
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models": {
+        "kind": "directory"
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/__init__.py": {
+        "kind": "file",
+        "sha256": "52e08c404afcaffc95c5d38ea4f2850f3ba66742fcac3409464ebf61a35ff3f3",
+        "size": 427
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/densenet.py": {
+        "kind": "file",
+        "sha256": "617c3a85b760e5606d75e45453ee3c90f7eedea4bf0070ffafc6ed4424249290",
+        "size": 3542
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/dla.py": {
+        "kind": "file",
+        "sha256": "110e9b7317f74d51a1c859bb672ff9e9ca7016a389b7abf0491228fb528c0d59",
+        "size": 4425
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/dla_simple.py": {
+        "kind": "file",
+        "sha256": "c7454baa2ed7e71406275f4232f29e2b4d4a9034cc9cc3d724e65839f62beea1",
+        "size": 4084
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/dpn.py": {
+        "kind": "file",
+        "sha256": "d99b63939f23dd1cbc18c1432de2b8f63a7d4248729f45d31e9092d7919c1b37",
+        "size": 3562
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/efficientnet.py": {
+        "kind": "file",
+        "sha256": "58adf6107ffbe8cf073d03da21c804e38fde8593695542ef7ae5e7c32d86f333",
+        "size": 5719
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/googlenet.py": {
+        "kind": "file",
+        "sha256": "165d505255db8e9f38d1dc041a7f1541904aa2f229aff725262ce00bbf2cdd70",
+        "size": 3221
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/lenet.py": {
+        "kind": "file",
+        "sha256": "bb87a7053653351d346f3b69a7f3713567cd9a9fa74a5d3454af9f5e24b867db",
+        "size": 699
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/mobilenet.py": {
+        "kind": "file",
+        "sha256": "3f6ef2c6371289b50908f1b60c4c533c025ec120294e802861c373fe853761ff",
+        "size": 2025
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/mobilenetv2.py": {
+        "kind": "file",
+        "sha256": "7e5ee0d8d9ecd923fb9acb28499d44554d57091f5f81375e1a731d8624d928b0",
+        "size": 3092
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/pnasnet.py": {
+        "kind": "file",
+        "sha256": "f6421290b066d8e1ea9d983def4c390431c8679a73c58faabf67dd6bee34cecf",
+        "size": 4258
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/preact_resnet.py": {
+        "kind": "file",
+        "sha256": "3cb4ae02d7c419dc3b9adccc47617e0310805c3cfa07dfee1b73816a5ff2a04a",
+        "size": 4078
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/regnet.py": {
+        "kind": "file",
+        "sha256": "a694137f828af1ba5eca57a28f8d8c59c5932b5361bd86b33a241c3cd0013c32",
+        "size": 4548
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/resnet.py": {
+        "kind": "file",
+        "sha256": "7bcbe6bba6544645a5da6037bf3e5ddf90e97d0b3ef4183be90e17a0443b4510",
+        "size": 4218
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/resnext.py": {
+        "kind": "file",
+        "sha256": "da94de29613d495384ec8ae4a24031149798e1a541b96bca0d7323da6a70b098",
+        "size": 3478
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/senet.py": {
+        "kind": "file",
+        "sha256": "d790bd677eec6ff126c686731624f8634361d7d21742ddeea0aa37cad72f6071",
+        "size": 4027
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/shufflenet.py": {
+        "kind": "file",
+        "sha256": "49e88cb68accd64351bf4bcccc53ce8de7f9a45b8d9c0c36e5d534f6b2a91390",
+        "size": 3542
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/shufflenetv2.py": {
+        "kind": "file",
+        "sha256": "5fa2c82d48ee9feec75c44126f75bfe33050c63f8b1e626251635b9c86678f25",
+        "size": 5530
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/vgg.py": {
+        "kind": "file",
+        "sha256": "20f9a5ef048ef91c3144ecbb22708347d48299ad419bbfc122b74ceed89d3016",
+        "size": 1442
+      },
+      "full-v5-n033-research-resnet-v1/runtime/pytorch-cifar/train_ddp.py": {
+        "kind": "file",
+        "sha256": "47b91e33e83d9cefb4476291d9cb93f33699a2f1afbbbf242f5cf32b831b8774",
+        "size": 13959
+      },
+      "full-v5-n033-research-resnet-v1/runtime/readme.md": {
+        "kind": "file",
+        "sha256": "43dd70d8854612e187d7e7573221296ebc0ba9da86998258d9d17f22bf21b161",
+        "size": 617
+      },
+      "full-v5-n033-research-resnet-v1/runtime/recipe.json": {
+        "kind": "file",
+        "sha256": "2c45707f34819d4f06f483c6fc7b632e5e84c9842c29799b3aa864dae4dd951c",
+        "size": 1294
+      },
+      "full-v5-n033-research-resnet-v1/runtime/requirements.txt": {
+        "kind": "file",
+        "sha256": "f9e3ad4b7a6b4ea4745e4c192668cc31e84f2a3426bd503dba12636974191a2d",
+        "size": 79
+      },
+      "synthetic_check-v5-n033-research-resnet-v1": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/case.json": {
+        "kind": "file",
+        "sha256": "411549eb3577381b571ccb519107f5df7750c5c2a2998c9b3cd7346ef7a39be1",
+        "size": 13250
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/__init__.py": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/configs": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/configs/llama_130m.json": {
+        "kind": "file",
+        "sha256": "21f33d6a29062d0ef28e12379f03eb9f0efc27fe9849e91bfca7d05334a561c6",
+        "size": 474
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/configs/llama_1b.json": {
+        "kind": "file",
+        "sha256": "81205ac273e999bcb0ead2a5bef82a9ac4b926e1e73d427ecf18353d794e1c95",
+        "size": 475
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/configs/llama_350m.json": {
+        "kind": "file",
+        "sha256": "c236d16168c108d29c051ca012d96ed1dee6f77d0fc47bb739a8650506687c6c",
+        "size": 475
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/configs/llama_60m_table_iv.json": {
+        "kind": "file",
+        "sha256": "fc15fdbddb80c161f2c26f7a1f088e8cbfb8b9f15fe541ecd4e16c85ad550305",
+        "size": 391
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/pept_utils": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/pept_utils/args_utils.py": {
+        "kind": "file",
+        "sha256": "4faceaf7d520624fc7e4a30f7ac63df4385c3c6cb54f6123c09f3fad3943edb9",
+        "size": 1254
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/pept_utils/c4_data.py": {
+        "kind": "file",
+        "sha256": "f8fb74127ef13a80a8f75b0e3f9278ed1117ee5d9ec35637ef0555c517cc0cc5",
+        "size": 1056
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/pept_utils/dataloader.py": {
+        "kind": "file",
+        "sha256": "bd28a4e3bb9d466197926282ac411ea9cdd6750a51c8f61ab7f966a15ff0c99d",
+        "size": 1323
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/pept_utils/metrics.py": {
+        "kind": "file",
+        "sha256": "5e39ec23221824eae252f5c83766eaff07d976f1497f60c962c8952b444371b6",
+        "size": 2621
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/pept_utils/modeling_llama.py": {
+        "kind": "file",
+        "sha256": "31155b9e724da6c9f355706b4e49b655f388c35906cc85734b76fefacfdeb799",
+        "size": 38778
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/pept_utils/training_utils.py": {
+        "kind": "file",
+        "sha256": "6f7f3e946a4c3bcfbd0e86bd95c30a9dc5a7628d81e364d60da3860573a370a8",
+        "size": 7768
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/run_llama_pretraining.py": {
+        "kind": "file",
+        "sha256": "cadec315e66368e8e110c0406f57b0e65b87a3d4b39891755cad42434e5935ce",
+        "size": 26372
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/queue_table_iv_130m_followups.bash": {
+        "kind": "file",
+        "sha256": "81384a2513640746097b71a9ce5d2ae9fb4e6e49b59dee8029438bc99deebd71",
+        "size": 3074
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/queue_table_iv_130m_muon_lr.py": {
+        "kind": "file",
+        "sha256": "0528fa922a24b7e22d27537e0d1706d41f8130fb95c9be2431103e5f27e2f03c",
+        "size": 4980
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/queue_table_iv_350m_muon.py": {
+        "kind": "file",
+        "sha256": "cb56f163e2a4d8b37297750fc6b418fd32969ffb47095bd07e063dec2a606df2",
+        "size": 12269
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_iv_130m.bash": {
+        "kind": "file",
+        "sha256": "b4260219769dcba2e58d97b180d2b6136f59097bed2c131281f85939b1d89238",
+        "size": 3344
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_iv_60m_adam_after_muon.bash": {
+        "kind": "file",
+        "sha256": "adca98101ec2c6426b8d5de760c9fe96196faab1e73fc8b628af1ec97587bed1",
+        "size": 774
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_iv_60m_muon.bash": {
+        "kind": "file",
+        "sha256": "46bbe0104ad247c446dd9067a369239ff9544b299ca81687789b2f4012c7a006",
+        "size": 2891
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_adam_350m.py": {
+        "kind": "file",
+        "sha256": "979b5d68842114647761eab9c7ef800cd32dd6b90fec9853f8b2ce3a0fc11a36",
+        "size": 4710
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_muon.py": {
+        "kind": "file",
+        "sha256": "929c5c91b29429be3aeda8fc2f9b72222e664677e5358ea38aaa9addbc6b1ae9",
+        "size": 8074
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_muon_setting_matrix.py": {
+        "kind": "file",
+        "sha256": "9032c30c3e0b9cb08cdf1bd584455cf8310a37737f141d52dd7a369ce42eef1c",
+        "size": 13922
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/run_table_v_muon_strict_blocking.py": {
+        "kind": "file",
+        "sha256": "e3db3e15b0439f86f5191542dd3d2211e757dc4dcd896e9ef752521066549042",
+        "size": 19361
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/scripts/sweep_table_iv_130m_lr.py": {
+        "kind": "file",
+        "sha256": "bfd89f61d3c7629477f4d299f206f631b87f0d7ca497060c44db478b417989c0",
+        "size": 5755
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/c4/table_v_timing.py": {
+        "kind": "file",
+        "sha256": "4683c8a6fddac36bce160438b48cec4afbe0d3155d46b481214d560b1a40a171",
+        "size": 22719
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/candidate_adapter.py": {
+        "kind": "file",
+        "sha256": "540f31a53ccd8b41b68e718b68d169d39812a145aa38c238fce29edc5f8524de",
+        "size": 1332
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/__init__.py": {
+        "kind": "file",
+        "sha256": "ad0dc69a87cc1d59b0183ee653e6694b3ea36a913836f7ff5b3ef8657bb06ea5",
+        "size": 3301
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/block_top1_hook.py": {
+        "kind": "file",
+        "sha256": "99aa9a563dcb011296bca73c66b82bf6309133d603737956aab54544aa20a629",
+        "size": 9933
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/ddp_zero_hook.py": {
+        "kind": "file",
+        "sha256": "65e00ae49ba38fd8cb1c9d452327192a8786e4ba64fe2ca916b616fb7a9bbe88",
+        "size": 19564
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/debugging_hooks.py": {
+        "kind": "file",
+        "sha256": "233ea90be5fc6f37af113dec7537e9ccdcee5787abb097b5a49598b1faf20d62",
+        "size": 1114
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/default_hooks.py": {
+        "kind": "file",
+        "sha256": "1e738d139aa9a64e2173d913421651124ba560fcbec2ef36f0c87b8d7ed131d9",
+        "size": 8984
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/fake_powersgd_hook.py": {
+        "kind": "file",
+        "sha256": "f9707c594b8f5b7c151382355c7a47d90dd740817d7314c87c45953739d9141e",
+        "size": 13798
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/fake_subspace_hook.py": {
+        "kind": "file",
+        "sha256": "094fe77718247d93da2b9f023a87848a2b0d572bae31b3d192f1589fd555d2be",
+        "size": 16805
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/flex_quant_hooks.py": {
+        "kind": "file",
+        "sha256": "4afbb27cf7f89d9d017e694565224d0e2f55a19a59932a17fc087a0063973a52",
+        "size": 19391
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/lore_hook.py": {
+        "kind": "file",
+        "sha256": "3f4b9fdb0a46537c46cf6d62fd6ca168c7489a11041fc6d8c61aab226cc57b85",
+        "size": 36459
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/optimizer_overlap_hooks.py": {
+        "kind": "file",
+        "sha256": "81879bd2ce498871f10139c9630924a17187903ad188dac3317349fa9af3163b",
+        "size": 6102
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/original_powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "01e13b37cca1c296fa99b5f982fb8940c65434d9f5a909c6c0785489bcd3a19c",
+        "size": 40518
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/post_localSGD_hook.py": {
+        "kind": "file",
+        "sha256": "cdfd4f59c518315b6061294d489c13d840c0996a6e4e7ed93276e31f1fa7b6a6",
+        "size": 5152
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/powerSGD_hook.py": {
+        "kind": "file",
+        "sha256": "961f08598f6123922a4f3d4ddbbb3ce1fee04faf381338e1b344d5435d0ae883",
+        "size": 41327
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/sparse_hook.py": {
+        "kind": "file",
+        "sha256": "f22d4430a8431cb0c4b6254f8627235ee4334ddf03aef9160b429c71bee58997",
+        "size": 18343
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/sparse_q4_hook.py": {
+        "kind": "file",
+        "sha256": "2af802d1072b917f4d65997ebcf9738c9d40add80309b7b18b2f2c5c6c55500b",
+        "size": 18327
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/subspace_hook.py": {
+        "kind": "file",
+        "sha256": "d91d67ba24e144b40bf37e787249e030b71e342c7c49584bcb9b5e08c49fef46",
+        "size": 35167
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/comm_hooks/utils.py": {
+        "kind": "file",
+        "sha256": "53a8b1142a059988eb3bb38fd3d8288c8e8eae84c15db6eafe8995e570bb23e4",
+        "size": 19564
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glue": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glue/local_glue.py": {
+        "kind": "file",
+        "sha256": "420155f79e0a667a9f399e8aaaa7aa575b2215d209de0b07529952516c8318a6",
+        "size": 940
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glue/run_glue_no_trainer_HF.py": {
+        "kind": "file",
+        "sha256": "095faee69c005ab532837b61997554eb1610196e202c6b685f5c21bcbe42ba20",
+        "size": 35191
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glue/scripts": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glue/scripts/run_table_iii_muon.bash": {
+        "kind": "file",
+        "sha256": "a402f1d0aff5802ae5ecf11c6044d2d34ba2b9c17af943abe1e532bcd3587f01",
+        "size": 4043
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glue/utils.py": {
+        "kind": "file",
+        "sha256": "8b552bad52c2dadee9ee51f1a3b900e89b6aabc6ee904bf0925a59cf5354115d",
+        "size": 2872
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/__init__.py": {
+        "kind": "file",
+        "sha256": "96c4f2e91fcf2c0ddda670f8d831c5a04dd2dccc1db29fe4acc7e27dc3b5242b",
+        "size": 83
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/__main__.py": {
+        "kind": "file",
+        "sha256": "50123b63e61f2893c9febced3abf09c3327dd52048af647419f0cd4ce167b511",
+        "size": 3414
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/bridge.py": {
+        "kind": "file",
+        "sha256": "ae4cb76732ae12df95b9b8178096e2a091f79ad55b1276319c99c0bd862de3a8",
+        "size": 7514
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/build.py": {
+        "kind": "file",
+        "sha256": "655926fa9a99570443ada8ea92545579b47bd7c609711c8192a176a8bdb87f03",
+        "size": 7753
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/campaign.py": {
+        "kind": "file",
+        "sha256": "d1e113bb603e90a42f1a5f4f5d494065c24d4211eea231932644888209a6fd52",
+        "size": 3288
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/checkpoints.py": {
+        "kind": "file",
+        "sha256": "20a93e6f94aed6d7c79275dfdfa217b38b8d0c7132e40760efd0e21c19cae885",
+        "size": 4996
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/common.py": {
+        "kind": "file",
+        "sha256": "687f3995da74d9e9e85c5176f650a3859814446dbd96468623f4e75968557a3d",
+        "size": 1959
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/methods.py": {
+        "kind": "file",
+        "sha256": "9fbe6195331dcbd01ee4ef108268b338bbf8566cbe8627066e2e53f986155db0",
+        "size": 7539
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/plans.py": {
+        "kind": "file",
+        "sha256": "decb85b9fa19e81dbc59c43fa7a630dd559c20117913beb1a5ba04dbe6d83f59",
+        "size": 12286
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/probe.py": {
+        "kind": "file",
+        "sha256": "aa1df2e30190815a696d52603cd2e33f8c926a84f444e32984a6166694553b2e",
+        "size": 3361
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/results.py": {
+        "kind": "file",
+        "sha256": "5729beda03af6b146287dc7c455736f43412bdd34bfeeaa68abc09c27bf9ed48",
+        "size": 6488
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/runner.py": {
+        "kind": "file",
+        "sha256": "ddd482013c9e05cb94eef8f8d88b3ab0a5b91caea76e8fd8cdd78c34b4731d55",
+        "size": 9994
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/glval/worker.py": {
+        "kind": "file",
+        "sha256": "d1921173376d5071ee2db2272fc486e4d264faef6073a9700cb3df10c3f09a6f",
+        "size": 1414
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/method.json": {
+        "kind": "file",
+        "sha256": "e0be6b782f1e195fa5bfdd98edf948fbc436a5ee59d5b63e45bf192966495545",
+        "size": 4068
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/__init__.py": {
+        "kind": "file",
+        "sha256": "101244a6e430bb4aa440a0c235b2cbac7a81b4fd18d9608b5a7f3830136d845b",
+        "size": 348
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/galore_adamw.py": {
+        "kind": "file",
+        "sha256": "2dd9d148c4bf72b9a3f81295c6ede8315754b1bd29e8ec87318edb5209fdc025",
+        "size": 6285
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/galore_projector.py": {
+        "kind": "file",
+        "sha256": "0cf522880e0fb92462ae93f44a2684311b077e05b1c8a8e49c165f72f7af8946",
+        "size": 5498
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/golore_adamw.py": {
+        "kind": "file",
+        "sha256": "303e50ff1664cf75a002e11aeea7306fb55d0a3ff7b687f6191fbfb4737c10cd",
+        "size": 6973
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/golore_projector.py": {
+        "kind": "file",
+        "sha256": "f8b40db1cf0f06518fbfaf5fcbde20ea99a84303f0895d0fb31a7ef1fedfbb38",
+        "size": 6728
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/muon.py": {
+        "kind": "file",
+        "sha256": "59fb1f15ab38a07cd46f37a54e58c8822d089eac44cd6bc48c3ea64ea211b4df",
+        "size": 13966
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/muon_utils.py": {
+        "kind": "file",
+        "sha256": "205ea1bd218503d126189335c5f640bc77e6912f47be90e903431a0a722eef5f",
+        "size": 4855
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/onebit_adam.py": {
+        "kind": "file",
+        "sha256": "346cf70e77197d878be4ccd41980583fe70413bd008fab0252daaad1787a4ddb",
+        "size": 15964
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/onebit_adammini.py": {
+        "kind": "file",
+        "sha256": "a04bfcf4558e4b3804a20960fd5d59fd0c7ae8ec21280b0f7bc43e57b9cbfbaa",
+        "size": 21023
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/onebit_utils.py": {
+        "kind": "file",
+        "sha256": "87c31107bcdfd711bdc4c4c1bf9b9bb52ccef2f821be50d5e5517468b858dd6f",
+        "size": 9611
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/optimizer/precond_adam.py": {
+        "kind": "file",
+        "sha256": "841195b2c7bca33a2af931bff9b047a055c6b9c073e203367339253fe99677b6",
+        "size": 4568
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models": {
+        "kind": "directory"
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/__init__.py": {
+        "kind": "file",
+        "sha256": "52e08c404afcaffc95c5d38ea4f2850f3ba66742fcac3409464ebf61a35ff3f3",
+        "size": 427
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/densenet.py": {
+        "kind": "file",
+        "sha256": "617c3a85b760e5606d75e45453ee3c90f7eedea4bf0070ffafc6ed4424249290",
+        "size": 3542
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/dla.py": {
+        "kind": "file",
+        "sha256": "110e9b7317f74d51a1c859bb672ff9e9ca7016a389b7abf0491228fb528c0d59",
+        "size": 4425
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/dla_simple.py": {
+        "kind": "file",
+        "sha256": "c7454baa2ed7e71406275f4232f29e2b4d4a9034cc9cc3d724e65839f62beea1",
+        "size": 4084
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/dpn.py": {
+        "kind": "file",
+        "sha256": "d99b63939f23dd1cbc18c1432de2b8f63a7d4248729f45d31e9092d7919c1b37",
+        "size": 3562
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/efficientnet.py": {
+        "kind": "file",
+        "sha256": "58adf6107ffbe8cf073d03da21c804e38fde8593695542ef7ae5e7c32d86f333",
+        "size": 5719
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/googlenet.py": {
+        "kind": "file",
+        "sha256": "165d505255db8e9f38d1dc041a7f1541904aa2f229aff725262ce00bbf2cdd70",
+        "size": 3221
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/lenet.py": {
+        "kind": "file",
+        "sha256": "bb87a7053653351d346f3b69a7f3713567cd9a9fa74a5d3454af9f5e24b867db",
+        "size": 699
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/mobilenet.py": {
+        "kind": "file",
+        "sha256": "3f6ef2c6371289b50908f1b60c4c533c025ec120294e802861c373fe853761ff",
+        "size": 2025
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/mobilenetv2.py": {
+        "kind": "file",
+        "sha256": "7e5ee0d8d9ecd923fb9acb28499d44554d57091f5f81375e1a731d8624d928b0",
+        "size": 3092
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/pnasnet.py": {
+        "kind": "file",
+        "sha256": "f6421290b066d8e1ea9d983def4c390431c8679a73c58faabf67dd6bee34cecf",
+        "size": 4258
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/preact_resnet.py": {
+        "kind": "file",
+        "sha256": "3cb4ae02d7c419dc3b9adccc47617e0310805c3cfa07dfee1b73816a5ff2a04a",
+        "size": 4078
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/regnet.py": {
+        "kind": "file",
+        "sha256": "a694137f828af1ba5eca57a28f8d8c59c5932b5361bd86b33a241c3cd0013c32",
+        "size": 4548
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/resnet.py": {
+        "kind": "file",
+        "sha256": "7bcbe6bba6544645a5da6037bf3e5ddf90e97d0b3ef4183be90e17a0443b4510",
+        "size": 4218
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/resnext.py": {
+        "kind": "file",
+        "sha256": "da94de29613d495384ec8ae4a24031149798e1a541b96bca0d7323da6a70b098",
+        "size": 3478
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/senet.py": {
+        "kind": "file",
+        "sha256": "d790bd677eec6ff126c686731624f8634361d7d21742ddeea0aa37cad72f6071",
+        "size": 4027
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/shufflenet.py": {
+        "kind": "file",
+        "sha256": "49e88cb68accd64351bf4bcccc53ce8de7f9a45b8d9c0c36e5d534f6b2a91390",
+        "size": 3542
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/shufflenetv2.py": {
+        "kind": "file",
+        "sha256": "5fa2c82d48ee9feec75c44126f75bfe33050c63f8b1e626251635b9c86678f25",
+        "size": 5530
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/models/vgg.py": {
+        "kind": "file",
+        "sha256": "20f9a5ef048ef91c3144ecbb22708347d48299ad419bbfc122b74ceed89d3016",
+        "size": 1442
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/pytorch-cifar/train_ddp.py": {
+        "kind": "file",
+        "sha256": "47b91e33e83d9cefb4476291d9cb93f33699a2f1afbbbf242f5cf32b831b8774",
+        "size": 13959
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/readme.md": {
+        "kind": "file",
+        "sha256": "43dd70d8854612e187d7e7573221296ebc0ba9da86998258d9d17f22bf21b161",
+        "size": 617
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/recipe.json": {
+        "kind": "file",
+        "sha256": "e32dd77a5df3a788eb1ab3b576ea442e458dedff574a8918efbb62dbde863b34",
+        "size": 1298
+      },
+      "synthetic_check-v5-n033-research-resnet-v1/runtime/requirements.txt": {
+        "kind": "file",
+        "sha256": "f9e3ad4b7a6b4ea4745e4c192668cc31e84f2a3426bd503dba12636974191a2d",
+        "size": 79
+      }
+    },
+    "cases.json": {
+      "": {
+        "kind": "file",
+        "sha256": "a5591527175e327c2b979447a83291f1e2c5b6b97e5be514f7421a7b7da4ff79",
+        "size": 42907
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "14b3882ca8e65f434bc30ed5f407d5d33b7084b1f76f9fbf8c2d41ffdb91245d",
+        "size": 1416
+      }
+    },
+    "cpu-checks.log": {
+      "": {
+        "kind": "file",
+        "sha256": "53acb38e85be8d54de8f4c95ce5b8741b565db5810674f31d175762448669e25",
+        "size": 2449
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "68341da710c2749da3875807e5ac3fabe8c1ce6c45f98af6d133560744eea4e2",
+        "size": 121
+      }
+    }
+  },
+  "legacy_source": {
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "8e42049812ae2248770febe6aeb38bd8b275a9ced1bdc204ecaaf47d202dabdf",
+      "size": 8018
+    },
+    "run.py": {
+      "kind": "file",
+      "sha256": "5a6cedef91f08d86911d7a008296cc854996fca8ea70960ff85e4861dba4fe11",
+      "size": 9216
+    }
+  }
+}

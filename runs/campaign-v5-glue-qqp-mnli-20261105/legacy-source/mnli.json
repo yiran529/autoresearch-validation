@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "v5-glue-mnli-lr2em5-20261105",
+  "methods": [
+    "dense",
+    "greedylore-engineer-streamfix-glue-r8-v1",
+    "greedylore-engineer-streamfix-glue-r16-v1",
+    "v5-n019-engineer-glue-v1",
+    "v5-n033-research-glue-v1",
+    "v5-n022-engineer-glue-v1"
+  ],
+  "reference_methods": [
+    "dense",
+    "greedylore-engineer-streamfix-glue-r8-v1",
+    "greedylore-engineer-streamfix-glue-r16-v1"
+  ],
+  "recipe": "glue-mnli-roberta-adamw-full-offline-lr2em5-v5",
+  "seeds": [
+    1243
+  ],
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "offline",
+      "project": "GreedyLore-Validation",
+      "group": "v5-glue-qqp-mnli-20261105"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "glue-qqp-roberta-adamw-full-offline-lr2em5-v5",
+  "workload": "glue",
+  "world_size": 4,
+  "compression_start_step": 1000,
+  "evaluation_split": "validation",
+  "required_paths": [
+    "/home/wyr/.cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "/home/wyr/.cache/huggingface/datasets/glue"
+  ],
+  "args": {
+    "task_name": "qqp",
+    "model_name_or_path": "/home/wyr/.cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "local_glue_cache_root": "/home/wyr/.cache/huggingface/datasets/glue",
+    "max_length": 256,
+    "per_device_train_batch_size": 4,
+    "per_device_eval_batch_size": 8,
+    "num_train_epochs": 10,
+    "gradient_accumulation_steps": 1,
+    "optimizer": "adamw",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "warmup_fraction": 0.1,
+    "report_to": "wandb",
+    "with_tracking": true,
+    "wandb_project": "GreedyLore-Validation",
+    "dtype": "float32",
+    "lr_scheduler_type": "cosine",
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08
+  },
+  "completion": {
+    "status": "completed",
+    "completed_epochs": 10,
+    "expected_epochs": 10
+  },
+  "metrics": [
+    "eval_accuracy",
+    "eval_f1"
+  ],
+  "notes": "Matched historical glue/scripts/run_table_iii_muon.bash: RoBERTa snapshot e2da8e2, local full Arrow splits, seed1243, four ranks, FP32, per-device4 global16 GA1, length256 dynamic padding, 10epochs cosine to0 warmup10% WD0, compression1000. Optimizer replaced with AdamW at reference Table VI LR2e-5, betas .9/.999 eps1e-8. Historical Greedy ranks8/16 gap200 EF14. Candidates retain frozen parameters. W&B offline; checkpoint flags absent, no model or optimizer saving. Final validation primary, best secondary. User-provided Table VI adopted for learning rate. Global batch16 shared across all methods for direct comparison; QNLI r16 table-specific global32 is not applied. No other hyperparameters changed from previous frozen full recipe. Additional queued task. QQP accuracy and F1; MNLI final matched/mismatched separately with evaluation-only padding correction. Shared LR2e-5/global16 across arms, no per-method tuning."
+}

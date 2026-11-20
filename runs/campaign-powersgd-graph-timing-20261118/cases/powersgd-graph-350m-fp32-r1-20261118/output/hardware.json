@@ -1,0 +1,33 @@
+{
+  "gpus": [
+    {
+      "index": "4",
+      "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "5",
+      "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    }
+  ],
+  "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tNIC0\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t18-23,66-71\t3\t\tN/A\nGPU1\tSYS\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPHB\t12-17,60-65\t2\t\tN/A\nGPU2\tSYS\tSYS\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t6-11,54-59\t1\t\tN/A\nGPU3\tSYS\tSYS\tSYS\t X \tSYS\tSYS\tSYS\tSYS\tSYS\t0-5,48-53\t0\t\tN/A\nGPU4\tSYS\tSYS\tSYS\tSYS\t X \tSYS\tSYS\tSYS\tSYS\t42-47,90-95\t7\t\tN/A\nGPU5\tSYS\tSYS\tSYS\tSYS\tSYS\t X \tSYS\tSYS\tSYS\t36-41,84-89\t6\t\tN/A\nGPU6\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t X \tSYS\tSYS\t30-35,78-83\t5\t\tN/A\nGPU7\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t X \tSYS\t24-29,72-77\t4\t\tN/A\nNIC0\tSYS\tPHB\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_bond_0\n\n"
+}

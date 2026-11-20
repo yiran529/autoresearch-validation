@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "llama130m-timing-bsz1-local-20261025",
+  "methods": [
+    "greedylore-engineer",
+    "n023-engineer-maxu",
+    "n031-engineer-maxu",
+    "n020-engineer-maxu",
+    "dense"
+  ],
+  "recipe": "llama130m-muon-timing-bsz1-local-v1",
+  "reference_methods": [
+    "greedylore-engineer",
+    "dense"
+  ],
+  "seeds": [
+    1243
+  ],
+  "repetitions": 3,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "disabled",
+      "project": "GreedyLore-Validation",
+      "group": "llama130m-timing-bsz1-local-20261025"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

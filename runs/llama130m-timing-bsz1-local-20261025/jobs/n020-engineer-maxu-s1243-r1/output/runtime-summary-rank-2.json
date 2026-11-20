@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_runtime",
+  "status": null,
+  "source": "runtime-rank-2.json",
+  "source_sha256": "9599d3dd537b4278c91cc9037070dc601d6bf69c4d7140c5a4468092cbc96e91",
+  "measurements": {
+    "rank": 2,
+    "method_id": "n020-engineer-maxu",
+    "parameters": {
+      "compressor": "top_subspace",
+      "compress_rank": 32,
+      "update_proj_gap": 200,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 1.0,
+      "beta_ef": 0.0,
+      "error_inherit": 0,
+      "start_compress_iter": 1000
+    },
+    "hook_registrations": 1,
+    "hook_calls": 24001,
+    "last_bucket_calls": 3001,
+    "refresh_coverage": "not established; requires method-specific evidence",
+    "description": {
+      "registration": "comm_hooks.utils.register_comm_hook_for_ddp_model",
+      "implementation": "frozen runtime comm_hooks; base optimizer and training loop",
+      "communication_volume": "unavailable; no generic byte estimator"
+    },
+    "environment": {
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "nccl": {
+        "NCCL_DEBUG": "WARN",
+        "NCCL_P2P_DISABLE": "1"
+      }
+    },
+    "hook_module": "comm_hooks.subspace_hook",
+    "hook_name": "subspace_hook",
+    "hook_source": "comm_hooks/subspace_hook.py",
+    "hook_sha256": "cce976a2873e86eca574287f2f6091572020827845b2637f90bb0ed0be750cd6",
+    "state_type": "SubspaceState",
+    "effective_state_configuration": {
+      "matrix_approximation_rank": 8,
+      "rejuvenation_gap": 10,
+      "update_proj_gap": 200,
+      "use_error_feedback": "ef14"
+    },
+    "elapsed_seconds": 297.8603036929853,
+    "peak_memory_bytes": 2068186112,
+    "iter": 3001,
+    "timing_period_steps": 80
+  },
+  "omitted_sequences": {
+    "timing_refresh_steps": {
+      "count": 201,
+      "sha256": "1ab78070ff06769b82de6835e952b045914e673bad08134671adb28b3a7f7b6b",
+      "first": 1001,
+      "last": 3001,
+      "min": 1001,
+      "max": 3001,
+      "mean": 2001.0,
+      "median": 2001,
+      "p95": 2901,
+      "p99": 2981,
+      "step": 10
+    }
+  },
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

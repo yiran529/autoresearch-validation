@@ -1,0 +1,37 @@
+# Spec: notes/nodes/N033/spec.md; design3: notes/nodes/N033/research.json
+mode: research
+node_id: N033
+node_type: research
+base_commit: a8c72f04ac1e59d1a450123a99a46afef7997eb5
+quality_anchor: null
+analysis_refs:
+  parent_research: nodes/N024/research_analysis_v1.md
+  parent_engineering: nodes/N024/engineering_analysis_v1.md
+change_summary: Guarded equal-wire top4of16 Q4 versus top5of16 Q3, sign-tagged scale,32byte
+  packets, ordered FP64 actual-residual scoring and continuous FP32 EF. Both runtime
+  compatibility fixes inherited and reverse-patch verified. Explicit IEEE FP32-to-FP64
+  conversion and bitwise scale sign tagging preserve subnormal guard/packet semantics.
+selection_rationale: Test sparsity-density versus precision allocation at fixed real
+  packet bytes; separate matched reconstruction, full quality and actual cost.
+semantic_self_check:
+  status: warning
+  commands:
+  - OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='' PYTHONPATH=. .venv/bin/python /tmp/research-N033/selfcheck.py
+  - OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='' PYTHONPATH=. .venv/bin/python -m torch.distributed.run
+    --standalone --nproc-per-node=4 /tmp/research-N033/selfcheck.py
+  - OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='' PYTHONPATH=. .venv/bin/python /tmp/research-N033/runtime_check.py
+  - git apply --reverse --check .codex/notes/toolkit/references/reused_root_runtime_compatibility.patch
+  limitations: CPU scalar oracle96 checks; world4 each112 checks, exhaustive6188 support
+    ranks; tails/ties/zeros/subnormals/outliers, both formats/dtypes,8step EF, matrix/convolution
+    shapes and8step hook with2dense prefix pass. Early uncommitted3bit byte-spanning
+    bug fixed; oracle rerun passes. Runtime JSON and Git-less identity checks pass.
+    CUDA/native full-model and long trajectories not yet validated; pause1000 before
+    first compression then managed validation. State dictionary roundtrip only, no
+    full disk checkpoint check. Managed controlled intervention n033-conversion-sign-cause2
+    passes94 checks/rank with corrected CUDA source, actual Conv2d+Linear DDP and
+    both modes/dtypes. Original failed CUDA tests and partial conversion fix retained.
+    CPU full disk checkpoint restoration and identical next update also passed in
+    supplementary archive. Candidate source receives the same correction; native committed-source
+    validation still planned at early pause.
+timing:
+  period_steps: 1

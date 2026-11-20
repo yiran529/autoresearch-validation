@@ -1,0 +1,40 @@
+{
+  "status": "planned",
+  "plan_hash": "a90096f9d5b6a744fa4136c4847d4004bb10ad910e324f4b9ace3a2560241af3",
+  "recipe": "glue-sst2-bert-full-v1",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "unverified",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "original_greedylore-s1243",
+      "method_id": "original_greedylore",
+      "seed": 1243,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "planned",
+      "total_wall_seconds": null
+    },
+    {
+      "status": "unverified",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "planned",
+      "total_wall_seconds": null
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

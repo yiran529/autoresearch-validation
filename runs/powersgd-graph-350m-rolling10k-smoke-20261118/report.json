@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "plan_hash": "3ee7e6171b580fb96862788d881ee211936052218572479a1e8f29bb8295a44f",
+  "recipe": "powersgd-graph-350m-rolling10k-smoke-20261118",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 10.574684336303223,
+        "final_eval_ppl": 39131.55040430883
+      },
+      "peak_memory_bytes": 13251378688,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "powersgd-r32-graph-v1-s1243",
+      "method_id": "powersgd-r32-graph-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 1018.144944650121
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

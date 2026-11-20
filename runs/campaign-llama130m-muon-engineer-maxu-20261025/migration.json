@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/llama130m-muon-engineer-maxu-20261025",
+  "destination": "runs/campaign-llama130m-muon-engineer-maxu-20261025",
+  "entries": {
+    "advance-dense.json": {
+      "": {
+        "kind": "file",
+        "sha256": "768db18319941d243c0e968e16cc963b3bdee453ecf868938e4e4d238943d29d",
+        "size": 676
+      }
+    },
+    "advance-dense.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "campaign-before-bsz1-local.json": {
+      "": {
+        "kind": "file",
+        "sha256": "b5b4f4e08d78902c132cd315139eb6dab372248c10a1914ae731264fd769e82e",
+        "size": 651
+      }
+    },
+    "campaign.json": {
+      "": {
+        "kind": "file",
+        "sha256": "2a118faf263484952ded6e79ff09b96fea552435358227246270d4b1b1921bb1",
+        "size": 904
+      }
+    },
+    "continuation-pretraining_non_dense-0.json": {
+      "": {
+        "kind": "file",
+        "sha256": "5a99d5da4219422de6402cc072cd7f5f0b3c5e4254ee1fb05bc58202e0c84914",
+        "size": 959
+      }
+    },
+    "continuation-result.json": {
+      "": {
+        "kind": "file",
+        "sha256": "d35f4dd29cfb612fefdbbc3ca8c0b9def699d4a7afa06b3e1f81d07de8efbbf9",
+        "size": 20572
+      }
+    },
+    "continuation.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "continuation.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "dense-early.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "dependencies.json": {
+      "": {
+        "kind": "file",
+        "sha256": "bb0f1cd6c5bc2522a6eb26e0cd5a292f4a3557f45f1cdc48460f4f37fdf83be1",
+        "size": 452
+      }
+    },
+    "first-free-timing-allocation.json": {
+      "": {
+        "kind": "file",
+        "sha256": "e67858370c406dc044dd03aec25adb6fbb93856af3b0fc46b19473a926b32bc5",
+        "size": 458
+      }
+    },
+    "first-free-timing-error-attempt1.json": {
+      "": {
+        "kind": "file",
+        "sha256": "841eb7daa6dfce157d399282f09b80a2297a5d6202a2c60d0158f8efaa52ac65",
+        "size": 609
+      }
+    },
+    "first-free-timing-resume.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "first-free-timing-resumed-3663984.json": {
+      "": {
+        "kind": "file",
+        "sha256": "c969db4e313e6124dea8d5be102243604512f759b83a9d753648054e05d22bda",
+        "size": 450
+      }
+    },
+    "first-free-timing-resumed.json": {
+      "": {
+        "kind": "file",
+        "sha256": "8b5c29935f5740ec59bb15ddcd8167575afdde8f621d76497d326bbb53b857ab",
+        "size": 451
+      }
+    },
+    "first-free-timing-started.json": {
+      "": {
+        "kind": "file",
+        "sha256": "28f6979f91580a43a72739643bbffd9a176b1c40d5e0e2fe61142dfd93fcf498",
+        "size": 591
+      }
+    },
+    "first-free-timing-status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "ad112c0987c80bcd83447df4ece5271cc2ca386199d39993b712e63e472d89f5",
+        "size": 538
+      }
+    },
+    "first-free-timing.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "first-free-timing.log": {
+      "": {
+        "kind": "file",
+        "sha256": "3a860ad6b4eba64f39cf0a1261c7a191a2fd04e98461e291a4cd8d1fae97efe3",
+        "size": 952
+      }
+    },
+    "launch-dense-early.sh": {
+      "": {
+        "kind": "file",
+        "sha256": "5083c9aa812518db5ec51030f03f8c2abe43ee32417d3be198dda4e3b7071b25",
+        "size": 424
+      }
+    },
+    "launch-first-free-timing-resume.sh": {
+      "": {
+        "kind": "file",
+        "sha256": "01ba3dbe3a82fcf2b84bfea13b0d526fde672128396a4fe6c00d225a10f4e62a",
+        "size": 445
+      }
+    },
+    "launch-first-free-timing.sh": {
+      "": {
+        "kind": "file",
+        "sha256": "2792071df1ee86dfbf423fdc9f38e630f0d9ff93f3e6c44e924333bf7b25c77d",
+        "size": 428
+      }
+    },
+    "launch-record.json": {
+      "": {
+        "kind": "file",
+        "sha256": "21675028084250679aa27a1ab14bca76e2e94478e32badfb1f6dfba9a74dc778",
+        "size": 740
+      }
+    },
+    "launch-timing-bsz1-local.sh": {
+      "": {
+        "kind": "file",
+        "sha256": "4c18c719f787fb1a1970563c86f584c3b8016d74752514be05868937d64fc66b",
+        "size": 462
+      }
+    },
+    "launch.sh": {
+      "": {
+        "kind": "file",
+        "sha256": "aecc482dc9c3483d1a16fd0a86a0c7909e1fd0264be9af6041b76da7e8e02d4e",
+        "size": 419
+      }
+    },
+    "replace-waiter.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "scheduler-handoff-incident.json": {
+      "": {
+        "kind": "file",
+        "sha256": "4585c75c20555a99fb90b0575653edd4ccf73b48c557d69ac699c40eafb05fd8",
+        "size": 664
+      }
+    },
+    "scheduling-override.json": {
+      "": {
+        "kind": "file",
+        "sha256": "1385413cfb10696e3df72997d8f88f05d7e5f56de950029ad38494fd293e2f7f",
+        "size": 349
+      }
+    },
+    "selections.json": {
+      "": {
+        "kind": "file",
+        "sha256": "544a8aaf8b2f758cac99b284b32f539f303b851fe0bd64853913a8d0eb1bec54",
+        "size": 11413
+      }
+    },
+    "started.json": {
+      "": {
+        "kind": "file",
+        "sha256": "9c787667d6f89ba8faed2999f64114cc879c3a33eb411c5430b58f7e72fd8804",
+        "size": 81
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "479d2b4b92d79afe34d593aab7771c79faa53e7b921fa5306f58314ebdfec7fc",
+        "size": 220
+      }
+    },
+    "timing-bsz1-local-preparation.json": {
+      "": {
+        "kind": "file",
+        "sha256": "222732309c80273162ee19e6f25c62c922f5660cf29dd472b3c6da885a606581",
+        "size": 236
+      }
+    },
+    "timing-bsz1-local.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    }
+  },
+  "legacy_source": {
+    "README.md": {
+      "kind": "file",
+      "sha256": "305a49f391719b6be93c24c66428b3b332013ac7fda6305f4ba67f71c2ac2619",
+      "size": 1735
+    },
+    "advance_dense.py": {
+      "kind": "file",
+      "sha256": "24d52661de7987aae29a8d2005a52d45c45b1fd0ef2facb972df0c20348b6845",
+      "size": 5397
+    },
+    "continue.py": {
+      "kind": "file",
+      "sha256": "5d83649ae88e5b0e139617a9c4fb7686074f9954ea932156b2707ffcc878ff4b",
+      "size": 5682
+    },
+    "first_free_timing.py": {
+      "kind": "file",
+      "sha256": "655a711a4650cd05e5fb788918b0a2ac2a656c80be6bb6c646d0492e8f001231",
+      "size": 16282
+    },
+    "llama130m-muon-full-q0-20261025.json": {
+      "kind": "file",
+      "sha256": "d3b991add2981ec1ff1c801e7ee1ddfc38d133f32b3ca28b9f564d43401ebfb2",
+      "size": 711
+    },
+    "llama130m-muon-full-q1-20261025.json": {
+      "kind": "file",
+      "sha256": "b71129174cc91b72451db09118522927cee62f8541cc18fe586eed4722475065",
+      "size": 697
+    },
+    "llama130m-muon-timing-20261025.json": {
+      "kind": "file",
+      "sha256": "3aa2d959ee427fa1d81377c94a1c7aad4c900016bc4d3047a7a3a12f1a56112b",
+      "size": 764
+    },
+    "llama130m-timing-bsz1-local-20261025.json": {
+      "kind": "file",
+      "sha256": "23e3382164e75eeac3031fb72bb7027d7b7075ccccca4c0588118b9a5bb49b8a",
+      "size": 775
+    },
+    "llama60m-timing-bsz1-local-20261025.json": {
+      "kind": "file",
+      "sha256": "67b28d1a7c8d6091fcbf23f228ca46833bb8c8d8edc00c8b452eaff68a8c8d36",
+      "size": 773
+    },
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "119ccbc3a844e1561d66b2fd45e0fb0f84cff988ecc46830bb9844c9b46ae64d",
+      "size": 4551
+    },
+    "prepare_timing_bsz1_local.py": {
+      "kind": "file",
+      "sha256": "dbbf04091a37056ad09cabc3fe5f643434b46aebd046c688c15ce518167fffb7",
+      "size": 4348
+    },
+    "quick_validate_skill.py": {
+      "kind": "file",
+      "sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+      "size": 4249
+    },
+    "test_continuation.py": {
+      "kind": "file",
+      "sha256": "cb01c30ddb6f3adff9ab1d8a686be3da6a648c67d16df285da27c631023a74d2",
+      "size": 3383
+    },
+    "test_first_free_timing.py": {
+      "kind": "file",
+      "sha256": "a9c528d1c8d01e0f7bb275715fec6494d258e7ea813679e6d4be5d3f7bed43b6",
+      "size": 4056
+    }
+  }
+}

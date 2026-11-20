@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "plan_hash": "1ed61333e5d1ca83feeeaa34a4658deceff263268ac8cb64976e089fc97dbfc3",
+  "recipe": "llama60m-adamw-full-online-v2",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.611895941511185,
+        "final_eval_ppl": 37.03620476984661
+      },
+      "peak_memory_bytes": 8935426048,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "completed",
+      "total_wall_seconds": 4411.835617735051
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.5509598355903993,
+        "final_eval_ppl": 34.84674859036099
+      },
+      "peak_memory_bytes": 8815273472,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "completed",
+      "total_wall_seconds": 4559.682632056996
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

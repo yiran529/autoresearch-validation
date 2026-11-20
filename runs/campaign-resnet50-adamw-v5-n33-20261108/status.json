@@ -1,0 +1,5 @@
+{
+  "status": "superseded",
+  "reason": "Replaced by ResNet18/CIFAR10 and ResNet50/CIFAR100",
+  "gpu_execution": false
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_timing",
+  "status": "completed",
+  "source": "all_results.json",
+  "source_sha256": "1afe710661bccc5ae7b662d71db83257dbfe5778e29b3923366f804d2a845015",
+  "measurements": {
+    "measured_steps": 800,
+    "mean_iteration_seconds": 0.09740080819115975,
+    "rank_elapsed_seconds": [
+      77.92055631894618,
+      77.92061510821804,
+      77.92064655292779,
+      77.92062825430185
+    ],
+    "slowest_rank": 2,
+    "slowest_rank_iteration_median_seconds": 0.09707795944996178,
+    "status": "completed",
+    "optimizer": "muon",
+    "compressor": "top_subspace",
+    "strict_blocking_communication": false,
+    "bucket_layout_recorded": false,
+    "parameter_count": 134105856,
+    "warmup_iterations": 2201,
+    "first_measured_update": 2202,
+    "last_measured_update": 3001,
+    "rank_peak_allocated_bytes": [
+      2334898176,
+      2335422464,
+      2335422464,
+      2335422464
+    ],
+    "rank_peak_reserved_bytes": [
+      3269459968,
+      3386900480,
+      3386900480,
+      3386900480
+    ],
+    "method_id": "n031-engineer-maxu",
+    "actual_parameters": {
+      "compressor": "top_subspace",
+      "compress_rank": 32,
+      "update_proj_gap": 200,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 1.0,
+      "beta_ef": 0.0,
+      "error_inherit": 0
+    }
+  },
+  "omitted_sequences": {
+    "rank_iteration_seconds[0]": {
+      "count": 800,
+      "sha256": "d27afd93dc6f1a7dbd19745dc0c48cc5b2d0c886231530f29bcf8448d40677d0",
+      "first": 0.09642241196706891,
+      "last": 0.09824600396677852,
+      "min": 0.0938800498843193,
+      "max": 0.10878019127994776,
+      "mean": 0.09739088278263808,
+      "median": 0.09709714888595045,
+      "p95": 0.10113015584647655,
+      "p99": 0.10421715024858713
+    },
+    "rank_iteration_seconds[1]": {
+      "count": 800,
+      "sha256": "1fcd06bd2a76693020a0122b18b5b1e957f874ae6e0e4c1f04cccb0c5a89fbfa",
+      "first": 0.09646718483418226,
+      "last": 0.09826140105724335,
+      "min": 0.09388523176312447,
+      "max": 0.10880246292799711,
+      "mean": 0.09739416423894,
+      "median": 0.097086914582178,
+      "p95": 0.1011515473946929,
+      "p99": 0.10428119217976928
+    },
+    "rank_iteration_seconds[2]": {
+      "count": 800,
+      "sha256": "52b2e5fb7724eefffe0d4390577eaf5244a7a5710734421022a9413de0aecd1c",
+      "first": 0.09649762883782387,
+      "last": 0.09825825924053788,
+      "min": 0.09386942395940423,
+      "max": 0.10879345890134573,
+      "mean": 0.09739409936650191,
+      "median": 0.09707795944996178,
+      "p95": 0.10114204185083508,
+      "p99": 0.10432273289188743
+    },
+    "rank_iteration_seconds[3]": {
+      "count": 800,
+      "sha256": "946e2c1c8b9c9d98754d25b7fdd59b45b3c6f8d2b318c645b18cf3f4db57686f",
+      "first": 0.0965041327290237,
+      "last": 0.0982252829708159,
+      "min": 0.0938724260777235,
+      "max": 0.10876721469685435,
+      "mean": 0.09739383481966797,
+      "median": 0.09710665862075984,
+      "p95": 0.10113109741359949,
+      "p99": 0.10433207685127854
+    },
+    "rank_losses[0]": {
+      "count": 800,
+      "sha256": "2e812e55b983657afedf0437dda52fb0a9a133b3d495b994021376bd9ba39e57",
+      "first": 6.46875,
+      "last": 6.46875,
+      "min": 3.765625,
+      "max": 8.25,
+      "mean": 5.82716796875,
+      "median": 5.78125,
+      "p95": 6.75,
+      "p99": 7.4375
+    },
+    "rank_losses[1]": {
+      "count": 800,
+      "sha256": "2346527efbb4faf94813e7564c328cf45848751e333ac44a2a14df2e18ca9e81",
+      "first": 5.375,
+      "last": 6.25,
+      "min": 0.9609375,
+      "max": 8.5,
+      "mean": 5.828818359375,
+      "median": 5.84375,
+      "p95": 6.6875,
+      "p99": 7.28125
+    },
+    "rank_losses[2]": {
+      "count": 800,
+      "sha256": "ada9174f2f5b5ed8b279d547800b983c321d05931415e4d04e053cdec9000f52",
+      "first": 7.15625,
+      "last": 5.0,
+      "min": 3.515625,
+      "max": 7.90625,
+      "mean": 5.85828125,
+      "median": 5.84375,
+      "p95": 6.8125,
+      "p99": 7.25
+    },
+    "rank_losses[3]": {
+      "count": 800,
+      "sha256": "1f03faf511b81e650055de02bdf8ce9b26f3a4080b159dd3c6757a1d539e841c",
+      "first": 6.0,
+      "last": 5.90625,
+      "min": 3.28125,
+      "max": 8.125,
+      "mean": 5.82765625,
+      "median": 5.84375,
+      "p95": 6.65625,
+      "p99": 7.21875
+    }
+  },
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

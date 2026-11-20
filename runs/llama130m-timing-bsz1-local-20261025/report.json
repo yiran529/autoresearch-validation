@@ -1,0 +1,519 @@
+{
+  "status": "completed",
+  "plan_hash": "ede26f709e1b36768660b9e3beba29c09229bdbf47826c275e82a29df75fc64a",
+  "recipe": "llama130m-muon-timing-bsz1-local-v1",
+  "evaluation_split": "none",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.11484633139625658
+      },
+      "peak_memory_bytes": 2287229952,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-s1243-r1",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "completed",
+      "total_wall_seconds": 327.8504110048525
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.09939533383352682
+      },
+      "peak_memory_bytes": 2335422464,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243-r1",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "completed",
+      "total_wall_seconds": 292.8945391778834
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.09859751698968466
+      },
+      "peak_memory_bytes": 2335422464,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243-r1",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 293.04833533102646
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.10638171218743082
+      },
+      "peak_memory_bytes": 2068188672,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243-r1",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "completed",
+      "total_wall_seconds": 310.3608412761241
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.07977391997992526
+      },
+      "peak_memory_bytes": 1798441984,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243-r1",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 253.7845123372972
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.11568415574904066
+      },
+      "peak_memory_bytes": 2287371776,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-s1243-r2",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "completed",
+      "total_wall_seconds": 329.9041349487379
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.09799070414504968
+      },
+      "peak_memory_bytes": 2335422464,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243-r2",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "completed",
+      "total_wall_seconds": 291.18747283006087
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.09740080819115975
+      },
+      "peak_memory_bytes": 2335422464,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243-r2",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 290.08988534333184
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.10724107978923712
+      },
+      "peak_memory_bytes": 2068225024,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243-r2",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "completed",
+      "total_wall_seconds": 311.0155532071367
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.08160066633485258
+      },
+      "peak_memory_bytes": 1798445056,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243-r2",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 2,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 258.40049373498186
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.11452441320114304
+      },
+      "peak_memory_bytes": 2287310848,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-s1243-r3",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "completed",
+      "total_wall_seconds": 325.83591288886964
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.09930669646884781
+      },
+      "peak_memory_bytes": 2335422464,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n023-engineer-maxu-s1243-r3",
+      "method_id": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+      "process_status": "completed",
+      "total_wall_seconds": 291.91731992410496
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.09774078839633148
+      },
+      "peak_memory_bytes": 2335422464,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243-r3",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 291.2651955699548
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.10708696880377828
+      },
+      "peak_memory_bytes": 2068191232,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n020-engineer-maxu-s1243-r3",
+      "method_id": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "72a57d8aa3e1c5b85fcc0e5240c353fd97c77363",
+      "process_status": "completed",
+      "total_wall_seconds": 311.596372904256
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "mean_iteration_seconds": 0.07936738777032587
+      },
+      "peak_memory_bytes": 1798381568,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243-r3",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 3,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 253.32402299996465
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.035072411416331314
+      },
+      "total_wall_speedup": 0.7740863022237936,
+      "measured_step_speedup": 0.6946144383548458
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.01545099756272976
+      },
+      "total_wall_speedup": 1.1193462736624782,
+      "measured_step_speedup": 1.1554499287522693
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.019621413853601555
+      },
+      "total_wall_speedup": 0.8664706178873702,
+      "measured_step_speedup": 0.8025922033074042
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.016248814406571915
+      },
+      "total_wall_speedup": 1.1187588239821042,
+      "measured_step_speedup": 1.1647994280451492
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.0188235970097594
+      },
+      "total_wall_speedup": 0.866015881136547,
+      "measured_step_speedup": 0.809086500507627
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.008464619208825755
+      },
+      "total_wall_speedup": 1.0563523724733306,
+      "measured_step_speedup": 1.0795683678592443
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.02660779220750556
+      },
+      "total_wall_speedup": 0.817707901853212,
+      "measured_step_speedup": 0.7498837755062067
+    },
+    {
+      "method": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.035072411416331314
+      },
+      "total_wall_speedup": 1.2918456212533433,
+      "measured_step_speedup": 1.4396475868950294
+    },
+    {
+      "method": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.03408348941418808
+      },
+      "total_wall_speedup": 0.7832593361557392,
+      "measured_step_speedup": 0.7053746107796554
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.01769345160399098
+      },
+      "total_wall_speedup": 1.1329612903411967,
+      "measured_step_speedup": 1.180562551911051
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.0163900378101971
+      },
+      "total_wall_speedup": 0.8874025081627954,
+      "measured_step_speedup": 0.8327388505552943
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.018283347557880913
+      },
+      "total_wall_speedup": 1.1372479759447127,
+      "measured_step_speedup": 1.1877124830627468
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.015800141856307168
+      },
+      "total_wall_speedup": 0.8907600946829137,
+      "measured_step_speedup": 0.8377822304585228
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.008443075959803537
+      },
+      "total_wall_speedup": 1.0607319522989302,
+      "measured_step_speedup": 1.078729867103137
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.025640413454384545
+      },
+      "total_wall_speedup": 0.8308282047968414,
+      "measured_step_speedup": 0.7609086601442645
+    },
+    {
+      "method": "dense",
+      "seed": 1243,
+      "repetition": 2,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.03408348941418808
+      },
+      "total_wall_speedup": 1.2767163490294677,
+      "measured_step_speedup": 1.41768641048009
+    },
+    {
+      "method": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.03515702543081717
+      },
+      "total_wall_speedup": 0.7774588772428039,
+      "measured_step_speedup": 0.6930171965249915
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.01521771673229523
+      },
+      "total_wall_speedup": 1.11619246495406,
+      "measured_step_speedup": 1.1532395827613597
+    },
+    {
+      "method": "n023-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.019939308698521938
+      },
+      "total_wall_speedup": 0.8677937405900612,
+      "measured_step_speedup": 0.7992148625669283
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.01678362480481156
+      },
+      "total_wall_speedup": 1.118691549298453,
+      "measured_step_speedup": 1.1717156683528605
+    },
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.018373400626005607
+      },
+      "total_wall_speedup": 0.869736675898588,
+      "measured_step_speedup": 0.8120191076063059
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.007437444397364754
+      },
+      "total_wall_speedup": 1.0456986705329494,
+      "measured_step_speedup": 1.0694523757693881
+    },
+    {
+      "method": "n020-engineer-maxu",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": 0.027719581033452415
+      },
+      "total_wall_speedup": 0.8129877143268396,
+      "measured_step_speedup": 0.741148887272693
+    },
+    {
+      "method": "dense",
+      "seed": 1243,
+      "repetition": 3,
+      "baseline": "greedylore-engineer",
+      "metric_deltas_candidate_minus_baseline": {
+        "mean_iteration_seconds": -0.03515702543081717
+      },
+      "total_wall_speedup": 1.286241664056137,
+      "measured_step_speedup": 1.4429656363713887
+    }
+  ],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

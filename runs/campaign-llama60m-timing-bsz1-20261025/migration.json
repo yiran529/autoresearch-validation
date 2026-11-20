@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/llama60m-timing-bsz1-20261025",
+  "destination": "runs/campaign-llama60m-timing-bsz1-20261025",
+  "entries": {
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "590e69a45babe4cba91302015fe6d1344d8a99220fb8cd5111bb651245a590a3",
+        "size": 471
+      }
+    }
+  },
+  "legacy_source": {
+    "experiment.json": {
+      "kind": "file",
+      "sha256": "98c7fece4aa982f326ffa0fac1da210d7fa49b4ca27bf00d93a67f7eb895e18d",
+      "size": 760
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "id": "n023-engineer-maxu-resnet-v1",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "63205995a2c0380e7bab2c254a001df3306741bd",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "resnet"
+  ],
+  "support_notes": {
+    "resnet": "Native4D conv gradients flatten(out_channels,-1); canonical linear classifier excluded via thin registration bridge. Source unchanged; synthetic/real convergence evidence recorded separately."
+  },
+  "parameters": {
+    "compressor": "top_subspace",
+    "compress_rank": 32,
+    "update_proj_gap": 200,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 1.0,
+    "beta_ef": 0.0,
+    "error_inherit": 0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "c4/run_llama_pretraining.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "c4/table_v_timing.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "comm_hooks/block_sparse_cuda.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "comm_hooks/block_sparse_hook.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "comm_hooks/subspace_hook.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "comm_hooks/utils.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "Legacy candidate CIFAR entry not imported; canonical frozen train_ddp.py/models/optimizer provide shared ResNet recipe. Candidate communication hook overlay retained."
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "Legacy candidate CIFAR entry not imported; canonical frozen train_ddp.py/models/optimizer provide shared ResNet recipe. Candidate communication hook overlay retained."
+    }
+  },
+  "selection_provenance": {
+    "node": "N023",
+    "implementation_sha": "63205995a2c0380e7bab2c254a001df3306741bd",
+    "parameter_sha": "63205995a2c0380e7bab2c254a001df3306741bd",
+    "historical_U": 1.3370052396281555,
+    "U_stage": "engineering",
+    "U_reference": {
+      "mode": "engineering",
+      "commit_hash": "382bfae897a4db84af45e021ed1952bab7584445",
+      "quality_anchor": "d6009710690cd4f1985ec6f00f03a94e5acf504a",
+      "contract_hash": "9641a65a390ca5b9bd3b9fe56963fde33a89b9ce27eac7b6b47bd4da5e28588f",
+      "quality_source": "inherited (provisional)",
+      "quality": {
+        "llama60m_adamw": 3.825115323706282,
+        "llama130m_muon": 3.797413772351918
+      },
+      "timing": {
+        "130m_adamw_bf16": 0.07864746174484026,
+        "130m_adamw_fp32": 0.10955295246763853
+      },
+      "timing_protocol": {
+        "version": "bounded-cycles-v2",
+        "minimum_iterations": 400,
+        "maximum_iterations": 800,
+        "period_steps": 200,
+        "requested_steps": null,
+        "host_override": null,
+        "measured_iterations": 400,
+        "window_covers_period": true,
+        "reference_window_matches": true,
+        "cycle_evidence": [
+          {
+            "repetition": 0,
+            "cell": "130m_adamw_bf16",
+            "confirmed": true,
+            "reason": null,
+            "event_count_per_rank": 2,
+            "coverage_scope": "declared_periods"
+          },
+          {
+            "repetition": 0,
+            "cell": "130m_adamw_fp32",
+            "confirmed": true,
+            "reason": null,
+            "event_count_per_rank": 2,
+            "coverage_scope": "declared_periods"
+          },
+          {
+            "repetition": 1,
+            "cell": "130m_adamw_fp32",
+            "confirmed": true,
+            "reason": null,
+            "event_count_per_rank": 2,
+            "coverage_scope": "declared_periods"
+          },
+          {
+            "repetition": 1,
+            "cell": "130m_adamw_bf16",
+            "confirmed": true,
+            "reason": null,
+            "event_count_per_rank": 2,
+            "coverage_scope": "declared_periods"
+          }
+        ]
+      },
+      "hardware_comparison": {
+        "status": "comparable",
+        "allowed": true,
+        "reason": null,
+        "baseline": {
+          "gpu_uuids": [
+            "GPU-27a23dc7-1b91-44b7-092c-93a30892ef4a",
+            "GPU-c6310a68-2302-2147-b92a-22049a5253d0",
+            "GPU-e6622753-895a-f8fc-6082-ac71bbfa0037",
+            "GPU-f7d3c0fb-aed7-235f-7332-68966b63e0c5"
+          ],
+          "gpu_names": [
+            "NVIDIA GeForce RTX 4090",
+            "NVIDIA GeForce RTX 4090",
+            "NVIDIA GeForce RTX 4090",
+            "NVIDIA GeForce RTX 4090"
+          ],
+          "topology_fingerprint": "16c8c8d8545d0950931908de357d479caef5bb4f76ab35fd3e4cf3eefdc6f416",
+          "numa_nodes": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "nccl_env": {
+            "NCCL_P2P_DISABLE": "1",
+            "NCCL_SHM_DISABLE": "0",
+            "NCCL_DEBUG": "INFO"
+          }
+        },
+        "candidate": {
+          "gpu_uuids": [
+            "GPU-27a23dc7-1b91-44b7-092c-93a30892ef4a",
+            "GPU-c6310a68-2302-2147-b92a-22049a5253d0",
+            "GPU-e6622753-895a-f8fc-6082-ac71bbfa0037",
+            "GPU-f7d3c0fb-aed7-235f-7332-68966b63e0c5"
+          ],
+          "gpu_names": [
+            "NVIDIA GeForce RTX 4090",
+            "NVIDIA GeForce RTX 4090",
+            "NVIDIA GeForce RTX 4090",
+            "NVIDIA GeForce RTX 4090"
+          ],
+          "topology_fingerprint": "16c8c8d8545d0950931908de357d479caef5bb4f76ab35fd3e4cf3eefdc6f416",
+          "numa_nodes": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "nccl_env": {
+            "NCCL_P2P_DISABLE": "1",
+            "NCCL_SHM_DISABLE": "0",
+            "NCCL_DEBUG": "INFO"
+          }
+        },
+        "differences": {},
+        "warnings": []
+      }
+    },
+    "verified_state_assignments": {
+      "matrix_approximation_rank": "matrix_approximation_rank",
+      "update_proj_gap": "update_proj_gap",
+      "beta_ef": "beta_ef",
+      "error_inherit": "error_inherit",
+      "sparse_block_size": "256",
+      "sparse_k": "8"
+    },
+    "note": "Historical U read as stored, not recomputed across Research/Engineering references. Engineer implementation has identical key parameter assignments."
+  },
+  "resnet_adaptation": {
+    "parent_method": "n023-engineer-maxu",
+    "parent_method_hash": "69e44c3a04d8faec7c12ab13fe114ee43dc3665380cbf42f15c2662bc8aed199",
+    "source_changed": false,
+    "parameter_changes": false,
+    "classifier_mapping": [
+      "linear"
+    ]
+  }
+}

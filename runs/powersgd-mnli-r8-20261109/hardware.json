@@ -1,0 +1,34 @@
+{
+  "gpus": [
+    {
+      "index": "4",
+      "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "5",
+      "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    }
+  ],
+  "selection": "4,5,6,7",
+  "lock_scope": "this scaffold only; use a dedicated allocation"
+}

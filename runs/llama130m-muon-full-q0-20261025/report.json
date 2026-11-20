@@ -1,0 +1,74 @@
+{
+  "status": "partial_or_failed",
+  "plan_hash": "5172ae522ef730783d68f519dc0e8a1a686160ed945b094a9bd2ba034216ad56",
+  "recipe": "llama130m-muon-full-online-v1",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "failed",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "greedylore-engineer-s1243",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "failed",
+      "total_wall_seconds": 789.1780126439407
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.167041395366774,
+        "final_eval_ppl": 23.73715151774143
+      },
+      "peak_memory_bytes": 9201291776,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 11750.192879281007
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.13208938496926,
+        "final_eval_ppl": 22.921822054792226
+      },
+      "peak_memory_bytes": 8664977920,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 11441.84116256563
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "final_eval_loss": 0.034952010397514055,
+        "final_eval_ppl": 0.8153294629492045
+      },
+      "total_wall_speedup": 0.9737577314786815
+    }
+  ],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

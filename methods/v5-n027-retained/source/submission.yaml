@@ -1,0 +1,33 @@
+mode: engineering
+node_id: N027
+node_type: research
+base_commit: 1e1d84cd7e5a9b053c5ac0895a47460a03d4faf7
+quality_anchor: 1e1d84cd7e5a9b053c5ac0895a47460a03d4faf7
+analysis_refs:
+  parent_research: nodes/N024/research_analysis_v1.md
+  parent_engineering: nodes/N024/engineering_analysis_v1.md
+change_summary: Matched control restoring the Research codec and DLPack handoff verbatim;
+  preserve inherited runtime compatibility fixes.
+selection_rationale: Pointer candidate3c70cca scored1.620921 vs Research1.580331,
+  but isolated per-call savings are about0.14ms and formal uses1 BF16/2 FP32 buckets,
+  smaller than1.88/4.17ms observed full-step differences. Run a real source-revert
+  control to assess temporal variance; preferred optimized candidate remains3c70cca
+  subject to control. Large350M screening rules out material gain from4/8-warp batching.
+  No protocol, RNG or algorithm changes.
+semantic_self_check:
+  status: pass
+  commands:
+  - autoresearch diagnostic run --request-id n027-e-pointer-check-cost (four-rank
+    probe.py)
+  - autoresearch diagnostic run --request-id n027-e-pointer-hook-stream (four-rank
+    hook_probe.py)
+  - git apply --reverse --check .codex/notes/toolkit/references/reused_root_runtime_compatibility.patch
+  - git diff --check
+  - git diff 1e1d84cd7e5a9b053c5ac0895a47460a03d4faf7 -- comm_hooks/sparse_q4_hook.py
+    (empty)
+  limitations: 1200 byte-exact checks/rank, FP32/BF16 finite edge cases, 3-step codec
+    EF and AdamW; 174 hook/state/optimizer/custom-stream checks/rank across seven
+    updates including dense prefix. World4 actual NCCL only; no full training or universal
+    proof. CUDA source and dimensions identical to Research.
+timing:
+  period_steps: 1

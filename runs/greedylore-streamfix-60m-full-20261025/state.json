@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "jobs": {
+    "greedylore-engineer-streamfix-s1243": {
+      "status": "completed",
+      "started_at": 1792913987.52498,
+      "pid": 3930795,
+      "returncode": 0,
+      "elapsed_seconds": 4459.721324213315,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.637438061830251,
+          "final_eval_ppl": 37.99437269665306
+        },
+        "peak_memory_bytes": 9001756160,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

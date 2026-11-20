@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/v5-60m-three-idle10m-20261107",
+  "destination": "runs/campaign-v5-60m-three-idle10m-20261107",
+  "entries": {
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "589f03a2c19dd0b49ce569ebd491cf8b0f942ba9c37fadc2ceffb1a78ae19e1e",
+        "size": 154
+      }
+    },
+    "cpu-tests.log": {
+      "": {
+        "kind": "file",
+        "sha256": "dd49370cbb8507f93f4f62b8b61295cd1ba193084e5a21e89a66d925268a7544",
+        "size": 2449
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "b21d1df9709eb34dd81be2b71961bad0cee5657ff2d2e32e257e0d1fe9027bc4",
+        "size": 79
+      }
+    }
+  },
+  "legacy_source": {
+    "controller.py": {
+      "kind": "file",
+      "sha256": "7ffcf3df05c0c10e9b00733ca7d37e3f38a3393927941e60797920870c9f125f",
+      "size": 3357
+    },
+    "experiment.json": {
+      "kind": "file",
+      "sha256": "78d5b60a1fe724e4881170759ad95eb3cfa0e26704aaeb27a6e02a36a9b1fd48",
+      "size": 682
+    }
+  }
+}

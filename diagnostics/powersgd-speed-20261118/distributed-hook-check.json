@@ -1,0 +1,293 @@
+{
+  "status": "passed",
+  "scope": "Four-rank hook with actual350M parameter shapes, synthetic gradients; not training",
+  "hardware": [
+    {
+      "index": "4",
+      "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "5",
+      "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": "0",
+      "utilization": "0"
+    }
+  ],
+  "checks_per_rank": 8,
+  "all_gradient_p_q_ef_bitwise_equal": true,
+  "reference_seconds": 3.104315461404622,
+  "graph_seconds": 1.2460046602413057,
+  "speedup": 2.491415610599264,
+  "ranks": [
+    {
+      "rank": 0,
+      "checks": [
+        {
+          "step": 1,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 2,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 3,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 4,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 5,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 6,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 7,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 8,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        }
+      ],
+      "timings": [
+        {
+          "reference_seconds": 3.184818943031132,
+          "graph_seconds": 1.5839777886867523
+        },
+        {
+          "reference_seconds": 3.1010219249874353,
+          "graph_seconds": 1.6156739834696054
+        },
+        {
+          "reference_seconds": 3.079353054985404,
+          "graph_seconds": 1.3998297965154052
+        },
+        {
+          "reference_seconds": 3.0815654741600156,
+          "graph_seconds": 0.18942029681056738
+        },
+        {
+          "reference_seconds": 3.0330769792199135,
+          "graph_seconds": 1.425250337459147
+        }
+      ],
+      "graph_cache_entries": 12,
+      "parameters": 367969280,
+      "dtype": "bfloat16",
+      "torch": "2.4.0+cu121"
+    },
+    {
+      "rank": 1,
+      "checks": [
+        {
+          "step": 1,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 2,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 3,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 4,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 5,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 6,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 7,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 8,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        }
+      ],
+      "timings": [
+        {
+          "reference_seconds": 3.1866858657449484,
+          "graph_seconds": 1.5809648390859365
+        },
+        {
+          "reference_seconds": 3.112683393061161,
+          "graph_seconds": 1.6276820246130228
+        },
+        {
+          "reference_seconds": 3.074249530211091,
+          "graph_seconds": 1.4028464676812291
+        },
+        {
+          "reference_seconds": 3.0709827737882733,
+          "graph_seconds": 0.17576730530709028
+        },
+        {
+          "reference_seconds": 3.024480251595378,
+          "graph_seconds": 1.41874576266855
+        }
+      ],
+      "graph_cache_entries": 12,
+      "parameters": 367969280,
+      "dtype": "bfloat16",
+      "torch": "2.4.0+cu121"
+    },
+    {
+      "rank": 2,
+      "checks": [
+        {
+          "step": 1,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 2,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 3,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 4,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 5,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 6,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 7,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 8,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        }
+      ],
+      "timings": [
+        {
+          "reference_seconds": 3.1918340800330043,
+          "graph_seconds": 1.5848241746425629
+        },
+        {
+          "reference_seconds": 3.101734008640051,
+          "graph_seconds": 1.6073871869593859
+        },
+        {
+          "reference_seconds": 3.0839746752753854,
+          "graph_seconds": 1.3887295611202717
+        },
+        {
+          "reference_seconds": 3.074229103513062,
+          "graph_seconds": 0.17973473016172647
+        },
+        {
+          "reference_seconds": 3.022075153887272,
+          "graph_seconds": 1.4022520799189806
+        }
+      ],
+      "graph_cache_entries": 12,
+      "parameters": 367969280,
+      "dtype": "bfloat16",
+      "torch": "2.4.0+cu121"
+    },
+    {
+      "rank": 3,
+      "checks": [
+        {
+          "step": 1,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 2,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 3,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 4,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 5,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 6,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 7,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        },
+        {
+          "step": 8,
+          "gradient_and_p_q_ef_bitwise_equal": true
+        }
+      ],
+      "timings": [
+        {
+          "reference_seconds": 3.202124370262027,
+          "graph_seconds": 1.5750784995034337
+        },
+        {
+          "reference_seconds": 3.102970448322594,
+          "graph_seconds": 1.6090100780129433
+        },
+        {
+          "reference_seconds": 3.0827328581362963,
+          "graph_seconds": 1.3947586817666888
+        },
+        {
+          "reference_seconds": 3.0729699162766337,
+          "graph_seconds": 0.18121682107448578
+        },
+        {
+          "reference_seconds": 3.041229394264519,
+          "graph_seconds": 1.4137565586715937
+        }
+      ],
+      "graph_cache_entries": 12,
+      "parameters": 367969280,
+      "dtype": "bfloat16",
+      "torch": "2.4.0+cu121"
+    }
+  ]
+}

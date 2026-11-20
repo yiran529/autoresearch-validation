@@ -1,0 +1,40 @@
+{
+  "status": "planned",
+  "plan_hash": "b0cea009cf22d3a7935acc4269af212f9501c7ad62b9908b092656e7e18a924a",
+  "recipe": "resnet18-cifar10-muon-full-v1",
+  "evaluation_split": "test",
+  "jobs": [
+    {
+      "status": "unverified",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "original_greedylore-s1243",
+      "method_id": "original_greedylore",
+      "seed": 1243,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "planned",
+      "total_wall_seconds": null
+    },
+    {
+      "status": "unverified",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "planned",
+      "total_wall_seconds": null
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

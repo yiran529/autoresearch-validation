@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/powersgd-350m-full-20261118",
+  "destination": "runs/campaign-powersgd-350m-full-20261118",
+  "entries": {
+    "controller.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "1feeeef38d61db21d897f9c95946525957077c79929ead11cc9e5bcd851d1a0c",
+        "size": 1063
+      }
+    },
+    "provenance.json": {
+      "": {
+        "kind": "file",
+        "sha256": "99e1674e71e2387769571df7f83060f4631cfd09d84d9652241ee64ea7ecfa6f",
+        "size": 1259
+      }
+    },
+    "queue.json": {
+      "": {
+        "kind": "file",
+        "sha256": "a75668de496e819f32e4fa32107000b47f27232875233b663fced62090bb79dd",
+        "size": 196
+      }
+    },
+    "review.json": {
+      "": {
+        "kind": "file",
+        "sha256": "ea641940c7b729b99decfa09aad08f33212d32159aacd6dc2d0390663226f4ca",
+        "size": 1286
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "bd5aba0f2cbaa9021960a0c574cf0ebf856713a4ad7a3d505aa75cf7a8261c80",
+        "size": 93
+      }
+    }
+  },
+  "legacy_source": {
+    ".gitignore": {
+      "kind": "file",
+      "sha256": "d478c8f3673ede274e18c5b2e57a163c83b5f12ee6c132b301973253846ad3bb",
+      "size": 67
+    },
+    "README.md": {
+      "kind": "file",
+      "sha256": "4cf3ac2be3cf45e07ef373ada2845f6dac02e0f22c5a29033693c5a240556d33",
+      "size": 1843
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "7b39549b74a182faba8707b80668e3f81037f52658c0f2cda4178dc859c338b0",
+      "size": 4657
+    },
+    "full-recipe.json": {
+      "kind": "file",
+      "sha256": "71551b60972f2356f3084ef0b06967865593ba3cc2ff0c90ac50b44f471e9b1f",
+      "size": 1745
+    },
+    "full.json": {
+      "kind": "file",
+      "sha256": "207dd2cb6ded904060a4a25b1a68dc64297541f0fa1bcf90fd0cad8d4ebb0e0d",
+      "size": 612
+    },
+    "launch.sh": {
+      "kind": "file",
+      "sha256": "d89c3963341df3ef840f87aae4a5a8ced5f22254ea399ea9a492cdd3867187e1",
+      "size": 259
+    },
+    "pause.json": {
+      "kind": "file",
+      "sha256": "1d21b68f1e38cec314e9b377c35d6d72a5b024e046b903bf89f2c8ac1bdc9a6f",
+      "size": 232
+    },
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "b3b175da418efb1eef2b89d381d8b271d223641c1163ed242466485f066596fe",
+      "size": 5677
+    },
+    "smoke-recipe.json": {
+      "kind": "file",
+      "sha256": "ec47c8271a46e61319ea3afad768bf46be3ee6ab6e61a660a3d748466e481a27",
+      "size": 1798
+    },
+    "smoke.json": {
+      "kind": "file",
+      "sha256": "ca828424274f8ce11d68e98d8dbf75f4862817884742300638d673596ecefbe3",
+      "size": 617
+    }
+  }
+}

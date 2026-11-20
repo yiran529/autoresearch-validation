@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "jobs": {
+    "greedylore-engineer-streamfix-s1243": {
+      "status": "completed",
+      "started_at": 1794029311.7097073,
+      "pid": 218347,
+      "returncode": 0,
+      "elapsed_seconds": 4505.8798022898845,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.637438061830251,
+          "final_eval_ppl": 37.99437269665306
+        },
+        "peak_memory_bytes": 9001756160,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n033-research-s1243": {
+      "status": "completed",
+      "started_at": 1794035901.9894116,
+      "pid": 304673,
+      "returncode": 0,
+      "elapsed_seconds": 4226.517599641811,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.5126557310106663,
+          "final_eval_ppl": 33.53721544420335
+        },
+        "peak_memory_bytes": 8935426048,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "dense-s1243": {
+      "status": "completed",
+      "started_at": 1794084008.108268,
+      "pid": 861387,
+      "returncode": 0,
+      "elapsed_seconds": 4251.494875824079,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 3.496805198072765,
+          "final_eval_ppl": 33.00982346984699
+        },
+        "peak_memory_bytes": 8692696064,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

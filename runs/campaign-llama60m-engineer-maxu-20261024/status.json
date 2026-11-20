@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "phase": "pretraining_non_dense",
+  "exitcodes": [
+    1,
+    0
+  ]
+}

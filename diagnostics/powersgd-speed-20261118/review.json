@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "reviewer": "/root/review_powersgd_350m",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "blocking_findings": [],
+  "plan_hash": "2f0957384c63a73f92f705233db9e6c43a3bda71cfad8dda0a9ce8ce79cc53b6",
+  "adapter_sha256": "387e057f3ffa41717a9ad54a263848024eb372f65524bcb9cf483376dc107b62",
+  "conclusion": "原始 PowerSGD 算法、精度、EF14、P/Q 更新及通信逻辑保持不变；仅将原始正交化 kernels 改为 CUDA graph replay。组件及四卡完整 hook 的 BF16 位模式对照通过，双线程同流与异流检查通过。真实四卡350M Muon BF16 batch128的多bucket DDP短测完成，每rank622次hook、28次完整backward；20个测量步骤的各rank loss数组完全相同，最大差值0。测量步耗时3.957877秒降至1.643341秒，加速2.4084倍。",
+  "limitations": [
+    "组件、合成梯度完整hook及一次有界真实模型paired timing，不构成60000步收敛验证。",
+    "首次graph capture增加启动同步及缓存内存开销。",
+    "原正式训练仍为interrupted，未重启且无可续训checkpoint。"
+  ]
+}

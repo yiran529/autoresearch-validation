@@ -1,0 +1,35 @@
+{
+  "status": "partial_or_failed",
+  "jobs": {
+    "greedylore-engineer-s1243": {
+      "status": "failed",
+      "started_at": 1792853177.3736973,
+      "pid": 3139023,
+      "returncode": 1,
+      "elapsed_seconds": 23.016786118038,
+      "validation": {
+        "status": "unverified",
+        "errors": [
+          "No final results"
+        ],
+        "metrics": {}
+      }
+    },
+    "n031-engineer-maxu-s1243": {
+      "status": "failed",
+      "started_at": 1792853200.579544,
+      "pid": 3142462,
+      "returncode": 1,
+      "elapsed_seconds": 124.54883964685723,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.4102767592218394
+        },
+        "peak_memory_bytes": 8079137792,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

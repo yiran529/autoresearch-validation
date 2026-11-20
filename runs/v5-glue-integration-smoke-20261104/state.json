@@ -1,0 +1,101 @@
+{
+  "status": "completed",
+  "jobs": {
+    "dense-s1243": {
+      "status": "completed",
+      "started_at": 1793797281.337233,
+      "pid": 1610751,
+      "returncode": 0,
+      "elapsed_seconds": 16.13464213628322,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.4375
+        },
+        "peak_memory_bytes": 3022825472,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r8-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793797298.051143,
+      "pid": 1611270,
+      "returncode": 0,
+      "elapsed_seconds": 20.543024071957916,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.4375
+        },
+        "peak_memory_bytes": 3820023808,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r16-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793797319.1643891,
+      "pid": 1611791,
+      "returncode": 0,
+      "elapsed_seconds": 20.57155199861154,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.4375
+        },
+        "peak_memory_bytes": 3820023808,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n019-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793797340.311921,
+      "pid": 1612336,
+      "returncode": 0,
+      "elapsed_seconds": 14.462770141195506,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.4375
+        },
+        "peak_memory_bytes": 3524361216,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n033-research-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793797355.3462698,
+      "pid": 1612789,
+      "returncode": 0,
+      "elapsed_seconds": 15.01026667887345,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.4375
+        },
+        "peak_memory_bytes": 3521638400,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n022-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793797370.9314704,
+      "pid": 1613329,
+      "returncode": 0,
+      "elapsed_seconds": 14.624773440416902,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_accuracy": 0.4375
+        },
+        "peak_memory_bytes": 4022805504,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

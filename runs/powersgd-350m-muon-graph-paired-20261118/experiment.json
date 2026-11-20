@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-350m-muon-graph-paired-20261118",
+  "methods": [
+    "powersgd-paper-r32",
+    "powersgd-r32-graph-v1"
+  ],
+  "reference_methods": [
+    "powersgd-paper-r32"
+  ],
+  "recipe": "/home/wyr/CORAL/validation/greedylore-validation/diagnostics/powersgd-speed-20261118/paired-timing-recipe.json",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 1,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 600,
+    "tracking": {
+      "mode": "disabled"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

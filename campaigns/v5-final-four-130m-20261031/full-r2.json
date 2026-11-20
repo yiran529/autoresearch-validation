@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "v5-final-four-130m-20261031-r2",
+  "methods": [
+    "v5-n019-engineer",
+    "v5-n027-retained",
+    "v5-n033-research",
+    "v5-n022-engineer"
+  ],
+  "reference_methods": [],
+  "recipe": "llama130m-muon-full-online-v1",
+  "seeds": [
+    1243
+  ],
+  "repetitions": 1,
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "online",
+      "project": "GreedyLore-Validation",
+      "group": "v5-final-four-130m-20261031"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "jobs": [
+    {
+      "run": "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-bf16-timing-r1-20261113",
+      "precision": "bf16",
+      "mean_iteration_seconds": 3.276165380552411,
+      "hardware": {
+        "gpus": [
+          {
+            "index": "4",
+            "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "5",
+            "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "6",
+            "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "7",
+            "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          }
+        ],
+        "selection": "4,5,6,7",
+        "lock_scope": "this scaffold only; use a dedicated allocation"
+      }
+    },
+    {
+      "run": "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-fp32-timing-r1-20261113",
+      "precision": "fp32",
+      "mean_iteration_seconds": 0.5381336439424195,
+      "hardware": {
+        "gpus": [
+          {
+            "index": "4",
+            "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "5",
+            "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "6",
+            "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "7",
+            "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          }
+        ],
+        "selection": "4,5,6,7",
+        "lock_scope": "this scaffold only; use a dedicated allocation"
+      }
+    },
+    {
+      "run": "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-bf16-timing-r2-20261113",
+      "precision": "bf16",
+      "mean_iteration_seconds": 3.349101285735378,
+      "hardware": {
+        "gpus": [
+          {
+            "index": "4",
+            "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "5",
+            "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "6",
+            "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "7",
+            "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          }
+        ],
+        "selection": "4,5,6,7",
+        "lock_scope": "this scaffold only; use a dedicated allocation"
+      }
+    },
+    {
+      "run": "/home/wyr/CORAL/validation/greedylore-validation/runs/powersgd-350m-fp32-timing-r2-20261113",
+      "precision": "fp32",
+      "mean_iteration_seconds": 0.5695321274246089,
+      "hardware": {
+        "gpus": [
+          {
+            "index": "4",
+            "uuid": "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "5",
+            "uuid": "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "6",
+            "uuid": "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          },
+          {
+            "index": "7",
+            "uuid": "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9",
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_mib": "0",
+            "utilization": "0"
+          }
+        ],
+        "selection": "4,5,6,7",
+        "lock_scope": "this scaffold only; use a dedicated allocation"
+      }
+    }
+  ],
+  "mean_iteration_seconds": {
+    "bf16": 3.3126333331438946,
+    "fp32": 0.5538328856835142
+  },
+  "speedup_vs_historical_dense": {
+    "bf16": 0.04630847563633342,
+    "fp32": 0.4195236613897523
+  },
+  "geomean_speedup": 0.13938257155158507,
+  "comparison_scope": "Historical Dense; GPU topology and run conditions may differ. No same-batch Dense measured."
+}

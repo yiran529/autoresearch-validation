@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "v5-n033-research-resnet-v1",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "2410afc4f56b989b4040e0b9930011dfbf428102",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "resnet"
+  ],
+  "support_notes": {
+    "resnet": "Frozen N33 full DDP-bucket codec, including convolution, normalization and linear classifier. Adapter is identical to approved Research source; no masks, precision or quantization rule changes. Synthetic real-architecture DDP verification precedes full training."
+  },
+  "parameters": {
+    "compressor": "sparse_q4_ef",
+    "compress_rank": 32,
+    "update_proj_gap": 1,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 1.0,
+    "beta_ef": 0.0,
+    "error_inherit": 0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "c4/run_llama_pretraining.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed language driver differences: local tokenizer, contract/results, optional checkpoint/replay/diagnostic plumbing and method_policy dispatch. No change to loss.backward, gradient clipping, optimizer.step or scheduler rule; staged replay disabled. Explicit adapter parameters reproduce method_policy; scaffold supplies tokenizer, fixed full budget and no checkpoint saving. Timing driver unused in this pretraining-only campaign."
+    },
+    "c4/table_v_timing.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed language driver differences: local tokenizer, contract/results, optional checkpoint/replay/diagnostic plumbing and method_policy dispatch. No change to loss.backward, gradient clipping, optimizer.step or scheduler rule; staged replay disabled. Explicit adapter parameters reproduce method_policy; scaffold supplies tokenizer, fixed full budget and no checkpoint saving. Timing driver unused in this pretraining-only campaign."
+    },
+    "comm_hooks/block_top1_hook.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "comm_hooks/sparse_q4_hook.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "comm_hooks/subspace_hook.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "comm_hooks/utils.py": {
+      "disposition": "overlay",
+      "reason": "Frozen source communication implementation and registration dependencies, overlaid unchanged."
+    },
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "CIFAR-specific entry points/helpers are not imported by the LLaMA-only baseline driver or selected communication hook."
+    },
+    "pytorch-cifar/train_ddp.py": {
+      "disposition": "not_required",
+      "reason": "CIFAR-specific entry points/helpers are not imported by the LLaMA-only baseline driver or selected communication hook."
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "CIFAR-specific entry points/helpers are not imported by the LLaMA-only baseline driver or selected communication hook."
+    }
+  },
+  "selection_provenance": {
+    "run": "/home/wyr/coral-experiments/greedylore-v5-dense-reuse-20261027/run",
+    "node": "N033",
+    "implementation_sha": "2410afc4f56b989b4040e0b9930011dfbf428102",
+    "parameter_sha": "2410afc4f56b989b4040e0b9930011dfbf428102",
+    "selection": "explicit approved fixed version; N033 Research override",
+    "utility": {
+      "version": "mean-log-ppl-ratio-v2",
+      "advisory_only": true,
+      "formula": "S * exp(-mean(candidate_loss - baseline_loss over the two language workloads))",
+      "value": null,
+      "speedup": null,
+      "mean_loss_delta": null,
+      "reference": null,
+      "reason": "fixed_root_reference_unavailable",
+      "quality_source": "measured"
+    },
+    "quality_source": "measured"
+  }
+}

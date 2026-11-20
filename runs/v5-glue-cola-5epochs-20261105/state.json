@@ -1,0 +1,101 @@
+{
+  "status": "completed",
+  "jobs": {
+    "dense-s1243": {
+      "status": "completed",
+      "started_at": 1793931421.7973971,
+      "pid": 3314442,
+      "returncode": 0,
+      "elapsed_seconds": 207.30178410187364,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matthews_correlation": 0.6107029287090541
+        },
+        "peak_memory_bytes": 3014168064,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r8-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793931629.6702743,
+      "pid": 3316637,
+      "returncode": 0,
+      "elapsed_seconds": 298.55285101011395,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matthews_correlation": 0.582897151722857
+        },
+        "peak_memory_bytes": 3820172288,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r16-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793931928.801448,
+      "pid": 3319675,
+      "returncode": 0,
+      "elapsed_seconds": 300.1007132669911,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matthews_correlation": 0.608358147712731
+        },
+        "peak_memory_bytes": 3820172288,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n019-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793932229.4753513,
+      "pid": 3322894,
+      "returncode": 0,
+      "elapsed_seconds": 146.14064967539161,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matthews_correlation": 0.6206942584175241
+        },
+        "peak_memory_bytes": 3520926720,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n033-research-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793932376.1939971,
+      "pid": 3324556,
+      "returncode": 0,
+      "elapsed_seconds": 147.44388981722295,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matthews_correlation": 0.6233293453039225
+        },
+        "peak_memory_bytes": 3514707968,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n022-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793932524.212317,
+      "pid": 3326204,
+      "returncode": 0,
+      "elapsed_seconds": 157.88385685300454,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_matthews_correlation": 0.6306644810568987
+        },
+        "peak_memory_bytes": 4016135680,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

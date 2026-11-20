@@ -1,0 +1,187 @@
+{
+  "status": "completed",
+  "records": [
+    {
+      "case": "synthetic_check-greedylore-engineer-streamfix-resnet-v1",
+      "method_id": "greedylore-engineer-streamfix-resnet-v1",
+      "phase": "synthetic_check",
+      "returncode": 0,
+      "elapsed_seconds": 27.63410210609436,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 100.0,
+          "final_test_loss": 6.003411442634388e-06
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "synthetic_check-n023-engineer-maxu-resnet-v1",
+      "method_id": "n023-engineer-maxu-resnet-v1",
+      "phase": "synthetic_check",
+      "returncode": 0,
+      "elapsed_seconds": 26.887265920639038,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 100.0,
+          "final_test_loss": 2.9149324376476216e-06
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "synthetic_check-n031-engineer-maxu-resnet-v1",
+      "method_id": "n031-engineer-maxu-resnet-v1",
+      "phase": "synthetic_check",
+      "returncode": 0,
+      "elapsed_seconds": 26.581278085708618,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 100.0,
+          "final_test_loss": 2.911190541965425e-06
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "synthetic_check-n020-engineer-maxu-resnet-v1",
+      "method_id": "n020-engineer-maxu-resnet-v1",
+      "phase": "synthetic_check",
+      "returncode": 0,
+      "elapsed_seconds": 28.485124349594116,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 100.0,
+          "final_test_loss": 2.1783188017820976e-06
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "synthetic_check-dense",
+      "method_id": "dense",
+      "phase": "synthetic_check",
+      "returncode": 0,
+      "elapsed_seconds": 23.72648024559021,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 100.0,
+          "final_test_loss": 2.781823127406824e-06
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "full-greedylore-engineer-streamfix-resnet-v1",
+      "method_id": "greedylore-engineer-streamfix-resnet-v1",
+      "phase": "full",
+      "returncode": 0,
+      "elapsed_seconds": 727.0975484848022,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 93.1,
+          "final_test_loss": 0.3484928566962481
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "full-n023-engineer-maxu-resnet-v1",
+      "method_id": "n023-engineer-maxu-resnet-v1",
+      "phase": "full",
+      "returncode": 0,
+      "elapsed_seconds": 639.3242139816284,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 93.0,
+          "final_test_loss": 0.354430678114295
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "full-n031-engineer-maxu-resnet-v1",
+      "method_id": "n031-engineer-maxu-resnet-v1",
+      "phase": "full",
+      "returncode": 0,
+      "elapsed_seconds": 635.1470420360565,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 92.57,
+          "final_test_loss": 0.35747086234390735
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "full-n020-engineer-maxu-resnet-v1",
+      "method_id": "n020-engineer-maxu-resnet-v1",
+      "phase": "full",
+      "returncode": 0,
+      "elapsed_seconds": 771.2838363647461,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 92.94,
+          "final_test_loss": 0.3480929622426629
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    {
+      "case": "full-dense",
+      "method_id": "dense",
+      "phase": "full",
+      "returncode": 0,
+      "elapsed_seconds": 475.5683944225311,
+      "valid": true,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_test_accuracy": 92.87,
+          "final_test_loss": 0.35659766346216204
+        },
+        "peak_memory_bytes": 3555717632,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  ],
+  "full_training_started": true,
+  "selection": "4,5,6,7"
+}

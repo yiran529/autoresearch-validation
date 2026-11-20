@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "original_greedylore",
+  "builtin": true,
+  "kind": "ddp_comm_hook",
+  "source": "../../vendor/greedy_lore",
+  "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "llama",
+    "resnet",
+    "glue"
+  ],
+  "support_notes": {
+    "llama": "Public registration entrypoint is bridged; local tokenizer and completion evidence injected. GPU parity not yet tested.",
+    "resnet": "Original special-case hook replaced by shared registration; original byte estimates disabled. GPU parity not yet tested.",
+    "glue": "Public registration bridged, completion fields added; accumulation fixed at 1. GPU parity not yet tested."
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "parameters": {
+    "compressor": "top_subspace",
+    "compress_rank": 32,
+    "update_proj_gap": 200,
+    "use_error_feedback": "ef14",
+    "beta_ef": 0.0,
+    "error_inherit": 0,
+    "min_compression_rate": 1.0
+  }
+}

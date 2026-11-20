@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/v5-glue-qqp-mnli-20261105",
+  "destination": "runs/campaign-v5-glue-qqp-mnli-20261105",
+  "entries": {
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "e7d60629c6bbd003fcf6a75983da14ec2d219341072f7941fea3dc857ec37294",
+        "size": 185
+      }
+    },
+    "cpu-tests.log": {
+      "": {
+        "kind": "file",
+        "sha256": "c359c1c625094fd63552d0cad4a5801d003f20a3b2d69958281b34576cc79bc5",
+        "size": 2449
+      }
+    },
+    "smoke-data": {
+      "": {
+        "kind": "directory"
+      },
+      "mnli": {
+        "kind": "directory"
+      },
+      "mnli/0.0.0": {
+        "kind": "directory"
+      },
+      "mnli/0.0.0/frozen": {
+        "kind": "directory"
+      },
+      "mnli/0.0.0/frozen/glue-train.arrow": {
+        "kind": "file",
+        "sha256": "eb0a847850a22d81bce5d2deb4638cc81908fd8587756880e9c6e4f5c2edf11c",
+        "size": 25896
+      },
+      "mnli/0.0.0/frozen/glue-validation_matched.arrow": {
+        "kind": "file",
+        "sha256": "ec9122dc79a8a909ba02d3a6d3b3842d08f4f5116b7f13ee6c7e1195ea3af04d",
+        "size": 7544
+      },
+      "mnli/0.0.0/frozen/glue-validation_mismatched.arrow": {
+        "kind": "file",
+        "sha256": "5b62f0269e0831b5231313b3bb49a5cb0da591d20076a1974abc8a8989b45bf2",
+        "size": 8992
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "1228da2d7236f2547dd9725a9d28482a63cfe36854597e4b1730c49ea0c3c221",
+        "size": 130
+      }
+    }
+  },
+  "legacy_source": {
+    "README.md": {
+      "kind": "file",
+      "sha256": "9fd171dcacda343b89966858da1462d494ef06007c3f1b2696c26b085084ceba",
+      "size": 1548
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "c7ec2bde2b9fe23efcc5ffa7b041eb4149214692fd6ed1aafb4f305dd82a7662",
+      "size": 2283
+    },
+    "mnli-evaluation-smoke.json": {
+      "kind": "file",
+      "sha256": "f130f9b063ab0a7e9f6344e8057e392bcd964f48d0601dc7e5880c6213d8b099",
+      "size": 592
+    },
+    "mnli.json": {
+      "kind": "file",
+      "sha256": "d804e2c1033bf671729426876d76b7a6cf4c5611ae0607860a546090021be71a",
+      "size": 904
+    },
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "093db2fa0d6e6a25b2e93a93e4ac9f3f05f97412f0d81174b468083782a9efaf",
+      "size": 4229
+    },
+    "qqp.json": {
+      "kind": "file",
+      "sha256": "6d459c8d65a99a277cc87342c568885af184f85707aa5e2cac659e57cd31a5c5",
+      "size": 902
+    }
+  }
+}

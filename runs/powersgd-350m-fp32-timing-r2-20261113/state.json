@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "jobs": {
+    "powersgd-paper-r32-s1243": {
+      "status": "completed",
+      "started_at": 1794879578.4643712,
+      "pid": 2097074,
+      "returncode": 0,
+      "elapsed_seconds": 325.3059376841411,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.5695321274246089
+        },
+        "peak_memory_bytes": 11222978560,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

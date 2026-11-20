@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "greedylore-engineer",
+  "kind": "ddp_comm_hook",
+  "source": "source",
+  "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+  "adapter": "adapter.py",
+  "status": "adapted",
+  "supported_workloads": [
+    "llama"
+  ],
+  "support_notes": {
+    "llama": "Pinned 60M config matches source; public DDP registration preserved; AdamW training loop unchanged. Real-model smoke required before formal launch."
+  },
+  "parameters": {
+    "compressor": "top_subspace",
+    "compress_rank": 32,
+    "update_proj_gap": 200,
+    "use_error_feedback": "ef14",
+    "min_compression_rate": 1.0,
+    "beta_ef": 0.0,
+    "error_inherit": 0
+  },
+  "overlay": [
+    "comm_hooks"
+  ],
+  "reviewed_changes": {
+    "c4/run_llama_pretraining.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "c4/table_v_timing.py": {
+      "disposition": "not_required",
+      "reason": "Reviewed differences are local tokenizer/contract metadata, optional diagnostic checkpoint and timing evidence plumbing. No optimizer/training update change. Scaffold supplies the equivalent local tokenizer, binding/result evidence and disables checkpoints."
+    },
+    "comm_hooks/subspace_hook.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "comm_hooks/utils.py": {
+      "disposition": "overlay",
+      "reason": "Fixed Engineer communication implementation and required helper/registration code; source unchanged."
+    },
+    "pytorch-cifar/main.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths."
+    },
+    "pytorch-cifar/utils.py": {
+      "disposition": "not_required",
+      "reason": "Legacy CIFAR entry files are outside this LLaMA-only campaign; no imports from these paths."
+    }
+  },
+  "selection_provenance": {
+    "node": "N000",
+    "implementation_sha": "382bfae897a4db84af45e021ed1952bab7584445",
+    "parameter_sha": "d6009710690cd4f1985ec6f00f03a94e5acf504a",
+    "historical_U": null,
+    "U_stage": "research",
+    "U_reference": null,
+    "verified_state_assignments": {
+      "matrix_approximation_rank": "matrix_approximation_rank",
+      "update_proj_gap": "update_proj_gap",
+      "beta_ef": "beta_ef",
+      "error_inherit": "error_inherit"
+    },
+    "note": "Historical U read as stored, not recomputed across Research/Engineering references. Engineer implementation has identical key parameter assignments."
+  }
+}

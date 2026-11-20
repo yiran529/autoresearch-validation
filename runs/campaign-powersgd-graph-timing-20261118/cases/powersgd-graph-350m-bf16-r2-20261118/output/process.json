@@ -1,0 +1,18 @@
+{
+  "case": "powersgd-graph-350m-bf16-r2-20261118",
+  "precision": "bf16",
+  "repetition": 2,
+  "returncode": 0,
+  "elapsed_seconds": 332.98602636903524,
+  "valid": true,
+  "validation": {
+    "status": "verified",
+    "errors": [],
+    "metrics": {
+      "mean_iteration_seconds": 0.5894109926722012
+    },
+    "peak_memory_bytes": 6369625088,
+    "refresh_coverage": "not certified by generic binding evidence"
+  },
+  "mean_iteration_seconds": 0.5894109926722012
+}

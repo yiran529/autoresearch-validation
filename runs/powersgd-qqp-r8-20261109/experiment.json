@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "powersgd-qqp-r8-20261109",
+  "methods": [
+    "powersgd-paper-r8"
+  ],
+  "reference_methods": [],
+  "recipe": "/home/wyr/greedylore-validation/campaigns/powersgd-validation-20261109/qqp-recipe.json",
+  "seeds": [
+    1243
+  ],
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "tracking": {
+      "mode": "offline",
+      "project": "GreedyLore-Validation",
+      "group": "powersgd-validation-20261109"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_DEBUG": "WARN"
+    }
+  },
+  "repetitions": 1
+}

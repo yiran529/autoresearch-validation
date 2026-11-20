@@ -1,0 +1,282 @@
+{
+  "status": "completed",
+  "plan_hash": "1edd6004f166d7fa2e99b8133f6cce720b88d056cf408226c34d316a5c8139da",
+  "recipe": "glue-qqp-roberta-adamw-5epochs-offline-v5",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_accuracy": 0.9168191936680683,
+        "eval_f1": 0.8890501798027118
+      },
+      "peak_memory_bytes": 3036542464,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 8148.942733464297
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_accuracy": 0.9140984417511748,
+        "eval_f1": 0.8855268795939221
+      },
+      "peak_memory_bytes": 3843581952,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-streamfix-glue-r8-v1-s1243",
+      "method_id": "greedylore-engineer-streamfix-glue-r8-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8316c7eacc991173dee03f430ebec20efd99760b",
+      "process_status": "completed",
+      "total_wall_seconds": 11983.073215292301
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_accuracy": 0.9154588177096216,
+        "eval_f1": 0.8875065824117957
+      },
+      "peak_memory_bytes": 3843581952,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-streamfix-glue-r16-v1-s1243",
+      "method_id": "greedylore-engineer-streamfix-glue-r16-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8316c7eacc991173dee03f430ebec20efd99760b",
+      "process_status": "completed",
+      "total_wall_seconds": 12078.676254052669
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_accuracy": 0.9167944595597328,
+        "eval_f1": 0.8889035667107001
+      },
+      "peak_memory_bytes": 3537418752,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n019-engineer-glue-v1-s1243",
+      "method_id": "v5-n019-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "04181280fa6947fda9bbfdd95526866fe403dfb3",
+      "process_status": "completed",
+      "total_wall_seconds": 5206.895129933022
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_accuracy": 0.9176354192431363,
+        "eval_f1": 0.8898518126488489
+      },
+      "peak_memory_bytes": 3538037760,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n033-research-glue-v1-s1243",
+      "method_id": "v5-n033-research-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "2410afc4f56b989b4040e0b9930011dfbf428102",
+      "process_status": "completed",
+      "total_wall_seconds": 5237.928832509089
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_accuracy": 0.9163245115013604,
+        "eval_f1": 0.8884271626925233
+      },
+      "peak_memory_bytes": 4044929536,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n022-engineer-glue-v1-s1243",
+      "method_id": "v5-n022-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8cec48b5e58e89139ba368bfaae98817a475502f",
+      "process_status": "completed",
+      "total_wall_seconds": 5303.472233264707
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r8-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0027207519168934713,
+        "eval_f1": 0.0035233002087897702
+      },
+      "total_wall_speedup": 1.4705064947975195
+    },
+    {
+      "method": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r16-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0013603759584467356,
+        "eval_f1": 0.0015435973909161405
+      },
+      "total_wall_speedup": 1.4822384509404638
+    },
+    {
+      "method": "greedylore-engineer-streamfix-glue-r8-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": -0.0027207519168934713,
+        "eval_f1": -0.0035233002087897702
+      },
+      "total_wall_speedup": 0.6800377989066239
+    },
+    {
+      "method": "greedylore-engineer-streamfix-glue-r8-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r16-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": -0.0013603759584467356,
+        "eval_f1": -0.00197970281787363
+      },
+      "total_wall_speedup": 1.0079781736323168
+    },
+    {
+      "method": "greedylore-engineer-streamfix-glue-r16-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": -0.0013603759584467356,
+        "eval_f1": -0.0015435973909161405
+      },
+      "total_wall_speedup": 0.6746552819254629
+    },
+    {
+      "method": "greedylore-engineer-streamfix-glue-r16-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r8-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0013603759584467356,
+        "eval_f1": 0.00197970281787363
+      },
+      "total_wall_speedup": 0.9920849738208447
+    },
+    {
+      "method": "v5-n019-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": -2.4734108335477956e-05,
+        "eval_f1": -0.0001466130920116937
+      },
+      "total_wall_speedup": 1.5650291642361385
+    },
+    {
+      "method": "v5-n019-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r8-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0026960178085579933,
+        "eval_f1": 0.0033766871167780765
+      },
+      "total_wall_speedup": 2.3013855505567755
+    },
+    {
+      "method": "v5-n019-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r16-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0013356418501112577,
+        "eval_f1": 0.0013969842989044468
+      },
+      "total_wall_speedup": 2.3197464040740225
+    },
+    {
+      "method": "v5-n033-research-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.000816225575067997,
+        "eval_f1": 0.0008016328461371014
+      },
+      "total_wall_speedup": 1.5557566729215686
+    },
+    {
+      "method": "v5-n033-research-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r8-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0035369774919614683,
+        "eval_f1": 0.004324933054926872
+      },
+      "total_wall_speedup": 2.287750291855747
+    },
+    {
+      "method": "v5-n033-research-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r16-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0021766015335147326,
+        "eval_f1": 0.002345230237053242
+      },
+      "total_wall_speedup": 2.3060023609115556
+    },
+    {
+      "method": "v5-n022-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": -0.0004946821667078938,
+        "eval_f1": -0.0006230171101885285
+      },
+      "total_wall_speedup": 1.536529725252842
+    },
+    {
+      "method": "v5-n022-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r8-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0022260697501855775,
+        "eval_f1": 0.0029002830986012418
+      },
+      "total_wall_speedup": 2.2594769404337525
+    },
+    {
+      "method": "v5-n022-engineer-glue-v1",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "greedylore-engineer-streamfix-glue-r16-v1",
+      "metric_deltas_candidate_minus_baseline": {
+        "eval_accuracy": 0.0008656937917388419,
+        "eval_f1": 0.000920580280727612
+      },
+      "total_wall_speedup": 2.277503439782749
+    }
+  ],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

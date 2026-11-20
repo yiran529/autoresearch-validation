@@ -1,0 +1,336 @@
+{
+  "status": "finished_with_failures",
+  "runs": {
+    "/home/wyr/greedylore-validation/runs/llama60m-full-q0-20261024": {
+      "status": "partial_or_failed",
+      "jobs": {
+        "greedylore-engineer-s1243": {
+          "status": "failed",
+          "started_at": 1792853643.2226367,
+          "pid": 3150668,
+          "returncode": 1,
+          "elapsed_seconds": 695.1050601662137,
+          "validation": {
+            "status": "unverified",
+            "errors": [
+              "No final results"
+            ],
+            "metrics": {}
+          }
+        },
+        "n031-engineer-maxu-s1243": {
+          "status": "completed",
+          "started_at": 1792854338.6158428,
+          "pid": 3163320,
+          "returncode": 0,
+          "elapsed_seconds": 4387.659808098804,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "final_eval_loss": 3.5834110047198093,
+              "final_eval_ppl": 35.996114595180075
+            },
+            "peak_memory_bytes": 8935426048,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "dense-s1243": {
+          "status": "completed",
+          "started_at": 1792862621.9779427,
+          "pid": 3263418,
+          "returncode": 0,
+          "elapsed_seconds": 4262.69436071394,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "final_eval_loss": 3.496805198072765,
+              "final_eval_ppl": 33.00982346984699
+            },
+            "peak_memory_bytes": 8692696064,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        }
+      }
+    },
+    "/home/wyr/greedylore-validation/runs/llama60m-full-q1-20261024": {
+      "status": "completed",
+      "jobs": {
+        "n023-engineer-maxu-s1243": {
+          "status": "completed",
+          "started_at": 1792853642.9442043,
+          "pid": 3150667,
+          "returncode": 0,
+          "elapsed_seconds": 4411.835617735051,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "final_eval_loss": 3.611895941511185,
+              "final_eval_ppl": 37.03620476984661
+            },
+            "peak_memory_bytes": 8935426048,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "n020-engineer-maxu-s1243": {
+          "status": "completed",
+          "started_at": 1792858054.9705973,
+          "pid": 3210624,
+          "returncode": 0,
+          "elapsed_seconds": 4559.682632056996,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "final_eval_loss": 3.5509598355903993,
+              "final_eval_ppl": 34.84674859036099
+            },
+            "peak_memory_bytes": 8815273472,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        }
+      }
+    },
+    "/home/wyr/greedylore-validation/runs/llama60m-timing-20261024": {
+      "status": "partial_or_failed",
+      "jobs": {
+        "greedylore-engineer-s1243-r1": {
+          "status": "failed",
+          "started_at": 1792866890.2767944,
+          "pid": 3310922,
+          "returncode": 1,
+          "elapsed_seconds": 486.3168098782189,
+          "validation": {
+            "status": "unverified",
+            "errors": [
+              "No final results"
+            ],
+            "metrics": {}
+          }
+        },
+        "n023-engineer-maxu-s1243-r1": {
+          "status": "completed",
+          "started_at": 1792867377.981968,
+          "pid": 3317499,
+          "returncode": 0,
+          "elapsed_seconds": 814.9045280669816,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.4045962960948236
+            },
+            "peak_memory_bytes": 8079541248,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "n031-engineer-maxu-s1243-r1": {
+          "status": "completed",
+          "started_at": 1792868194.3042476,
+          "pid": 3327536,
+          "returncode": 0,
+          "elapsed_seconds": 813.9279804020189,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.40417115491989536
+            },
+            "peak_memory_bytes": 8079541248,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "n020-engineer-maxu-s1243-r1": {
+          "status": "completed",
+          "started_at": 1792868967.6382036,
+          "pid": 3338700,
+          "returncode": 0,
+          "elapsed_seconds": 846.6273790760897,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.4341301075927913
+            },
+            "peak_memory_bytes": 7960175104,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "dense-s1243-r1": {
+          "status": "completed",
+          "started_at": 1792875766.5808182,
+          "pid": 3425387,
+          "returncode": 0,
+          "elapsed_seconds": 796.9554460742511,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.38694533276488075
+            },
+            "peak_memory_bytes": 7836811264,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "greedylore-engineer-s1243-r2": {
+          "status": "failed",
+          "started_at": 1792869815.656852,
+          "pid": 3349738,
+          "returncode": 1,
+          "elapsed_seconds": 491.2052291999571,
+          "validation": {
+            "status": "unverified",
+            "errors": [
+              "No final results"
+            ],
+            "metrics": {}
+          }
+        },
+        "n023-engineer-maxu-s1243-r2": {
+          "status": "completed",
+          "started_at": 1792870308.2580438,
+          "pid": 3356408,
+          "returncode": 0,
+          "elapsed_seconds": 816.5026219980791,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.40765946229978
+            },
+            "peak_memory_bytes": 8079541248,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "n031-engineer-maxu-s1243-r2": {
+          "status": "completed",
+          "started_at": 1792871126.1687858,
+          "pid": 3366531,
+          "returncode": 0,
+          "elapsed_seconds": 814.7878526616842,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.40530541142856236
+            },
+            "peak_memory_bytes": 8079541248,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "n020-engineer-maxu-s1243-r2": {
+          "status": "completed",
+          "started_at": 1792871942.3561707,
+          "pid": 3376736,
+          "returncode": 0,
+          "elapsed_seconds": 840.6665535769425,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.4296376050589606
+            },
+            "peak_memory_bytes": 7960175104,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "dense-s1243-r2": {
+          "status": "completed",
+          "started_at": 1792876564.940677,
+          "pid": 3435341,
+          "returncode": 0,
+          "elapsed_seconds": 796.8637994090095,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.38639244985359256
+            },
+            "peak_memory_bytes": 7836811264,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "greedylore-engineer-s1243-r3": {
+          "status": "failed",
+          "started_at": 1792872784.4260354,
+          "pid": 3387173,
+          "returncode": 1,
+          "elapsed_seconds": 488.78841138631105,
+          "validation": {
+            "status": "unverified",
+            "errors": [
+              "No final results"
+            ],
+            "metrics": {}
+          }
+        },
+        "n023-engineer-maxu-s1243-r3": {
+          "status": "completed",
+          "started_at": 1792873274.6030169,
+          "pid": 3394366,
+          "returncode": 0,
+          "elapsed_seconds": 817.2379766041413,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.40732302384392827
+            },
+            "peak_memory_bytes": 8079541248,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "n031-engineer-maxu-s1243-r3": {
+          "status": "completed",
+          "started_at": 1792874093.2530541,
+          "pid": 3404542,
+          "returncode": 0,
+          "elapsed_seconds": 815.7068772087805,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.4060789582983125
+            },
+            "peak_memory_bytes": 8079541248,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "n020-engineer-maxu-s1243-r3": {
+          "status": "completed",
+          "started_at": 1792874910.388285,
+          "pid": 3414754,
+          "returncode": 0,
+          "elapsed_seconds": 850.5623762938194,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.43289542810583953
+            },
+            "peak_memory_bytes": 7960175104,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        },
+        "dense-s1243-r3": {
+          "status": "completed",
+          "started_at": 1792877363.199471,
+          "pid": 3445954,
+          "returncode": 0,
+          "elapsed_seconds": 793.5720431832597,
+          "validation": {
+            "status": "verified",
+            "errors": [],
+            "metrics": {
+              "mean_iteration_seconds": 0.3857264961086912
+            },
+            "peak_memory_bytes": 7836811264,
+            "refresh_coverage": "not certified by generic binding evidence"
+          }
+        }
+      }
+    }
+  }
+}

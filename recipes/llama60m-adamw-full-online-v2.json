@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "llama60m-adamw-full-online-v2",
+  "workload": "llama",
+  "world_size": 4,
+  "compression_start_step": 1000,
+  "evaluation_split": "validation",
+  "tokenizer_path": "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "required_paths": [
+    "/home/wyr/greedy_lore/c4/c4_en",
+    "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+    "c4/configs/llama_60m_table_iv.json"
+  ],
+  "args": {
+    "model_config": "c4/configs/llama_60m_table_iv.json",
+    "dataset_path": "/home/wyr/greedy_lore/c4/c4_en",
+    "max_length": 256,
+    "dtype": "bfloat16",
+    "num_training_steps": 8393,
+    "warmup_steps": 1000,
+    "activation_checkpointing": true,
+    "scheduler": "cosine",
+    "min_lr_ratio": 0.1,
+    "eval_every": 1000,
+    "save_every": 40000,
+    "total_batch_size": 512,
+    "batch_size": 128,
+    "gradient_accumulation": 1,
+    "workers": 4,
+    "optimizer": "adamw",
+    "lr": 0.0025,
+    "weight_decay": 0.0,
+    "grad_clipping": 1.0,
+    "repeat_training_data": true,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08
+  },
+  "completion": {
+    "status": "completed",
+    "update_step": 8393,
+    "completed_steps": 8393,
+    "expected_steps": 8393
+  },
+  "metrics": [
+    "final_eval_loss",
+    "final_eval_ppl"
+  ],
+  "notes": "8393 full updates, warmup1000, BF16, activation checkpointing ON, no model/optimizer saving. Five fixed methods, seed1243. CPU/data/algorithm settings otherwise shared.",
+  "checkpoint_policy": "none"
+}

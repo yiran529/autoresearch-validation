@@ -1,0 +1,28 @@
+mode: engineering
+node_id: N031
+node_type: research
+base_commit: e0a575985a2ceba585c937ce4b94d31f43b828f5
+quality_anchor: e0a575985a2ceba585c937ce4b94d31f43b828f5
+analysis_refs:
+  parent_research: nodes/N023/research_analysis_v1.md
+  parent_engineering: nodes/N023/engineering_analysis_v1.md
+change_summary: 'C3: overlap independent dense AllReduce with sparse encoding, retaining
+  dense/offset/value collective order and final synchronization; retain C2 fusion
+  and reuse.'
+selection_rationale: Residual-2 profiling shows dense collectives serialize before
+  independent sparse encoding; N023 formal evidence supports removing that dependency.
+  Launch dense reduction asynchronously and wait before dense readback; verify multi-rank
+  and multi-bucket exactness before formal full-step confirmation.
+semantic_self_check:
+  status: pass
+  commands:
+  - 'python -m compileall -q comm_hooks/block_sparse_hook.py comm_hooks/block_sparse_cuda.py;
+    git diff --check: pass'
+  - 'Managed diagnostic N031-engineer-E0029/overlap-3 at b53df5c: four NCCL ranks;
+    exact12 steps/dtype,18 bitwise decoder cases,28 multi-bucket AdamW updates versus
+    fixed Research.'
+  limitations: Finite BF16/FP32 synthetic checks. No long Muon trajectory or new quality
+    measurement. See diagnostics/N031-engineer-E0029/records/overlap-3/. Retains final
+    device synchronization and collective order.
+timing:
+  period_steps: null

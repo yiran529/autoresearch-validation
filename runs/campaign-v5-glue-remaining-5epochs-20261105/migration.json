@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/v5-glue-remaining-5epochs-20261105",
+  "destination": "runs/campaign-v5-glue-remaining-5epochs-20261105",
+  "entries": {
+    "allocation.json": {
+      "": {
+        "kind": "file",
+        "sha256": "42cdee88d00153ecbea5f13a5c0797d0b79825cd7891094c99aca94f5177c5b7",
+        "size": 819
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "28f7270e1b625579ca937953f89c6a240c7ffa9312ec1994e96bf22eb594b7fa",
+        "size": 302
+      }
+    },
+    "data": {
+      "": {
+        "kind": "directory"
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "0170c0b17bf2afff6ce3896dcf8fe6f9370147735d69933b6de67f325898eb06",
+        "size": 105
+      }
+    }
+  },
+  "legacy_source": {
+    "cola.json": {
+      "kind": "file",
+      "sha256": "bbfd25671a9d6c023236274a9bf0050fe85ca71269316bb5db092ff29f1c60ab",
+      "size": 910
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "448e7409a3d3886919b896381527fc27e5172186a19fafe804b268b62d90593f",
+      "size": 2308
+    },
+    "mrpc.json": {
+      "kind": "file",
+      "sha256": "397e16ee718a37bc18323936cded6c530b4a1cf3dc1b39a68335b38ddbe87f29",
+      "size": 910
+    },
+    "rte.json": {
+      "kind": "file",
+      "sha256": "cec9d512b42bfb55606e911fbbe14ccc6d7a11268fa84986abd257359f2ce6c8",
+      "size": 908
+    },
+    "stsb.json": {
+      "kind": "file",
+      "sha256": "eed123f2885e588fc163f377a11ea8c4ce05ef1c11540258d2bbcabbd437a54a",
+      "size": 910
+    }
+  }
+}

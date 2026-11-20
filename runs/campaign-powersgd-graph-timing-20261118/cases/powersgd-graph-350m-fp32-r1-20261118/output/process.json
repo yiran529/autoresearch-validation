@@ -1,0 +1,18 @@
+{
+  "case": "powersgd-graph-350m-fp32-r1-20261118",
+  "precision": "fp32",
+  "repetition": 1,
+  "returncode": 0,
+  "elapsed_seconds": 331.22759515140206,
+  "valid": true,
+  "validation": {
+    "status": "verified",
+    "errors": [],
+    "metrics": {
+      "mean_iteration_seconds": 0.5763287777989171
+    },
+    "peak_memory_bytes": 11222978560,
+    "refresh_coverage": "not certified by generic binding evidence"
+  },
+  "mean_iteration_seconds": 0.5763287777989171
+}

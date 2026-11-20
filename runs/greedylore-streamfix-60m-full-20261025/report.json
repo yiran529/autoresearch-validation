@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "plan_hash": "5fb337a3fce3b9f91ddb372bc4b24d812b3d0f67336fbf76a99c74d19c538f07",
+  "recipe": "llama60m-adamw-full-online-v2",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.637438061830251,
+        "final_eval_ppl": 37.99437269665306
+      },
+      "peak_memory_bytes": 9001756160,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-streamfix-s1243",
+      "method_id": "greedylore-engineer-streamfix",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8316c7eacc991173dee03f430ebec20efd99760b",
+      "process_status": "completed",
+      "total_wall_seconds": 4459.721324213315
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

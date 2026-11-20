@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "glue-sst2-bert-example",
+  "method": "original_greedylore",
+  "baselines": [
+    "dense"
+  ],
+  "recipe": "glue-sst2-bert-full-v1",
+  "seeds": [
+    1243
+  ],
+  "execution": {
+    "python": "/home/wyr/greedy_lore/.venv/bin/python",
+    "timeout_seconds": 0,
+    "environment": {
+      "OMP_NUM_THREADS": "4"
+    }
+  }
+}

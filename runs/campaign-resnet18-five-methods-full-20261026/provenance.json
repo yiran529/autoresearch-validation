@@ -1,0 +1,11 @@
+{
+  "manifest_hash": "ccacb14f7f68a285739aab43bc4d963423ce6b80066d05a4ae6a8a16e5077e9e",
+  "scripts": {
+    "adapter.py": "e3d4960ac028c5bba14154297879635f6c98b814bdd56249ccda367ae62ee4f4",
+    "run.py": "5e35c90636d035ae822f494d7ab9d5373a3f460543de1494d4f0b505f0319f4b",
+    "report.py": "cf5ecd462c7da3a4ca4a4d98967ffe6a070ea1f08ebe8367791751637b97f508",
+    "prepare.py": "3866169ea66ee0a76bbbc942452462626bbc46e523c4eac3b5b5b0e530fe1533"
+  },
+  "cpu_checks_hash": "f2147a1dab9e77d345c151a7348aab868260571a878cf4c8e0ea70c672d52d44",
+  "source_identity": "Each case.runtime_files; new ResNet method variants preserve parent source and parameter hashes; only classifier-name registration bridge added."
+}

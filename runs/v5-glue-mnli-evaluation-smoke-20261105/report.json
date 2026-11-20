@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "plan_hash": "37f94873a7fb7490c2d3fc9d713b6069628b48d9e828fcda0fbac40b63203c61",
+  "recipe": "glue-mnli-evaluation-smoke-v5",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "eval_matched_accuracy": 0.3939393939393939,
+        "eval_mismatched_accuracy": 0.5142857142857142
+      },
+      "peak_memory_bytes": 3024095232,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 17.09667966980487
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

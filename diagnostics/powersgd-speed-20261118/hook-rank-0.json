@@ -1,0 +1,63 @@
+{
+  "rank": 0,
+  "checks": [
+    {
+      "step": 1,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    },
+    {
+      "step": 2,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    },
+    {
+      "step": 3,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    },
+    {
+      "step": 4,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    },
+    {
+      "step": 5,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    },
+    {
+      "step": 6,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    },
+    {
+      "step": 7,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    },
+    {
+      "step": 8,
+      "gradient_and_p_q_ef_bitwise_equal": true
+    }
+  ],
+  "timings": [
+    {
+      "reference_seconds": 3.184818943031132,
+      "graph_seconds": 1.5839777886867523
+    },
+    {
+      "reference_seconds": 3.1010219249874353,
+      "graph_seconds": 1.6156739834696054
+    },
+    {
+      "reference_seconds": 3.079353054985404,
+      "graph_seconds": 1.3998297965154052
+    },
+    {
+      "reference_seconds": 3.0815654741600156,
+      "graph_seconds": 0.18942029681056738
+    },
+    {
+      "reference_seconds": 3.0330769792199135,
+      "graph_seconds": 1.425250337459147
+    }
+  ],
+  "graph_cache_entries": 12,
+  "parameters": 367969280,
+  "dtype": "bfloat16",
+  "torch": "2.4.0+cu121"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "planned",
+  "plan_hash": "a7ddb547acb35d24f10ed3c18e60fc4ddd6aae5c470f4ed31ea4b9eee814c339",
+  "recipe": "llama130m-muon-full-v1",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "unverified",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "original_greedylore-s1243",
+      "method_id": "original_greedylore",
+      "seed": 1243,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "planned",
+      "total_wall_seconds": null
+    },
+    {
+      "status": "unverified",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "planned",
+      "total_wall_seconds": null
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

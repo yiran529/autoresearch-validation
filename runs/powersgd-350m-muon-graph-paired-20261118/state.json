@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "jobs": {
+    "powersgd-paper-r32-s1243": {
+      "status": "completed",
+      "started_at": 1795007808.434736,
+      "pid": 3458610,
+      "returncode": 0,
+      "elapsed_seconds": 166.09232806507498,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 3.9578774736262856
+        },
+        "peak_memory_bytes": 11917391872,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "powersgd-r32-graph-v1-s1243": {
+      "status": "completed",
+      "started_at": 1795007975.2362823,
+      "pid": 3461822,
+      "returncode": 0,
+      "elapsed_seconds": 144.5899084182456,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 1.6433410875499248
+        },
+        "peak_memory_bytes": 11925983232,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

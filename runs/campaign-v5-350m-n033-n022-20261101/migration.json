@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/v5-350m-n033-n022-20261101",
+  "destination": "runs/campaign-v5-350m-n033-n022-20261101",
+  "entries": {
+    "allocation.json": {
+      "": {
+        "kind": "file",
+        "sha256": "a44a03c0818e3cd31e41675bded6256b80d42231da7ed0d2857baf8dce9aa225",
+        "size": 806
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "7383e8f2b51607f9916094ededead67075842c11dcb85accf320713e2e0d4090",
+        "size": 712
+      }
+    },
+    "rolling-controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "a8547d7fe64d21e9b0a46851fd1619652cab3c0d0185bd3312b77c5cc85ce48c",
+        "size": 684
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "4d4707134708a600859ee3dd90fc03782fc610b83507e6050cc8a7f66f716171",
+        "size": 154
+      }
+    }
+  },
+  "legacy_source": {
+    "README.md": {
+      "kind": "file",
+      "sha256": "5d7cfd9882b7f53b588b9eb842145fd980ccdbb669bfea12e043b98ad3ede716",
+      "size": 1721
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "c837b9b60c572add091b1e0283b1d28b26beff172b9a0cddce7247a315e7c819",
+      "size": 1475
+    },
+    "full-rolling20k.json": {
+      "kind": "file",
+      "sha256": "e9b1ec05a653de428290b576ebbba422a2a22375bbd97e0834f7daf5dbbe13ca",
+      "size": 659
+    },
+    "full.json": {
+      "kind": "file",
+      "sha256": "0be76f49db5e164667a075eff2f851b41c5a30d9d62ed2bd81565a90e559d5cf",
+      "size": 637
+    },
+    "run_full_rolling.py": {
+      "kind": "file",
+      "sha256": "0a1151a3b1619b408d602c70e2c425cec701903c1ab6cb046ef7139373a2a870",
+      "size": 780
+    },
+    "smoke.json": {
+      "kind": "file",
+      "sha256": "63319a418ca8b8df6a221ace081f78e2e85f92bb2154b97c082652f8a79c8c31",
+      "size": 559
+    }
+  }
+}

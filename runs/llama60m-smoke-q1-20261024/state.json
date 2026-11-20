@@ -1,0 +1,33 @@
+{
+  "status": "partial_or_failed",
+  "jobs": {
+    "n023-engineer-maxu-s1243": {
+      "status": "failed",
+      "started_at": 1792853092.5388827,
+      "pid": 3131463,
+      "returncode": 1,
+      "elapsed_seconds": 15.701916987076402,
+      "validation": {
+        "status": "unverified",
+        "errors": [
+          "No final results"
+        ],
+        "metrics": {}
+      }
+    },
+    "n020-engineer-maxu-s1243": {
+      "status": "failed",
+      "started_at": 1792853108.43748,
+      "pid": 3134859,
+      "returncode": 1,
+      "elapsed_seconds": 16.050519204698503,
+      "validation": {
+        "status": "unverified",
+        "errors": [
+          "No final results"
+        ],
+        "metrics": {}
+      }
+    }
+  }
+}

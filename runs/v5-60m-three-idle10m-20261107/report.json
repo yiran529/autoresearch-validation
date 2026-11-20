@@ -1,0 +1,88 @@
+{
+  "status": "completed",
+  "plan_hash": "a5c4c6d2ffb1ff6cf20be036ba8c8b400547c810771f7febdc79e9839d7034a9",
+  "recipe": "llama60m-adamw-full-online-v2",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.637438061830251,
+        "final_eval_ppl": 37.99437269665306
+      },
+      "peak_memory_bytes": 9001756160,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "greedylore-engineer-streamfix-s1243",
+      "method_id": "greedylore-engineer-streamfix",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8316c7eacc991173dee03f430ebec20efd99760b",
+      "process_status": "completed",
+      "total_wall_seconds": 4505.8798022898845
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.5126557310106663,
+        "final_eval_ppl": 33.53721544420335
+      },
+      "peak_memory_bytes": 8935426048,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "v5-n033-research-s1243",
+      "method_id": "v5-n033-research",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "2410afc4f56b989b4040e0b9930011dfbf428102",
+      "process_status": "completed",
+      "total_wall_seconds": 4226.517599641811
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.496805198072765,
+        "final_eval_ppl": 33.00982346984699
+      },
+      "peak_memory_bytes": 8692696064,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 4251.494875824079
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "greedylore-engineer-streamfix",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "final_eval_loss": 0.14063286375748607,
+        "final_eval_ppl": 4.984549226806067
+      },
+      "total_wall_speedup": 0.9435437833169612
+    },
+    {
+      "method": "v5-n033-research",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "final_eval_loss": 0.015850532937901285,
+        "final_eval_ppl": 0.5273919743563553
+      },
+      "total_wall_speedup": 1.0059096586240135
+    }
+  ],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "finished_with_failures_or_unverified_exit",
+  "phase": "finished",
+  "selected_group": 1,
+  "gpus": [
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "gpu_uuids": [
+    "GPU-0bc7caf4-d72c-c6b9-a9c1-60d2ff5779c4",
+    "GPU-76169292-9c3b-c2e1-682b-bacd97a2f23c",
+    "GPU-7f6d4fbc-2dac-56fc-5bb4-d221c28f37e3",
+    "GPU-ef070131-0f32-4dbe-b24f-e026f1fd28b9"
+  ],
+  "concurrent_pretraining_possible": true,
+  "comparison_note": "Timing may overlap pretraining on the other four GPUs; shared host/CPU/IO interference is possible."
+}

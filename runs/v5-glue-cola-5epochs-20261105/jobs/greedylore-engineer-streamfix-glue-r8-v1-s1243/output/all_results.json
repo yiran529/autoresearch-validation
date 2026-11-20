@@ -1,0 +1,1 @@
+{"eval_matthews_correlation": 0.582897151722857, "status": "completed", "evaluation_split": "validation", "world_size": 4, "completed_steps": 2675, "expected_steps": 2675, "completed_epochs": 5, "expected_epochs": 5, "peak_memory_bytes_rank0": 3820172288, "best_matthews_correlation": 0.6031588333778671, "wandb_link": null}

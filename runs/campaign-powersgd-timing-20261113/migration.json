@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/powersgd-timing-20261113",
+  "destination": "runs/campaign-powersgd-timing-20261113",
+  "entries": {
+    "controller.lock": {
+      "": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "cb27d55df657364c28d68f32aaf581e1a9fa0e4a01017a31ae04720a313a5fbc",
+        "size": 400
+      }
+    },
+    "provenance.json": {
+      "": {
+        "kind": "file",
+        "sha256": "7e2b05ba7205b930e41b292f655e77c1eae213d6b099d7a655e4c51406d3fc97",
+        "size": 513
+      }
+    },
+    "queue.json": {
+      "": {
+        "kind": "file",
+        "sha256": "1cee9e7ede3750c2e38adb4286f709beaa4c78042c7b5a83787f64c24290c427",
+        "size": 391
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "7f5ed0d73c4f5b161fdb01f9403a091d76c9847331ed8b35321b908d9e8b201d",
+        "size": 81
+      }
+    },
+    "summary.json": {
+      "": {
+        "kind": "file",
+        "sha256": "27645b2182fe571b46a3f65052b8b23254c654bac7f5c9c9f3e1ea53c768f7ca",
+        "size": 5398
+      }
+    }
+  },
+  "legacy_source": {
+    ".gitignore": {
+      "kind": "file",
+      "sha256": "d42b4ed34df45b97608bc159ddb9d27dbb493c105162c629044d116fcdcae56a",
+      "size": 68
+    },
+    "README.md": {
+      "kind": "file",
+      "sha256": "2e3c399d1957006b2fe0202ee3a8d208a64e40406d5d8d8f49141eb221023ad2",
+      "size": 1245
+    },
+    "bf16-r1.json": {
+      "kind": "file",
+      "sha256": "b86c43f6315af5a7b8f423f11a87e3279c4c8aa5f19400f1b2e089b868c60531",
+      "size": 613
+    },
+    "bf16-r2.json": {
+      "kind": "file",
+      "sha256": "09504dcc09063ba31fdfc467e9b2b09baad5b51574387499910adb2e0551c9c4",
+      "size": 613
+    },
+    "bf16-recipe.json": {
+      "kind": "file",
+      "sha256": "3758001cd11c920d450ef01c8e137816d0257a839c4a282e3cbd6e1ebb27241c",
+      "size": 1668
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "d0bf05d87fec06a6f447cc50fea6c4e7bd9d6f90ea9500f26e0a39e7b84c815f",
+      "size": 4780
+    },
+    "fp32-r1.json": {
+      "kind": "file",
+      "sha256": "57997ed737bc92be64b08c23d19bc7968eb650043da6eeca6b375e85263c1d11",
+      "size": 613
+    },
+    "fp32-r2.json": {
+      "kind": "file",
+      "sha256": "eb2142c5973e7b48c6f4485ccb7ce45710403b544544d20d4c963a90a0e94a1c",
+      "size": 613
+    },
+    "fp32-recipe.json": {
+      "kind": "file",
+      "sha256": "9c5eccddf52c07691bb05867ca2283c4df5847319cd21f2961d93c085bda392f",
+      "size": 1667
+    },
+    "idle_policy.py": {
+      "kind": "file",
+      "sha256": "6766d36cef9c3e0b4396e96bf90e516c07cbb2d5907366c2b2fbf62667988ae9",
+      "size": 697
+    },
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "ff66ca754de5480a68772e676b5b49a568feed4e81c0a57869ac1649a36000eb",
+      "size": 4463
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "llama60m-adamw-timing-bsz1-local-v1",
+  "workload": "llama",
+  "world_size": 4,
+  "compression_start_step": 1000,
+  "evaluation_split": "none",
+  "tokenizer_path": "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "required_paths": [
+    "/home/wyr/greedy_lore/c4/c4_en",
+    "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+    "c4/configs/llama_60m_table_iv.json"
+  ],
+  "args": {
+    "model_config": "c4/configs/llama_60m_table_iv.json",
+    "dataset_path": "/home/wyr/greedy_lore/c4/c4_en",
+    "max_length": 256,
+    "dtype": "bfloat16",
+    "activation_checkpointing": true,
+    "batch_size": 1,
+    "workers": 4,
+    "optimizer": "adamw",
+    "lr": 0.0025,
+    "weight_decay": 0.0,
+    "grad_clipping": 1.0,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "warmup_iterations": 1201,
+    "measured_iterations": 800,
+    "scheduler_steps": 8393,
+    "lr_warmup_steps": 1000,
+    "strict_blocking_communication": false,
+    "record_bucket_layout": false
+  },
+  "completion": {
+    "status": "completed",
+    "measured_steps": 800,
+    "warmup_iterations": 1201,
+    "first_measured_update": 1202,
+    "last_measured_update": 2001,
+    "strict_blocking_communication": false
+  },
+  "metrics": [
+    "mean_iteration_seconds"
+  ],
+  "notes": "Timing default: per-device batch1, global batch4, no gradient accumulation; W&B disabled. All other recipe settings and frozen method identities retained. Does not match full-training batch128.",
+  "checkpoint_policy": "none",
+  "kind": "timing"
+}

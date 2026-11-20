@@ -1,0 +1,73 @@
+{
+  "status": "completed",
+  "jobs": {
+    "v5-n019-engineer-s1243": {
+      "status": "completed",
+      "started_at": 1793429352.6822355,
+      "pid": 228238,
+      "returncode": 0,
+      "elapsed_seconds": 219.44576170714572,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 10.500456262766749,
+          "final_eval_ppl": 36332.07586655043
+        },
+        "peak_memory_bytes": 8814985728,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n027-retained-s1243": {
+      "status": "completed",
+      "started_at": 1793429572.5078182,
+      "pid": 232681,
+      "returncode": 0,
+      "elapsed_seconds": 227.30625693220645,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 10.500456262766749,
+          "final_eval_ppl": 36332.07586655043
+        },
+        "peak_memory_bytes": 8814760448,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n033-research-s1243": {
+      "status": "completed",
+      "started_at": 1793429800.1965513,
+      "pid": 237082,
+      "returncode": 0,
+      "elapsed_seconds": 223.3691190299578,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 10.500456262766749,
+          "final_eval_ppl": 36332.07586655043
+        },
+        "peak_memory_bytes": 8814985728,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n022-engineer-s1243": {
+      "status": "completed",
+      "started_at": 1793430023.9480572,
+      "pid": 241473,
+      "returncode": 0,
+      "elapsed_seconds": 219.76941834110767,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 10.500456262766749,
+          "final_eval_ppl": 36332.07586655043
+        },
+        "peak_memory_bytes": 9351409152,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

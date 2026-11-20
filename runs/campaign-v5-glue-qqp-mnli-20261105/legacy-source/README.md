@@ -1,0 +1,7 @@
+# Additional GLUE queue
+Order: wait for the current SST-2/QNLI controller to complete successfully and exit, then QQP, MNLI evaluation smoke, MNLI. If predecessor fails or disappears with stale state, stop without using GPUs. No modification to the existing controller or its runs.
+Six arms: Dense, GreedyLoRE rank8/rank16 with stream fix, frozen N19 Engineer/N33 Research/N22 Engineer, seed1243. GPU4-7 only, serial. RoBERTa-base same cached weights; AdamW2e-5, FP32, max_length256, per-device4/global16, GA1, 10epochs, cosine to0, warmup10%, WD0, compression1000. No model/optimizer checkpoint; W&B offline.
+QQP 363846 train/40430 validation; report accuracy and F1. MNLI 392702 train/9815 matched/9832 mismatched; report final matched and mismatched accuracy separately.
+MNLI evaluation-only bridge is applied during plan construction before inventory freezing, with before/after hashes in each runtime. It preserves the training-loop AST exactly, uses gather_for_metrics to remove mismatched tail padding, asserts exact sample count, and avoids constructing evaluation gradients. Core scaffold and original repositories are unchanged.
+One Dense MNLI short integration run is queued immediately before full MNLI:128 train,33 matched,35 mismatched,8 updates. Nondivisible sample sizes check tail handling and split reporting; it is not a quality result.
+Controller status.json and controller.log; tmux v5-glue-extra-20261105. Original six-method integration checks apply to adapter paths; this does not establish scientific success on new tasks.

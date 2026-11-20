@@ -1,0 +1,74 @@
+{
+  "status": "partial_or_failed",
+  "plan_hash": "40f528f81500c776329074203eba69f782fee432b55a52d33c2f920aed722877",
+  "recipe": "llama60m-adamw-full-online-v2",
+  "evaluation_split": "validation",
+  "jobs": [
+    {
+      "status": "failed",
+      "errors": [
+        "No final results"
+      ],
+      "metrics": {},
+      "id": "greedylore-engineer-s1243",
+      "method_id": "greedylore-engineer",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "382bfae897a4db84af45e021ed1952bab7584445",
+      "process_status": "failed",
+      "total_wall_seconds": 695.1050601662137
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.5834110047198093,
+        "final_eval_ppl": 35.996114595180075
+      },
+      "peak_memory_bytes": 8935426048,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "n031-engineer-maxu-s1243",
+      "method_id": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "8684c7acad3850ed029cf6039345b890cf674472",
+      "process_status": "completed",
+      "total_wall_seconds": 4387.659808098804
+    },
+    {
+      "status": "verified",
+      "errors": [],
+      "metrics": {
+        "final_eval_loss": 3.496805198072765,
+        "final_eval_ppl": 33.00982346984699
+      },
+      "peak_memory_bytes": 8692696064,
+      "refresh_coverage": "not certified by generic binding evidence",
+      "id": "dense-s1243",
+      "method_id": "dense",
+      "seed": 1243,
+      "repetition": 1,
+      "source_commit": "d2c38bc2062e06fdfd73185c508e7cc652933de6",
+      "process_status": "completed",
+      "total_wall_seconds": 4262.69436071394
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "n031-engineer-maxu",
+      "seed": 1243,
+      "repetition": 1,
+      "baseline": "dense",
+      "metric_deltas_candidate_minus_baseline": {
+        "final_eval_loss": 0.08660580664704431,
+        "final_eval_ppl": 2.986291125333082
+      },
+      "total_wall_speedup": 0.971518884131764
+    }
+  ],
+  "limitations": [
+    "Total wall time includes process startup and evaluation; not pure training throughput.",
+    "Generic hook evidence does not certify algorithmic equivalence or refresh coverage.",
+    "No aggregate scientific pass threshold is imposed."
+  ]
+}

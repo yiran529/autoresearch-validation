@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_runtime",
+  "status": null,
+  "source": "runtime-rank-2.json",
+  "source_sha256": "011986db2cc067e98c307668c9c9b53c2c6ef9f625b9bfae954c45508aaf1eac",
+  "measurements": {
+    "rank": 2,
+    "method_id": "v5-n033-research-resnet-v1",
+    "parameters": {
+      "compressor": "sparse_q4_ef",
+      "compress_rank": 32,
+      "update_proj_gap": 1,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 1.0,
+      "beta_ef": 0.0,
+      "error_inherit": 0,
+      "start_compress_iter": 500
+    },
+    "hook_registrations": 1,
+    "hook_calls": 46918,
+    "last_bucket_calls": 15640,
+    "refresh_coverage": "not established; requires method-specific evidence",
+    "description": {
+      "registration": "comm_hooks.utils.register_comm_hook_for_ddp_model",
+      "implementation": "frozen runtime comm_hooks; base optimizer and training loop",
+      "communication_volume": "unavailable; no generic byte estimator"
+    },
+    "environment": {
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "nccl": {
+        "NCCL_DEBUG": "WARN",
+        "NCCL_P2P_DISABLE": "1"
+      }
+    },
+    "hook_module": "comm_hooks.sparse_q4_hook",
+    "hook_name": "sparse_q4_hook",
+    "hook_source": "comm_hooks/sparse_q4_hook.py",
+    "hook_sha256": "2af802d1072b917f4d65997ebcf9738c9d40add80309b7b18b2f2c5c6c55500b",
+    "state_type": "SparseQ4State",
+    "effective_state_configuration": {},
+    "elapsed_seconds": 235.6702624950558,
+    "peak_memory_bytes": 1847423488,
+    "iter": 15640,
+    "timing_period_steps": 1
+  },
+  "omitted_sequences": {
+    "timing_refresh_steps": {
+      "count": 15140,
+      "sha256": "4101ed499a0a6fe46d4698517ba9e8a80251c753ac4f055f778e27c8f8f4c467",
+      "first": 501,
+      "last": 15640,
+      "min": 501,
+      "max": 15640,
+      "mean": 8070.5,
+      "median": 8070.5,
+      "p95": 14883,
+      "p99": 15489,
+      "step": 1
+    }
+  },
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

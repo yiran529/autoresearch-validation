@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "record_type": "compact_saved_runtime",
+  "status": null,
+  "source": "runtime-rank-1.json",
+  "source_sha256": "b0ea6ba809a1fb9d10fb4fb4f25ff0d3556df2959172236b33c858b514145a2b",
+  "measurements": {
+    "rank": 1,
+    "method_id": "powersgd-paper-r8",
+    "parameters": {
+      "compressor": "powersgd",
+      "compress_rank": 8,
+      "use_error_feedback": "ef14",
+      "min_compression_rate": 2.0,
+      "start_compress_iter": 115
+    },
+    "hook_registrations": 1,
+    "hook_calls": 16087,
+    "last_bucket_calls": 1150,
+    "refresh_coverage": "not established; requires method-specific evidence",
+    "description": {
+      "implementation": "Pinned GreedyLoRE PowerSGD plus explicit dense layer exclusions",
+      "error_feedback": "ef14",
+      "warm_start": true,
+      "min_compression_rate": 2
+    },
+    "environment": {
+      "torch": "2.4.0+cu121",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "nccl": {
+        "NCCL_DEBUG": "WARN",
+        "NCCL_P2P_DISABLE": "1"
+      }
+    },
+    "hook_module": "comm_hooks.powerSGD_hook",
+    "hook_name": "powerSGD_hook",
+    "hook_source": "comm_hooks/powerSGD_hook.py",
+    "hook_sha256": "ba49b4f33dcc921d634302f8817d570c8605dd44c8bd4b856a6a33536f83f857",
+    "state_type": "ScopedPowerSGDState",
+    "effective_state_configuration": {
+      "matrix_approximation_rank": 8,
+      "use_error_feedback": "ef14"
+    },
+    "elapsed_seconds": 112.05939716892317,
+    "peak_memory_bytes": 3813215744,
+    "iter": 1150,
+    "timing_period_steps": null,
+    "timing_refresh_steps": null
+  },
+  "omitted_sequences": {},
+  "statistics_convention": "fmean, median, nearest-rank p95/p99 for finite numeric sequences",
+  "limitations": [
+    "Derived saved evidence; not a new verification or execution.",
+    "Raw per-step evidence remains local and is excluded from publication.",
+    "Official scalar measurements are copied without recomputation."
+  ]
+}

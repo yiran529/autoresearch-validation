@@ -1,0 +1,11 @@
+{
+  "per_device_batch_size": 1,
+  "world_size": 4,
+  "gradient_accumulation": 1,
+  "tracking_mode": "disabled",
+  "scope": "Future timing only; full pretraining unchanged",
+  "recipe_templates": [
+    "llama130m-muon-timing-bsz1-local-v1",
+    "llama60m-adamw-timing-bsz1-local-v1"
+  ]
+}

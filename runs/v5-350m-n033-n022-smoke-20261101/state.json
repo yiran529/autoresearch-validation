@@ -1,0 +1,29 @@
+{
+  "status": "interrupted",
+  "jobs": {
+    "v5-n033-research-s1243": {
+      "status": "completed",
+      "started_at": 1793538138.4570875,
+      "pid": 1420319,
+      "returncode": 0,
+      "elapsed_seconds": 274.3975718761794,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "final_eval_loss": 10.574679633909978,
+          "final_eval_ppl": 39131.366392803204
+        },
+        "peak_memory_bytes": 12538108416,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n022-engineer-s1243": {
+      "status": "interrupted",
+      "started_at": 1793538413.0556176,
+      "pid": 1425174,
+      "error": "",
+      "elapsed_seconds": 20.296116591896862
+    }
+  }
+}

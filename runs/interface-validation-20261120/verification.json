@@ -1,0 +1,248 @@
+{
+  "original_artifacts_unchanged": {
+    "runs": 27902,
+    "diagnostics": 14515
+  },
+  "migrated_campaigns": 22,
+  "migrated_files_and_symlinks": 5030,
+  "migration_hashes_match": true,
+  "diagnostics_moved": false,
+  "existing_runs_moved": false,
+  "cpu_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v",
+    "count": 60,
+    "passed": true
+  },
+  "gpu_execution": false,
+  "luna_simulation": {
+    "model": "gpt-6-luna",
+    "passed": true,
+    "evidence": {
+      "schema_version": 1,
+      "scope": "CPU-only interface acceptance; no training, probe, GPU query, torch/candidate import, dependency installation, code edits, or historical result edits",
+      "repository": "/tmp/glval-luna-validation-p5eqihzv/repo",
+      "inputs": [
+        "test-tmp/simulation-inputs/training-experiment.json",
+        "test-tmp/simulation-inputs/timing-experiment.json"
+      ],
+      "generated_runs": {
+        "training": {
+          "path": "runs/luna-training-simulation",
+          "plan_hash": "64b043ce5d3e53f5c8be9a709014d76b0f8d8843552a281b51f542ba3cc83ce9",
+          "job": "dense-s1243",
+          "preflight": "static_pass",
+          "status": "planned",
+          "report": "unverified; No final results"
+        },
+        "timing": {
+          "path": "runs/luna-timing-simulation",
+          "plan_hash": "5be532dddf8d6b9bccaf008275002b05f449f5cd3eeef35d584cc154fad8c1b8",
+          "job": "powersgd-paper-r32-s1243",
+          "preflight": "static_pass",
+          "status": "planned",
+          "report": "unverified; No final results"
+        }
+      },
+      "commands": [
+        {
+          "cmd": "python3 -m glval --help",
+          "exit_code": 0,
+          "result": "CLI exposes check, plan, preflight, status, report, run, probe, artifacts, migration commands."
+        },
+        {
+          "cmd": "python3 -m glval plan test-tmp/simulation-inputs/training-experiment.json",
+          "exit_code": 0,
+          "result": "planned; training_executed=false; runs/luna-training-simulation"
+        },
+        {
+          "cmd": "python3 -m glval plan test-tmp/simulation-inputs/timing-experiment.json",
+          "exit_code": 0,
+          "result": "planned; training_executed=false; runs/luna-timing-simulation"
+        },
+        {
+          "cmd": "python3 -m glval preflight runs/luna-training-simulation",
+          "exit_code": 0,
+          "result": "static_pass; missing_inputs=[]; training_executed=false; gpu_preflight_executed=false"
+        },
+        {
+          "cmd": "python3 -m glval status runs/luna-training-simulation",
+          "exit_code": 0,
+          "result": "planned"
+        },
+        {
+          "cmd": "python3 -m glval report runs/luna-training-simulation",
+          "exit_code": 0,
+          "result": "report.json/report.md generated; job unverified; No final results"
+        },
+        {
+          "cmd": "python3 -m glval preflight runs/luna-timing-simulation",
+          "exit_code": 0,
+          "result": "static_pass; missing_inputs=[]; training_executed=false; gpu_preflight_executed=false"
+        },
+        {
+          "cmd": "python3 -m glval check dense --workload llama",
+          "exit_code": 0,
+          "result": "static_pass; training_executed=false"
+        },
+        {
+          "cmd": "python3 -m glval check powersgd-paper-r32 --workload llama",
+          "exit_code": 0,
+          "result": "static_pass; training_executed=false"
+        },
+        {
+          "cmd": "python3 -m glval status runs/luna-timing-simulation",
+          "exit_code": 0,
+          "result": "planned"
+        },
+        {
+          "cmd": "python3 -m glval report runs/luna-timing-simulation",
+          "exit_code": 0,
+          "result": "report.json/report.md generated; job unverified; No final results"
+        },
+        {
+          "cmd": "python3 -m glval plan test-tmp/simulation-inputs/training-experiment.json (duplicate ID)",
+          "exit_code": 2,
+          "result": "Run already exists; previous plan preserved"
+        },
+        {
+          "cmd": "python3 -m glval plan test-tmp/simulation-inputs/timing-experiment.json (duplicate ID)",
+          "exit_code": 2,
+          "result": "Run already exists; previous plan preserved"
+        },
+        {
+          "cmd": "python3 -m glval plan test-tmp/simulation-inputs/training-experiment.json --out test-tmp/outside-run",
+          "exit_code": 2,
+          "result": "Formal experiment artifacts must stay inside this project's runs/"
+        },
+        {
+          "cmd": "python3 -m glval artifacts runs/campaign-powersgd-graph-timing-20261118",
+          "exit_code": 0,
+          "result": "Read-only saved results; detailed metrics recorded below"
+        },
+        {
+          "cmd": "python3 -m glval artifacts runs/campaign-greedylore-streamfix-full-20261025",
+          "exit_code": 0,
+          "result": "Read-only saved results; detailed metrics recorded below"
+        },
+        {
+          "cmd": "python3 -m glval migrate-campaigns (before fixture)",
+          "exit_code": 0,
+          "result": "dry_run; campaigns=[]"
+        },
+        {
+          "cmd": "mkdir -p campaigns/luna-migration-fixture-20261120; create summary.json and notes.txt",
+          "exit_code": 0,
+          "result": "Created JSON/text-only fixture; no training script"
+        },
+        {
+          "cmd": "python3 -m glval migrate-campaigns (fixture preview)",
+          "exit_code": 0,
+          "result": "dry_run; only campaigns/luna-migration-fixture-20261120 -> runs/campaign-luna-migration-fixture-20261120; summary.json eligible"
+        },
+        {
+          "cmd": "python3 campaigns/powersgd-graph-timing-20261118/prepare.py",
+          "exit_code": 2,
+          "result": "Historical campaign CLI archived; suggests glval plan/artifacts"
+        },
+        {
+          "cmd": "python3 campaigns/greedylore-streamfix-full-20261025/prepare.py",
+          "exit_code": 2,
+          "result": "Historical campaign CLI archived; suggests glval plan/artifacts"
+        },
+        {
+          "cmd": "python3 campaigns/greedylore-streamfix-full-20261025/run.py",
+          "exit_code": 2,
+          "result": "Historical campaign CLI archived; suggests glval plan/artifacts"
+        },
+        {
+          "cmd": "python3 -m glval migrate-campaigns --apply",
+          "exit_code": 0,
+          "result": "migrated; only the luna fixture moved; original campaign summary remains readable via symlink"
+        },
+        {
+          "cmd": "Verify fixture destination, legacy alias, and historical checksums",
+          "exit_code": 0,
+          "result": "Alias is readable and targets the new runs file; notes.txt copied under legacy-source; all checked historical hashes match"
+        }
+      ],
+      "saved_historical_metrics": {
+        "runs/campaign-powersgd-graph-timing-20261118": {
+          "bf16_mean_iteration_seconds": [
+            0.563239398598671,
+            0.5894109926722012
+          ],
+          "bf16_mean_iteration_seconds_average": 0.576325195635436,
+          "bf16_total_elapsed_seconds": [
+            318.374031865038,
+            332.98602636903524
+          ],
+          "fp32_mean_iteration_seconds": [
+            0.5763287777989171,
+            0.5512829330703244
+          ],
+          "fp32_mean_iteration_seconds_average": 0.5638058554346208,
+          "fp32_total_elapsed_seconds": [
+            331.22759515140206,
+            317.38207176793367
+          ],
+          "limitations": [
+            "No contemporaneous Dense baseline",
+            "Total elapsed includes startup/evaluation; iteration time is its measurement window",
+            "refresh coverage not certified by generic binding evidence"
+          ]
+        },
+        "runs/campaign-greedylore-streamfix-full-20261025": {
+          "130m": {
+            "status": "completed",
+            "final_eval_loss": 3.2012670974913107,
+            "final_eval_ppl": 24.563635006829134,
+            "total_wall_seconds": 12037.452123274561
+          },
+          "60m": {
+            "status": "completed",
+            "final_eval_loss": 3.637438061830251,
+            "final_eval_ppl": 37.99437269665306,
+            "total_wall_seconds": 4459.721324213315
+          },
+          "limitations": [
+            "Total wall time includes startup and evaluation",
+            "refresh coverage not certified by generic binding evidence",
+            "No aggregate scientific pass threshold"
+          ]
+        }
+      },
+      "checks": {
+        "output_location_restriction": "passed for an ordinary outside-runs path; no symlink escape case was exercised",
+        "existing_experiment_protection": "passed for both duplicate IDs; each rejected with exit 2 and Run already exists",
+        "historical_artifact_read_only": "passed; CLI was artifacts-only and read-only; hashes for both timing status/summary and both GreedyLoRE status files match pre-migration observed values",
+        "migration_fixture": {
+          "preview_scope": "exactly one fixture campaign and summary.json",
+          "applied_destination": "runs/campaign-luna-migration-fixture-20261120",
+          "legacy_path_readable": true,
+          "legacy_path_target": "../../runs/campaign-luna-migration-fixture-20261120/summary.json",
+          "notes_preserved": "runs/campaign-luna-migration-fixture-20261120/legacy-source/notes.txt",
+          "historical_hashes_match": true
+        },
+        "old_campaign_cli_behavior": "three safe direct invocations (PowerSGD prepare, GreedyLoRE prepare/run) exited 2 before imports with archived message; no experiment preparation or training occurred",
+        "execution_boundary": "No run/probe command issued; plan/preflight reported training_executed=false and gpu_preflight_executed=false; no GPU probe was performed",
+        "static_boundary": "Both plans have readable report.md/report.json and static_pass preflight, but remain unverified until explicitly executed later"
+      },
+      "limitations_and_findings": [
+        "Timing input uses powersgd-paper-r32 and the llama60m timing recipe, distinct from the historical optimized graph-only campaign; this is what the supplied simulation input requests.",
+        "The recipe references source dataset/model locations outside this isolated repository, but preflight only checks required_paths and reports no missing inputs; it does not validate those argument paths or data contents.",
+        "The timing plan retains record_bucket_layout=true and the generated runtime includes the native bucket observer bridge. Static inspection confirms the configured code path, but this CPU run does not validate observed layouts against runtime measurements.",
+        "No symlink escape output test was performed; this evidence establishes rejection for a normal path outside runs/ only.",
+        "No repository implementation files or historical runs were modified. Added artifacts are the two simulation runs, this evidence, and the JSON/text migration fixture/archive."
+      ]
+    },
+    "parent_independent_checks": {
+      "both_runs_planned_and_unverified": true,
+      "no_training_output_directories": true,
+      "implementation_unchanged": true,
+      "tracked_historical_files_unchanged": 53
+    }
+  },
+  "archived_source_whitespace": "Original bytes retained; only legacy-source snapshots opt out of whitespace lint through .gitattributes.",
+  "implementation_commit": "00efbcc",
+  "scope": "CPU-only migration/interface verification; no GPU, training, probe or scientific rerun"
+}

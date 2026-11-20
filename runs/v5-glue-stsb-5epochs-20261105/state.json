@@ -1,0 +1,107 @@
+{
+  "status": "completed",
+  "jobs": {
+    "dense-s1243": {
+      "status": "completed",
+      "started_at": 1793932683.8053985,
+      "pid": 3328863,
+      "returncode": 0,
+      "elapsed_seconds": 151.7803909550421,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_pearson": 0.9057211875915527,
+          "eval_spearmanr": 0.9032473129291837
+        },
+        "peak_memory_bytes": 3023593472,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r8-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793932836.1610138,
+      "pid": 3330589,
+      "returncode": 0,
+      "elapsed_seconds": 204.11212684214115,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_pearson": 0.9036684036254883,
+          "eval_spearmanr": 0.90081161374155
+        },
+        "peak_memory_bytes": 3838310400,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-streamfix-glue-r16-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793933040.8465977,
+      "pid": 3333345,
+      "returncode": 0,
+      "elapsed_seconds": 207.6693374691531,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_pearson": 0.9052456617355347,
+          "eval_spearmanr": 0.9017589649282928
+        },
+        "peak_memory_bytes": 3838310400,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n019-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793933249.0922704,
+      "pid": 3337162,
+      "returncode": 0,
+      "elapsed_seconds": 105.66529823513702,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_pearson": 0.9055466055870056,
+          "eval_spearmanr": 0.9028427183442783
+        },
+        "peak_memory_bytes": 3529035776,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n033-research-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793933355.3345842,
+      "pid": 3338653,
+      "returncode": 0,
+      "elapsed_seconds": 107.268493025098,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_pearson": 0.9059064984321594,
+          "eval_spearmanr": 0.9025098373319315
+        },
+        "peak_memory_bytes": 3524775936,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "v5-n022-engineer-glue-v1-s1243": {
+      "status": "completed",
+      "started_at": 1793933463.1827219,
+      "pid": 3340246,
+      "returncode": 0,
+      "elapsed_seconds": 106.87192545784637,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "eval_pearson": 0.905896008014679,
+          "eval_spearmanr": 0.9030657950104832
+        },
+        "peak_memory_bytes": 4027538432,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}

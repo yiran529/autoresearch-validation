@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "llama60m-real-smoke-v1",
+  "workload": "llama",
+  "world_size": 4,
+  "compression_start_step": 0,
+  "evaluation_split": "none",
+  "tokenizer_path": "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "required_paths": [
+    "/home/wyr/greedy_lore/c4/c4_en",
+    "/home/wyr/.cache/huggingface/hub/models--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+    "c4/configs/llama_60m_table_iv.json"
+  ],
+  "args": {
+    "model_config": "c4/configs/llama_60m_table_iv.json",
+    "dataset_path": "/home/wyr/greedy_lore/c4/c4_en",
+    "max_length": 256,
+    "dtype": "bfloat16",
+    "activation_checkpointing": true,
+    "batch_size": 128,
+    "workers": 4,
+    "optimizer": "adamw",
+    "lr": 0.0025,
+    "weight_decay": 0.0,
+    "grad_clipping": 1.0,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "warmup_iterations": 1,
+    "measured_iterations": 12,
+    "scheduler_steps": 8393,
+    "lr_warmup_steps": 1000,
+    "strict_blocking_communication": false,
+    "record_bucket_layout": false
+  },
+  "completion": {
+    "status": "completed",
+    "measured_steps": 12,
+    "warmup_iterations": 1,
+    "first_measured_update": 2,
+    "last_measured_update": 13,
+    "strict_blocking_communication": false
+  },
+  "metrics": [
+    "mean_iteration_seconds"
+  ],
+  "notes": "Diagnostic real-model integration only. Compression activation intentionally moved to zero to cover startup and N020 renewal. Not a formal timing/performance result.",
+  "checkpoint_policy": "none",
+  "kind": "timing"
+}

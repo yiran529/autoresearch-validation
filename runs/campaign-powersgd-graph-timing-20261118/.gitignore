@@ -1,0 +1,5 @@
+# Raw timing observations remain local; publish timing-summary.json.
+/cases/powersgd-graph-350m-bf16-r1-20261118/output/all_results.json
+/cases/powersgd-graph-350m-bf16-r2-20261118/output/all_results.json
+/cases/powersgd-graph-350m-fp32-r1-20261118/output/all_results.json
+/cases/powersgd-graph-350m-fp32-r2-20261118/output/all_results.json

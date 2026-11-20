@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "status": "historical_archive",
+  "measurement_status": "unchanged; migration is not a new validation",
+  "source": "campaigns/powersgd-validation-20261109",
+  "destination": "runs/campaign-powersgd-validation-20261109",
+  "entries": {
+    "controller.log": {
+      "": {
+        "kind": "file",
+        "sha256": "ae60e2bb7675bd651e4a0613d4f241d61504bf3641c97aff3e3c2a330fff6943",
+        "size": 1553
+      }
+    },
+    "cpu-tests.log": {
+      "": {
+        "kind": "file",
+        "sha256": "154020cdcb84dafa2779c94eb5bfecd4e0a60cfe360ea6af262dc881934b003e",
+        "size": 2449
+      }
+    },
+    "migration-cpu-tests.log": {
+      "": {
+        "kind": "file",
+        "sha256": "8e866fc96d0da5795287a3451dae603f99238ed2714b3fef782d3dacabce5d29",
+        "size": 2449
+      }
+    },
+    "queue.json": {
+      "": {
+        "kind": "file",
+        "sha256": "51dd9f0d1ace0a60a1047b59b4db9972d68d327bd0fc266d19be9f5d3fc6d248",
+        "size": 837
+      }
+    },
+    "status.json": {
+      "": {
+        "kind": "file",
+        "sha256": "30fb583a32b22049f38efd6353be6bf89262e64c3a9e3a74ab47e690534bb023",
+        "size": 80
+      }
+    }
+  },
+  "legacy_source": {
+    "cifar10-recipe.json": {
+      "kind": "file",
+      "sha256": "34aaa0791f2a620644850503eb787a295400b5ee2875bffcc0c72deac5221681",
+      "size": 1281
+    },
+    "cifar10.json": {
+      "kind": "file",
+      "sha256": "79ad5769ef6802a0bbbbee2dbf1d301d4b070b45a9b36f7ab2b860a63dbf4c02",
+      "size": 674
+    },
+    "cifar100-recipe.json": {
+      "kind": "file",
+      "sha256": "543658c64fca113ca385c7330dad5c1ac46a4c61cc4f3e7b96de18f4d3e9491e",
+      "size": 1284
+    },
+    "cifar100.json": {
+      "kind": "file",
+      "sha256": "0d450a13199add354ca850a3c380ff5be4a736ecb5e05e4e907418aa86855a26",
+      "size": 676
+    },
+    "cola-recipe.json": {
+      "kind": "file",
+      "sha256": "14463fdcb06d2d03103948f4d647730278795c85572e7bad491f3f9930db8745",
+      "size": 1414
+    },
+    "cola.json": {
+      "kind": "file",
+      "sha256": "b57360fbcec2569cdb4a5d8cf9a64a0601df7659272de5ecbb1ccd597ca4db47",
+      "size": 672
+    },
+    "controller.py": {
+      "kind": "file",
+      "sha256": "e76e64263dfc2be62ae67ffefa105ccd0ae559b5a3d46ed6a30cfc6164264e94",
+      "size": 3615
+    },
+    "llama130m-recipe.json": {
+      "kind": "file",
+      "sha256": "94da79742f2abd5190cb6cd6f2aff190788e5a71ca565b8bae2dc03ae7065d19",
+      "size": 1738
+    },
+    "llama130m.json": {
+      "kind": "file",
+      "sha256": "91a7749a88128990cd5d6f3d590dad6de64f2b50dacc01829877d743fa5b44e6",
+      "size": 684
+    },
+    "llama60m-recipe.json": {
+      "kind": "file",
+      "sha256": "5fb7407ad55ad0bb4a1a673987ee14fef57d70e01f6a9a32cb9fe385c9e08440",
+      "size": 1580
+    },
+    "llama60m.json": {
+      "kind": "file",
+      "sha256": "2675856fbdcfb3630e2941bfc556e6d42297e6d2c483826a4a558c29c63dc2fb",
+      "size": 681
+    },
+    "mnli-recipe.json": {
+      "kind": "file",
+      "sha256": "891f2f6a2d23f74ee87797788c9270c5066e3d10856bfe344d69976df01cf7db",
+      "size": 1747
+    },
+    "mnli.json": {
+      "kind": "file",
+      "sha256": "16139b1d84f8ce948c51c0301661a2dea0ae519d9facd465d81b9dc655edab01",
+      "size": 672
+    },
+    "mrpc-recipe.json": {
+      "kind": "file",
+      "sha256": "f50f6804f5ff1fd29c9c4d6483f2122454e5457a2144e5396ba0f0d881874a15",
+      "size": 1417
+    },
+    "mrpc.json": {
+      "kind": "file",
+      "sha256": "0facc2919c467b9858db877c324b28360e1129adea9a4d99b1662e5966f28fd0",
+      "size": 672
+    },
+    "prepare.py": {
+      "kind": "file",
+      "sha256": "11b3cd29adcb7dafcbf0207a32cabab52d41744bc69f85c5740c6e3e63383f29",
+      "size": 7245
+    },
+    "qnli-recipe.json": {
+      "kind": "file",
+      "sha256": "eed4bcc6d2acc9d9c21757932be051cfbf7a59c4fe055e648cf827b692602df3",
+      "size": 1707
+    },
+    "qnli.json": {
+      "kind": "file",
+      "sha256": "631d4b436f7eecae155d7450df6a3c0672875c382efe83bc973e44883d69db65",
+      "size": 672
+    },
+    "qqp-recipe.json": {
+      "kind": "file",
+      "sha256": "e47277c8302638767ff62f5591ef2f6ae19f57e91ee17c2ada0db8d89cad92fa",
+      "size": 1720
+    },
+    "qqp.json": {
+      "kind": "file",
+      "sha256": "2efc73ad487c7a343692643c128f41894cff0493933e79a8194875daaa21b4e2",
+      "size": 670
+    },
+    "rte-recipe.json": {
+      "kind": "file",
+      "sha256": "5dde89b113605c60771f9b3ff664a54f0935eef6460b538e9076c0f0331e5cac",
+      "size": 1399
+    },
+    "rte.json": {
+      "kind": "file",
+      "sha256": "f1c164433fce2ba3ccfebcc4c3265ecf96e9e985071e444bf0ca6d4ef11ae7b8",
+      "size": 670
+    },
+    "sst2-recipe.json": {
+      "kind": "file",
+      "sha256": "4007818fb6fe19fc4de81395f97dbe5da818ef77ffd8a2770a440b57c466e3f9",
+      "size": 1707
+    },
+    "sst2.json": {
+      "kind": "file",
+      "sha256": "2ccfc8905e38508f5f4ebc3ca7cf6ab02c0079ebae71db66ab2e702a314968cb",
+      "size": 672
+    },
+    "stsb-recipe.json": {
+      "kind": "file",
+      "sha256": "aa904774d022a3ff8845d921df9f96a1ad04b10de290b50b95ee283f950855f4",
+      "size": 1423
+    },
+    "stsb.json": {
+      "kind": "file",
+      "sha256": "0949d0bc19f32eadeb0bfde4d954131d75201c17a0f41b058b9ccfd8d3895687",
+      "size": 672
+    }
+  }
+}

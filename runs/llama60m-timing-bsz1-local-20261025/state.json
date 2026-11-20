@@ -1,0 +1,245 @@
+{
+  "status": "completed",
+  "jobs": {
+    "greedylore-engineer-s1243-r1": {
+      "status": "completed",
+      "started_at": 1792906139.3990848,
+      "pid": 3813162,
+      "returncode": 0,
+      "elapsed_seconds": 528.7082975492813,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.28133312049729287
+        },
+        "peak_memory_bytes": 1086483968,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n023-engineer-maxu-s1243-r1": {
+      "status": "completed",
+      "started_at": 1792906669.5103166,
+      "pid": 3819916,
+      "returncode": 0,
+      "elapsed_seconds": 523.6121927346103,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.27220012499485163
+        },
+        "peak_memory_bytes": 1008072704,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n031-engineer-maxu-s1243-r1": {
+      "status": "completed",
+      "started_at": 1792907194.5251114,
+      "pid": 3826843,
+      "returncode": 0,
+      "elapsed_seconds": 520.7000046060421,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.2762963211571332
+        },
+        "peak_memory_bytes": 1008072704,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n020-engineer-maxu-s1243-r1": {
+      "status": "completed",
+      "started_at": 1792907716.6273706,
+      "pid": 3839932,
+      "returncode": 0,
+      "elapsed_seconds": 548.2166554019786,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.29588672416401096
+        },
+        "peak_memory_bytes": 888180224,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "dense-s1243-r1": {
+      "status": "completed",
+      "started_at": 1792912537.2941232,
+      "pid": 3910658,
+      "returncode": 0,
+      "elapsed_seconds": 477.9712524493225,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.23329680725117213
+        },
+        "peak_memory_bytes": 762713600,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-s1243-r2": {
+      "status": "completed",
+      "started_at": 1792908266.2444198,
+      "pid": 3849263,
+      "returncode": 0,
+      "elapsed_seconds": 532.2204449735582,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.2780017138749827
+        },
+        "peak_memory_bytes": 1089481216,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n023-engineer-maxu-s1243-r2": {
+      "status": "completed",
+      "started_at": 1792908799.8697906,
+      "pid": 3856310,
+      "returncode": 0,
+      "elapsed_seconds": 514.2100917198695,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.26850350823777264
+        },
+        "peak_memory_bytes": 1008072704,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n031-engineer-maxu-s1243-r2": {
+      "status": "completed",
+      "started_at": 1792909315.4793699,
+      "pid": 3863405,
+      "returncode": 0,
+      "elapsed_seconds": 539.587622764986,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.2823795714863809
+        },
+        "peak_memory_bytes": 1008072704,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n020-engineer-maxu-s1243-r2": {
+      "status": "completed",
+      "started_at": 1792909856.4781146,
+      "pid": 3870138,
+      "returncode": 0,
+      "elapsed_seconds": 544.3025389499962,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.29516216919990257
+        },
+        "peak_memory_bytes": 890252288,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "dense-s1243-r2": {
+      "status": "completed",
+      "started_at": 1792913016.6622806,
+      "pid": 3917136,
+      "returncode": 0,
+      "elapsed_seconds": 481.6384793459438,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.23462104922742583
+        },
+        "peak_memory_bytes": 764556288,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "greedylore-engineer-s1243-r3": {
+      "status": "completed",
+      "started_at": 1792910402.1786819,
+      "pid": 3880728,
+      "returncode": 0,
+      "elapsed_seconds": 531.5280013289303,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.2779807389859343
+        },
+        "peak_memory_bytes": 1089481216,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n023-engineer-maxu-s1243-r3": {
+      "status": "completed",
+      "started_at": 1792910935.0948951,
+      "pid": 3887969,
+      "returncode": 0,
+      "elapsed_seconds": 516.8272010479122,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.2687544467713451
+        },
+        "peak_memory_bytes": 1005443584,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n031-engineer-maxu-s1243-r3": {
+      "status": "completed",
+      "started_at": 1792911453.3168406,
+      "pid": 3895981,
+      "returncode": 0,
+      "elapsed_seconds": 529.0882093319669,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.27610061523504553
+        },
+        "peak_memory_bytes": 1005443584,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "n020-engineer-maxu-s1243-r3": {
+      "status": "completed",
+      "started_at": 1792911983.803268,
+      "pid": 3903265,
+      "returncode": 0,
+      "elapsed_seconds": 549.2638736600056,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.2957222639123211
+        },
+        "peak_memory_bytes": 888180224,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    },
+    "dense-s1243-r3": {
+      "status": "completed",
+      "started_at": 1792913499.7030523,
+      "pid": 3924044,
+      "returncode": 0,
+      "elapsed_seconds": 475.6010504378937,
+      "validation": {
+        "status": "verified",
+        "errors": [],
+        "metrics": {
+          "mean_iteration_seconds": 0.23113398185523693
+        },
+        "peak_memory_bytes": 762713600,
+        "refresh_coverage": "not certified by generic binding evidence"
+      }
+    }
+  }
+}
